@@ -22,7 +22,6 @@ $yearsToSample = $yearcombos[$params['yearselector']];
 $report = '';
 $qualcounts = array();
 $qualnows = array();
-$cohort = 0;
 
 # now unwind $jobtitles into profsoct code and titles
 $profsocts = array();
@@ -126,8 +125,6 @@ foreach ( $yearsToSample as $yearcode ) {
         mysqli_stmt_store_result( $est );
         $qualcounts[$yearcode][$code] = mysqli_stmt_num_rows( $est );
         $qualcounts[$yearcode]['pop'] += mysqli_stmt_num_rows( $est );
-#        echo "<p>$yearcode: $code: ".mysqli_stmt_num_rows( $est )."</p>";
-        $cohort += mysqli_stmt_num_rows( $est );
 
         mysqli_stmt_bind_result($est, $husid, $typequal, $profsoct, $instprov, $course);
 
@@ -194,13 +191,6 @@ foreach ( $yearsToSample as $yearcode ) {
 <br />
 <br />
 
-<?php
-
-if ($cohort >= $minsize) {
-
-?>
-
-
 <table>
     <tr><th rowspan='2'>Publication Categories</th>
 
@@ -240,15 +230,6 @@ foreach ($qualtypes as $code => $qualdetails) {
 ?>
 
 </table>
-
-<?php
-
-} else {
-    echo "<p><strong>There are too few graduates ($cohort) in your chosen population, please go back and re-select.</strong></p>";
-}
-
-?>
-
 
 <p><a href="index.php">Back to main page</a></p>
 

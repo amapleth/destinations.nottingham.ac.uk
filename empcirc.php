@@ -167,10 +167,6 @@ foreach ( $yearsToSample as $yearcode ) {
         mysqli_stmt_store_result( $prost );
         $popcounts[$yearcode][$prosp] = mysqli_stmt_num_rows( $prost );
 
-        // if ( $yearcode == '1112' ) {
-        //     echo "<p>$prosp<br />$prospstm</p>";
-        // }
-
         // if ( $yearcode == '1112' && $prosp == 'negemp' ) {
 
         //     echo "<p>$prospstm</p>";
@@ -449,21 +445,6 @@ foreach ( $yearsToSample as $yearcode ) {
 
 <?php include 'table.php'; ?>
 
-
-<?php 
-
-$totalpop = 0;
-
-foreach ( $yearsToSample as $yearcode ) {
-    $totalpop += $popcounts[$yearcode]['pop'];
-}
-
-if ( $totalpop >= $minsize ) {
-
-?>
-
-
-
 <br />
 <table>
     <tr><th>Survey</th><th>Population</th><th>Respondents</th><th>Response rate</th><th>Positive outcomes (PO)</th><th>Graduate prospects (GP)</th></tr>
@@ -682,12 +663,7 @@ HEREDOC;
 
 }
 
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
-}
-
 ?>
-
 
 
 <p><a href="index.php">Back to main page</a></p>

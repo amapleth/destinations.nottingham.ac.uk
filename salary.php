@@ -30,7 +30,6 @@ $cohorts = array();
 $schoolcounts = array();
 $subcounts = array();
 $coursecounts = array();
-$cohort = 0;
 
 foreach ( $yearsToSample as $yearcode ) {
 
@@ -114,7 +113,6 @@ foreach ( $yearsToSample as $yearcode ) {
     mysqli_stmt_execute( $pst );
     mysqli_stmt_store_result( $pst );
     $cohorts[$yearcode] = mysqli_stmt_num_rows( $pst );
-    $cohort += mysqli_stmt_num_rows( $pst );
 
     # now get the number who gave a salary
     $salstmord =  $salstm." ORDER BY (SALARY+0)";
@@ -138,33 +136,26 @@ foreach ( $yearsToSample as $yearcode ) {
 
     $salcounts[$yearcode]['array'] = $salarray;
 
-    // echo "<p>Salaries for $yearcode</p>";
-    // print_r( $salarray );
-
-    // echo "<p>Number of salaries stated for $yearcode: ".$salcounts[$yearcode]['total']." - ";
-
     # get the median salary
     if ( $salcounts[$yearcode]['total'] % 2 == 1 ) {
 
-        // echo " odd</p>";
-
-        # odd number of salaries so just take the central value from $salarray
-        $i = ( (count($salarray) / 2) + 0.5 ) - 1;
-        // echo "<p>Getting value of salary $i in array: ".number_format( $salarray[$i], -2)."</p>";
+        # odd numbewr of salaries so just take the central value from $salarray
+        $i = ( (count($salarray) / 2) + 0.5 );
         $salcounts[$yearcode]['median'] = number_format( $salarray[$i], -2);
- 
+
     } else {
 
-        // echo " even!</p>";
-
         # even number of salaries so split the difference between the two central values
-        $j = count($salarray) / 2;
-        $i = $j-1;
-        // echo "<p>Getting difference between salary $i (".$salarray[$i].") and salary $j (".$salarray[$j].") in array: ".number_format( ( $salarray[$i] + $salarray[$j] ) / 2, -2)."</p>";
+        $i = count($salarray) / 2;
+        $j = $i+1;
         $salcounts[$yearcode]['median'] = number_format( ( $salarray[$i] + $salarray[$j] ) / 2, -2); 
 
     }
 
+    # special case for an array of one
+    if ( count($salarray) == 1 ) { 
+        $salcounts[$yearcode]['median'] = number_format( $salarray[0], -2);
+    }
 
     # now get the counts for each salary band
     foreach ( $salarybands as $band => $bounds ) {
@@ -219,17 +210,22 @@ foreach ( $yearsToSample as $yearcode ) {
             if ( $schoolcounts[$school][$yearcode]['total'] % 2 == 1 ) {
 
                 # odd numbewr of salaries so just take the central value from $salarray2
-                $i = ( (count($salarray2) / 2) + 0.5 ) -1;
+                $i = ( (count($salarray2) / 2) + 0.5 );
                 $schoolcounts[$school][$yearcode]['median'] = number_format( $salarray2[$i], -2);
 
             } else {
 
                 # even number of salaries so split the difference between the two central values
-                $j = count($salarray2) / 2;
-                $i = $j-1;
+                $i = count($salarray2) / 2;
+                $j = $i+1;
                 $schoolcounts[$school][$yearcode]['median'] = number_format( ( $salarray2[$i] + $salarray2[$j] ) / 2, -2); 
 
              }
+
+             # special case for an array of one
+            if ( count($salarray2) == 1 ) { 
+                $schoolcounts[$school][$yearcode]['median'] = number_format( $salarray2[0], -2);
+            }
              
 
         }
@@ -277,16 +273,21 @@ foreach ( $yearsToSample as $yearcode ) {
                 if ( $subcounts[$subject][$yearcode]['total'] % 2 == 1 ) {
 
                     # odd numbewr of salaries so just take the central value from $salarray3
-                    $i2 = ( (count($salarray3) / 2) + 0.5 ) - 1;
+                    $i2 = ( (count($salarray3) / 2) + 0.5 );
                     $subcounts[$subject][$yearcode]['median'] = number_format( $salarray3[$i2], -2);
 
                 } else {
 
                     # even number of salaries so split the difference between the two central values
-                    $j2 = count($salarray3) / 2;
-                    $i2 = $j2-1;
+                    $i2 = count($salarray3) / 2;
+                    $j2 = $i2+1;
                     $subcounts[$subject][$yearcode]['median'] = number_format( ( $salarray3[$i2] + $salarray3[$j2] ) / 2, -2); 
 
+                }
+
+                # special case for an array of one
+                if ( count($salarray3) == 1 ) { 
+                    $subcounts[$subject][$yearcode]['median'] = number_format( $salarray3[0], -2);
                 }
                 
 
@@ -339,17 +340,23 @@ foreach ( $yearsToSample as $yearcode ) {
                     if ( $coursecounts[$course][$yearcode]['total'] % 2 == 1 ) {
 
                         # odd numbewr of salaries so just take the central value from $salarray4
-                        $i3 = ( (count($salarray4) / 2) + 0.5 ) - 1;
+                        $i3 = ( (count($salarray4) / 2) + 0.5 );
                         $coursecounts[$course][$yearcode]['median'] = number_format( $salarray4[$i3], -2);
 
                     } else {
 
                         # even number of salaries so split the difference between the two central values
-                        $j3 = count($salarray4) / 2;
-                        $i3 = $j3-1;
+                        $i3 = count($salarray4) / 2;
+                        $j3 = $i3+1;
                         $coursecounts[$course][$yearcode]['median'] = number_format( ( $salarray4[$i3] + $salarray4[$j3] ) / 2, -2); 
 
-                    }                    
+                    }
+
+                    # special case for an array of one
+                    if ( count($salarray4) == 1 ) { 
+                        $coursecounts[$course][$yearcode]['median'] = number_format( $salarray4[0], -2);
+                    }
+                    
 
 
                 }
@@ -395,12 +402,6 @@ foreach ( $yearsToSample as $yearcode ) {
 
 <br />
 <br />
-
-<?php
-
-if ($cohort >= $minsize ) {
-
-?>
 
 <table>
     <tr><th>Survey</th><th>Number in FT employment</th><th>Number elected to state salary</th><th>Mean salary</th><th>Median salary</th></tr>
@@ -577,10 +578,6 @@ HEREDOC;
 
     }
 
-}
-
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
 }
 
 ?>

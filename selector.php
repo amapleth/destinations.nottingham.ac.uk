@@ -307,7 +307,7 @@ foreach ( $whereclauses as $counter => $clause ) {
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-<div class='rootcontainer'>
+       <div class='rootcontainer'>
 
 <?php include 'header.php' ?>
 
@@ -338,7 +338,8 @@ echo <<<HEREDOC
 <form method="post" action="$cat.php" id="selecterform">
 <p>Filter by: <br />
 <input type="radio" name="filtertype" id="schoolfilter" value="school" checked="checked" /> <label for="schoolfilter">$option1 / $option2 / $option3</label> <br />
-<input type="radio" name="filtertype" id="jacsfilter" value="jacs" $jacsallow $jacshider/> <label for="jacsfilter" $jacshider>JACS code</label> </p>
+<input type="radio" name="filtertype" id="jacsfilter" value="jacs" $jacsallow $jacshider/> <label for="jacsfilter" $jacshider>JACS code</label>
+</p>
 <div id="schoolselecter" class="selecter">
 <label for="school">$option1 </label>
 <select name="school" id="school" class="filtrigger">

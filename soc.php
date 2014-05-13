@@ -26,7 +26,6 @@ $dlhecounts = array();
 $cohorts = array();
 $jtcounts = array();
 $empnames = array();
-$cohort = 0;
 
 #$whereclause .= " AND SOCDLHE <> 'X'";
 $sdvar = '';
@@ -101,14 +100,8 @@ foreach ( $yearsToSample as $yearcode ) {
 #    $cohorts[$yearcode] = mysqli_stmt_num_rows( $pst );
     $cohorts[$yearcode] = 0;
 
-    $jts = $jobtitles;
-
-    if ($yearcode > '1011') {
-        $jts = $jobtitles1112;
-    }
-
     # now get the counts for SOCs
-    foreach ( $jts as $soc => $socdetails ) {
+    foreach ( $jobtitles as $soc => $socdetails ) {
 
         $cstm = $socdlhe." AND ( LEFT($sdvar, 1)='".$socdetails['code']."')";
         $cst = mysqli_prepare( $con, $cstm );
@@ -117,7 +110,6 @@ foreach ( $yearsToSample as $yearcode ) {
         mysqli_stmt_store_result( $cst );
         $dlhecounts[$yearcode][$soc]['count'] = mysqli_stmt_num_rows( $cst );
         $cohorts[$yearcode] += mysqli_stmt_num_rows( $cst );
-        $cohort += mysqli_stmt_num_rows( $cst );
 
 
         foreach ( $socdetails['subset'] as $subsoc => $subdetails ) {
@@ -201,18 +193,8 @@ foreach ( $yearsToSample as $yearcode ) {
 <br />
 <br />
 
-<?php
-
-if ($cohort >= $minsize) {
-
-if ( in_array('1011', $yearsToSample) ) {
-
-?>
-
-
-
 <table>
-    <tr><th rowspan='2'>Occupational Category pre 11/12</th>
+    <tr><th rowspan='2'>Occupational Catergory</th>
 
 <?php
 
@@ -221,11 +203,10 @@ $row2 = '';
 $row3 = '';
 
 $empnametable = <<<HEREDOC
-<table><tr><th>Occupational areas pre 11/12</th>
+<table><tr><th>Occupational areas</th>
 HEREDOC;
 
 foreach ( $yearsToSample as $yearcode ) {
-    if ( $yearcode > '1011' ) { continue; }
     $row1 .= "<td colspan='2'>".$yearcodemap[$yearcode]." survey</td>";
     $row2 .= "<td class='small'>Number</td><td class='small'>Percentage</td>";
     $row3 .= "<th>".$yearcodemap[$yearcode]." survey</th>";
@@ -233,13 +214,11 @@ foreach ( $yearsToSample as $yearcode ) {
 
 echo "$row1</tr>$row2</tr>";
 $empnametable .= "$row3<th>Employers</th></tr>";
-
 
 foreach ( $jobtitles as $soc => $socdetails ) {
     $socid = substr($socdetails['code'], 0, 1);
     echo "<tr><td class='tablerowtoggle' id='cat$socid'>$soc</td>";
     foreach ($yearsToSample as $yearcode) {
-        if ( $yearcode > '1011' ) { continue; }
         $soccount = $dlhecounts[$yearcode][$soc]['count'];
         $socperc = number_format( ( $dlhecounts[$yearcode][$soc]['count'] / $cohorts[$yearcode] ) * 100, 1);
         echo "<td id='subs$socid'>$soccount</td><td>$socperc%</td>";
@@ -249,7 +228,6 @@ foreach ( $jobtitles as $soc => $socdetails ) {
         $subid =  substr($subdetails['code'], 0, 3);
         echo "<tr class='subsect subscat$socid'><td class='tablerowtoggle subindent' id='cat$subid'>$subsoc</td>";
         foreach ($yearsToSample as $yearcode) {
-            if ( $yearcode > '1011' ) { continue; }
             $subcount = $dlhecounts[$yearcode][$soc]['subset'][$subsoc]['count'];
             echo "<td>$subcount</td><td></td>";
         }
@@ -258,7 +236,6 @@ foreach ( $jobtitles as $soc => $socdetails ) {
             echo "<tr class='subsubsect subscat$subid'><td class='tablerowtoggle subsubindent' id='cat$code'>$subsubsoc</td>";
             $empnametable .= "<tr><td>$subsubsoc</td>";
             foreach ($yearsToSample as $yearcode) {
-                if ( $yearcode > '1011' ) { continue; }
                 $subsubcount = $dlhecounts[$yearcode][$soc]['subset'][$subsoc]['subset'][$subsubsoc]['count'];
                 echo "<td>$subsubcount</td><td></td>";
                 $empnametable .=  "<td>$subsubcount</td>";
@@ -272,7 +249,6 @@ foreach ( $jobtitles as $soc => $socdetails ) {
             foreach ( $jtcounts[$subsubsoc] as $jobtitle => $count ) {
                 echo "<tr class='subscat$code subsubsubsect'><td class='subsubsubindent'>$jobtitle</td>";
                 foreach ($yearsToSample as $yearcode) {
-                    if ( $yearcode > '1011' ) { continue; }
                     $jtcount = 0;
                     $jtarr = $dlhecounts[$yearcode][$soc]['subset'][$subsoc]['subset'][$subsubsoc]['jobtitles'];
                     if (array_key_exists($jobtitle, $jtarr)) {
@@ -290,107 +266,11 @@ foreach ( $jobtitles as $soc => $socdetails ) {
 echo "<tr><td>Total</td>";
 
 foreach ($yearsToSample as $yearcode) {
-    if ( $yearcode > '1011' ) { continue; }
     echo "<td colspan='2'>".$cohorts[$yearcode]."</td>";
 }
 
 echo <<<HEREDOC
 </tr></table>
-<br /><br />
-HEREDOC;
-
-}
-
-?>
-
-<table>
-    <tr><th rowspan='2'>Occupational Category post 11/12</th>
-
-<?php
-
-$row1 = '';
-$row2 = '';
-$row3 = '';
-
-
-$empnametable .= <<<HEREDOC
-</table><br /><br /><table><tr><th>Occupational areas post 11/12</th>
-HEREDOC;
-
-
-foreach ( $yearsToSample as $yearcode ) {
-    if ( $yearcode < '1112' ) { continue; }
-    $row1 .= "<td colspan='2'>".$yearcodemap[$yearcode]." survey</td>";
-    $row2 .= "<td class='small'>Number</td><td class='small'>Percentage</td>";
-    $row3 .= "<th>".$yearcodemap[$yearcode]." survey</th>";
-}
-
-echo "$row1</tr>$row2</tr>";
-$empnametable .= "$row3<th>Employers</th></tr>";
-
-
-foreach ( $jobtitles1112 as $soc => $socdetails ) {
-    $socid = substr($socdetails['code'], 0, 1);
-    echo "<tr><td class='tablerowtoggle' id='cat$socid'>$soc</td>";
-    foreach ($yearsToSample as $yearcode) {
-        if ( $yearcode < '1112' ) { continue; }
-        $soccount = $dlhecounts[$yearcode][$soc]['count'];
-        $socperc = number_format( ( $dlhecounts[$yearcode][$soc]['count'] / $cohorts[$yearcode] ) * 100, 1);
-        echo "<td id='subs$socid'>$soccount</td><td>$socperc%</td>";
-    }
-    echo "</tr>";
-    foreach ( $socdetails['subset'] as $subsoc => $subdetails ) {
-        $subid =  substr($subdetails['code'], 0, 3);
-        echo "<tr class='subsect subscat$socid'><td class='tablerowtoggle subindent' id='cat$subid'>$subsoc</td>";
-        foreach ($yearsToSample as $yearcode) {
-            if ( $yearcode < '1112' ) { continue; }
-            $subcount = $dlhecounts[$yearcode][$soc]['subset'][$subsoc]['count'];
-            echo "<td>$subcount</td><td></td>";
-        }
-        echo "</tr>";
-        foreach ($subdetails['subset'] as $subsubsoc => $code) {
-            echo "<tr class='subsubsect subscat$subid'><td class='tablerowtoggle subsubindent' id='cat$code'>$subsubsoc</td>";
-            $empnametable .= "<tr><td>$subsubsoc</td>";
-            foreach ($yearsToSample as $yearcode) {
-                if ( $yearcode < '1112' ) { continue; }
-                $subsubcount = $dlhecounts[$yearcode][$soc]['subset'][$subsoc]['subset'][$subsubsoc]['count'];
-                echo "<td>$subsubcount</td><td></td>";
-                $empnametable .=  "<td>$subsubcount</td>";
-            }
-            $empnamelist = '';
-            if ( array_key_exists($subsubsoc, $empnames) ) {
-                $empnamelist = implode( ', ', array_keys($empnames[$subsubsoc]) );               
-            }
-            $empnametable .= "<td>$empnamelist</td></tr>";
-            echo "</tr>";
-            foreach ( $jtcounts[$subsubsoc] as $jobtitle => $count ) {
-                echo "<tr class='subscat$code subsubsubsect'><td class='subsubsubindent'>$jobtitle</td>";
-                foreach ($yearsToSample as $yearcode) {
-                    if ( $yearcode < '1112' ) { continue; }
-                    $jtcount = 0;
-                    $jtarr = $dlhecounts[$yearcode][$soc]['subset'][$subsoc]['subset'][$subsubsoc]['jobtitles'];
-                    if (array_key_exists($jobtitle, $jtarr)) {
-                        $jtcount = $jtarr[$jobtitle];
-                    }
-                    echo "<td>$jtcount</td><td></td>";
-                }
-                echo "</tr>";
-            }
-        }
-    }
-
-}
-
-echo "<tr><td>Total</td>";
-
-foreach ($yearsToSample as $yearcode) {
-    if ( $yearcode < '1112' ) { continue; }
-    echo "<td colspan='2'>".$cohorts[$yearcode]."</td>";
-}
-
-echo <<<HEREDOC
-</tr></table>
-<br /><br />
 $empnametable
 </table>
 HEREDOC;
@@ -398,13 +278,6 @@ HEREDOC;
 
 ?>
 
-<?php
-
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
-}
-
-?>
 
 
 

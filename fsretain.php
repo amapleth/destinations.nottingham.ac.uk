@@ -16,7 +16,6 @@ foreach ( $yearsToSample as $yearcode ) {
     $cohorts[$yearcode]['retained'] = 0;
 }
 $qualnows = array();
-$cohort = 0;
 
 foreach ( $yearsToSample as $yearcode ) {
 
@@ -36,7 +35,6 @@ foreach ( $yearsToSample as $yearcode ) {
         mysqli_stmt_store_result( $pst );
         $retcounts[$yearcode][$code]['total'] = mysqli_stmt_num_rows( $pst );
         $cohorts[$yearcode]['total'] += mysqli_stmt_num_rows( $pst );
-        $cohort += mysqli_stmt_num_rows( $pst );
 
         $retst = "$basestm AND (".$qtdetails['sql']." ) AND INSTPROV = ? ";
         $uni = $university;
@@ -113,13 +111,6 @@ foreach ( $yearsToSample as $yearcode ) {
 <br />
 <br />
 
-<?php
-
-if ($cohort >= $minsize) {
-
-?>
-
-
 <table>
     <tr><th rowspan='2'>Nature of Study</th>
 
@@ -177,15 +168,6 @@ echo "</tr>";
 ?>
 
 </table>
-
-<?php
-
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
-}
-
-?>
-
 
 
 <p><a href="index.php">Back to main page</a></p>

@@ -137,8 +137,6 @@ foreach ( $yearsToSample as $yearcode ) {
 
         if ( $jobtitle == 'XXXX' ) { continue; }
 
-        $jobtitles['all'][$jobtitle]++;
-
 #        echo "<p>found for $empname : $jobtitle</p>";
 
         if ( array_key_exists($empname, $jobtitles)  && ( $jobtitles[$empname] != '' )  ) {
@@ -160,7 +158,6 @@ foreach ( $yearsToSample as $yearcode ) {
         if ( $sic == 'all' ) { continue; }
 
         $istm = $sicstm." AND (".$sicdetails['sql'].")";
-#        echo "<p>$istm<br />$p1 <br />$p2 <br />$p3</p>";
         $sicst = mysqli_prepare( $con, $istm );
         mysqli_stmt_bind_param( $sicst, 'sss', $p1, $p2, $p3 );
         mysqli_stmt_execute( $sicst );
@@ -222,153 +219,123 @@ foreach ( $yearsToSample as $yearcode ) {
 
 <?php 
 
-if ( $cohort >= $minsize ) {
+#print_r( $empcounts );
 
-    echo "<p><span id='emptabletoggle' class='vistoggle'>Hide/show employer name table</span>";
+#echo "<p>Cohort: '$cohort'</p>";
 
-    if ($jobslink != 'no') {
-        echo " | <span id='jobtitletoggle' class='vistoggle'>Show/hide job titles</span>";
-    }
+echo "<p><span id='emptabletoggle' class='vistoggle'>Hide/show employer name table</span> | <span id='jobtitletoggle' class='vistoggle'>Show/hide job titles</span></p><div id='emptablediv'><table id='emptable'><tr><th>Employer</th>";
 
-    echo "</p><div id='emptablediv'><table id='emptable'><tr><th>Employer</th>";
+foreach ( $yearsToSample as $yearcode ) {
+    echo "<th>".$yearcodemap[$yearcode]."</th>";
+}
+
+#if ( $cohort < 200 ) { 
+    echo "<th class='jtdisp'>Job title</th>"; 
+#}
+
+echo "</tr>";
+
+foreach ( $empnames as $empname => $flag ) {
+
+    echo "<tr><td>$empname</td>";
 
     foreach ( $yearsToSample as $yearcode ) {
-        echo "<th>".$yearcodemap[$yearcode]."</th>";
-    }
-
-    if ( $jobslink != 'no' ) { 
-        echo "<th class='jtdisp'>Job title</th>"; 
-    }
-
-    echo "</tr>";
-
-    ksort($empnames);
-
-    foreach ( $empnames as $empname => $flag ) {
-
-        echo "<tr><td>$empname</td>";
-
-        foreach ( $yearsToSample as $yearcode ) {
-            $yearemps = $empcounts[$yearcode];
-            if ( array_key_exists($empname, $yearemps) ) {
-                echo "<td>".$empcounts[$yearcode][$empname]."</td>";
-            } else {
-                echo "<td></td>";
-            }
+        $yearemps = $empcounts[$yearcode];
+        if ( array_key_exists($empname, $yearemps) ) {
+            echo "<td>".$empcounts[$yearcode][$empname]."</td>";
+        } else {
+            echo "<td></td>";
         }
-
-        if ( $jobslink != 'no' ) { 
-            if ( array_key_exists($empname, $jobtitles) ) {
-                echo "<td class='jtdisp'>$jobtitles[$empname]</td>"; 
-            } else {
-                echo "<td class='jtdisp'></td>";
-            }
-        }
-
-        echo "</tr>\n";
-
     }
 
-    echo "</table>";
-
-    #if ( $cohort > 199 ) { echo "<p class='small'>Job titles have been suppressed as there are more than 200 in this cohort.</p>"; }
-
-    echo "</div><!-- end emptablediv -->";
-
-    if ( $jobslink == 'no' ) {
-
-        echo "<h3>List of job titles for the graduates you selected</h3><ul>";
-
-        $jts = $jobtitles['all'];
-
-        ksort($jts);
-
-        foreach ( $jts as $jt => $jtcount ) {
-
-            if ( $jt == '' ) { continue; }
-
-            echo "<li>$jt</li>";
+#    if ( $cohort < 200 ) { 
+        if ( array_key_exists($empname, $jobtitles) ) {
+            echo "<td class='jtdisp'>$jobtitles[$empname]</td>"; 
+        } else {
+            echo "<td class='jtdisp'></td>";
         }
+#    }
 
+    echo "</tr>\n";
 
-        echo "</ul>";
-        
-    }
+}
 
+echo "</table>";
 
+#if ( $cohort > 199 ) { echo "<p class='small'>Job titles have been suppressed as there are more than 200 in this cohort.</p>"; }
 
-    echo <<<HEREDOC
+echo "</div><!-- end emptablediv -->";
+
+echo <<<HEREDOC
 <table>
 <tr>
     <th rowspan="2">Standard Industrial Classification</th>
 HEREDOC;
 
-    $headrow1 = '';
-    $headrow2 = '<tr>';
+$headrow1 = '';
+$headrow2 = '<tr>';
 
-    foreach ( $yearsToSample as $yearcode ) {
-        $headrow1 .= "<th colspan='2'>".$yearcodemap[$yearcode]." survey</th>";
-        $headrow2 .= "<td class='small'>Number</td><td class='small'>Percentage</td>";
-    }
-
-    echo "$headrow1</tr>\n$headrow2</tr>";
-
-    # now loop through the SICs and subSICs and make them into a nice table with accordions.
-    $sics = $empwheres['industries'];
-    foreach ( $sics as $sic => $sicdetails ) {
-
-        if ( $sic == 'all' ) { continue; }
-
-        echo "<tr><td id='$sic' class='tablerowtoggle'>".$sicdetails['label']."</td>";
-
-        foreach ( $yearsToSample as $yearcode ) {
-
-            $siccount = $siccounts[$yearcode][$sic]['count'];
-            if ( $siccounts[$yearcode]['total'] > 0 ) {
-                $sicpercent = number_format( ($siccount / $siccounts[$yearcode]['total']) * 100, 1 );
-            } else {
-                $sicpercent = '0';
-            } 
-            
-            echo "<td>$siccount</td><td>$sicpercent%</td>";
-
-        }
-
-        echo "</tr>";
-
-        foreach ($sicdetails['subinds'] as $subsic => $subsicdetails ) {
-
-            echo "<tr class='subsect subs$sic'><td class='subindent'>".$subsicdetails['label']."</td>";
-            
-           foreach ( $yearsToSample as $yearcode ) {
-                $subsiccount = $siccounts[$yearcode][$sic]['subsics'][$subsic]['count'];
-                if ( $siccounts[$yearcode]['total'] > 0 ) {
-                    $subsicpercent = number_format( ($subsiccount / $siccounts[$yearcode]['total']) * 100, 1 );
-                } else {
-                    $subsicpercent = '0';
-                } 
-                echo "<td>$subsiccount</td><td>$subsicpercent%</td>";
-
-            }
-
-            echo "</tr>\n\n";
-
-        }
-
-
-
-
-    }
-
-    echo "<tr><td>Total</td>";
-    foreach ( $yearsToSample as $yearcode ) {
-        echo "<td colspan='2'>".$siccounts[$yearcode]['total']."</td>";
-    }
-    echo "</tr></table>";
-
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
+foreach ( $yearsToSample as $yearcode ) {
+    $headrow1 .= "<th colspan='2'>".$yearcodemap[$yearcode]." survey</th>";
+    $headrow2 .= "<td class='small'>Number</td><td class='small'>Percentage</td>";
 }
+
+echo "$headrow1</tr>\n$headrow2</tr>";
+
+# now loop through the SICs and subSICs and make them into a nice table with accordions.
+$sics = $empwheres['industries'];
+foreach ( $sics as $sic => $sicdetails ) {
+
+    if ( $sic == 'all' ) { continue; }
+
+    echo "<tr><td id='$sic' class='tablerowtoggle'>".$sicdetails['label']."</td>";
+
+    foreach ( $yearsToSample as $yearcode ) {
+
+        $siccount = $siccounts[$yearcode][$sic]['count'];
+        if ( $siccounts[$yearcode]['total'] > 0 ) {
+            $sicpercent = number_format( ($siccount / $siccounts[$yearcode]['total']) * 100, 1 );
+        } else {
+            $sicpercent = '0';
+        } 
+        
+        echo "<td>$siccount</td><td>$sicpercent%</td>";
+
+    }
+
+    echo "</tr>";
+
+    foreach ($sicdetails['subinds'] as $subsic => $subsicdetails ) {
+
+        echo "<tr class='subsect subs$sic'><td class='subindent'>".$subsicdetails['label']."</td>";
+        
+       foreach ( $yearsToSample as $yearcode ) {
+            $subsiccount = $siccounts[$yearcode][$sic]['subsics'][$subsic]['count'];
+            if ( $siccounts[$yearcode]['total'] > 0 ) {
+                $subsicpercent = number_format( ($subsiccount / $siccounts[$yearcode]['total']) * 100, 1 );
+            } else {
+                $subsicpercent = '0';
+            } 
+            echo "<td>$subsiccount</td><td>$subsicpercent%</td>";
+
+        }
+
+        echo "</tr>\n\n";
+
+    }
+
+
+
+
+}
+
+echo "<tr><td>Total</td>";
+foreach ( $yearsToSample as $yearcode ) {
+    echo "<td colspan='2'>".$siccounts[$yearcode]['total']."</td>";
+}
+echo "</tr></table>";
+
+
 
 #print_r( $siccounts ); 
 

@@ -18,7 +18,6 @@ $popparams = array('FTorPT', 'UGorPG', 'level', 'homeeu');
 
 # intialise variables to store the data
 $expcounts = array();
-$cohort = 0;
 
 # now get the population and responsdent counts for each year
 $yearsToSample = $yearcombos[$params['yearselector']];
@@ -96,7 +95,6 @@ foreach ( $yearsToSample as $yearcode ) {
                 mysqli_stmt_store_result( $exst );
                 $expcounts[$yearcode][$crit][$code] = mysqli_stmt_num_rows( $exst );
                 $cohorts[$yearcode][$crit] += mysqli_stmt_num_rows( $exst );
-                $cohort += mysqli_stmt_num_rows( $exst );
             }
         }
 
@@ -138,14 +136,6 @@ foreach ( $yearsToSample as $yearcode ) {
 
 <br />
 <br />
-
-<?php
-
-if ($cohort >= $minsize) {
-
-?>
-
-
 
 <table>
     <tr><th rowspan='2'>Prepare for employment?</th>
@@ -289,13 +279,7 @@ echo "$totalrow</tr>";
 
 </table>
 
-<?php
 
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
-}
-
-?>
 
 <p><a href="index.php">Back to main page</a></p>
 

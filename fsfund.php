@@ -21,7 +21,6 @@ $yearsToSample = $yearcombos[$params['yearselector']];
 # intialise variables to store the data
 $report = '';
 $fundcounts = array();
-$cohort = 0;
 
 
 foreach ( $yearsToSample as $yearcode ) {
@@ -106,7 +105,6 @@ foreach ( $yearsToSample as $yearcode ) {
         mysqli_stmt_store_result( $est );
         $fundcounts[$yearcode][$code] = mysqli_stmt_num_rows( $est );
         $fundcounts[$yearcode]['pop'] += mysqli_stmt_num_rows( $est );
-        $cohort += mysqli_stmt_num_rows( $est );
 
     }
 
@@ -147,12 +145,6 @@ foreach ( $yearsToSample as $yearcode ) {
 <br />
 <br />
 
-<?php
-
-if ($cohort >= $minsize) {
-
-?>
-
 <table>
     <tr><th rowspan='2'>Study funded by...</th>
 
@@ -183,14 +175,6 @@ foreach ($funds as $code => $label) {
 ?>
 
 </table>
-
-<?php
-
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
-}
-
-?>
 
 <p><a href="index.php">Back to main page</a></p>
 

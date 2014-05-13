@@ -20,7 +20,6 @@ function getempclause($yearcode, $empparams, $params, $empwheres) {
 			if ( $empr == 'contracts' ) { $empr2 = 'contracts1112'; }
 			if ( $empr == 'qualuses' ) { $empr2 = 'qualuses1112'; }
 			if ( $empr == 'orgsizes' ) { $empr2 = 'orgsizes1112'; }
-			
 		}
 
 		if (array_key_exists($params[$empr],$empwheres[$empr2])) {

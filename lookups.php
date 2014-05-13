@@ -291,8 +291,8 @@ $schlevs = array(
 
 $schtypes = array(
     '1' => 'State-funded school or college',
-    '2' => 'Both state-funded and non-state–funded school or college',
-    '3' => 'Non-state-funded school or college',
+    '2' => 'State-funded school or college',
+    '3' => 'Both state-funded and non-state–funded school or college',
     '4' => 'Not known'
 );
 
@@ -1133,7 +1133,7 @@ $empwheres = array(
 			'label'		=> "All employment types"
 		),
 		'ftpaid'	=> array(
-			'sql' 		=> "EMPBASIS IN ('3', '4', '5', '9', '03', '04', '05', '09') AND (ALLACT1 IN ('1', '01') OR ALLACT2 IN ('1', '01') OR ALLACT3 IN ('1', '01') OR ALLACT4 IN ('1', '01') OR ALLACT5 IN ('1', '01') OR ALLACT6 IN ('1', '01') OR ALLACT7 IN ('1', '01') OR ALLACT8 IN ('1', '01'))",
+			'sql' 		=> "EMPBASIS IN ('3', '4', '5', '9', '03', '04', '05', '09') AND (ALLACT1 IN ('1', '01') OR ALLACT2 IN ('1', '01') ALLACT3 IN ('1', '01') OR ALLACT4 IN ('1', '01') OR ALLACT5 IN ('1', '01') OR ALLACT6 IN ('1', '01') OR ALLACT7 IN ('1', '01') OR ALLACT8 IN ('1', '01'))",
 			'label'		=> "Full-time paid employment"
 		),
 		'ptpaid'	=> array(
@@ -1149,7 +1149,7 @@ $empwheres = array(
 			'label'		=> "Self employment"
 		),
 		'allftp'	=> array(
-			'sql'		=> "EMPBASIS IN ('1', '2', '3', '4', '5', '9', '01', '02', '03', '04', '05', '09') AND (ALLACT1 IN ('1', '01') OR ALLACT2 IN ('1', '01') OR ALLACT3 IN ('1', '01') OR ALLACT4 IN ('1', '01') OR ALLACT5 IN ('1', '01') OR ALLACT6 IN ('1', '01') OR ALLACT7 IN ('1', '01') OR ALLACT8 IN ('1', '01'))",
+			'sql'		=> "EMPBASIS IN ('1', '2', '3', '4', '5', '9', '01', '02', '03', '04', '05', '09') AND (ALLACT1 IN ('1', '01') OR ALLACT2 IN ('1', '01') ALLACT3 IN ('1', '01') OR ALLACT4 IN ('1', '01') OR ALLACT5 IN ('1', '01') OR ALLACT6 IN ('1', '01') OR ALLACT7 IN ('1', '01') OR ALLACT8 IN ('1', '01'))",
 			'label'		=> "all full-time paid empoyment (inc. self employed)"
 		)
 	),
@@ -1908,67 +1908,41 @@ $empwheres = array(
 		)
 	),
 
-	# now that HESA have backtracked from the ZNOEMPBAND 3rd party data, zero any results for 
-	# 11/12 or later that specify an employer size
-
 	'orgsizes1112' => array(
 		'all'		=>  array(
 			'sql'		=> "1 = 1",
-			'label'		=> "All organisation sizes"
-		),
+			'label'		=> "All organisation sizes"		),
 		'small'	=> array(
-			'sql'		=> "1 = 0",
-			'label'		=> "Small company (1-49 employees)"
+			'sql'		=> "ZNOEMPBAND IN ('A', 'B', 'C', 'D')",
+			'label'		=> "Small company (1-49 employees)",
+			'subset'	=> array(
+				'1-5 employees'		=> "ZNOEMPBAND = 'A'",
+				'6-10 employees' 	=> "ZNOEMPBAND = 'B'",
+				'11-25 employees'	=> "ZNOEMPBAND = 'C'",
+				'25-50 employees'	=> "ZNOEMPBAND = 'D'"
+			)
 		),
 		'medium'	=>  array(
-			'sql'		=> "1 = 0",
-			'label'		=> "Medium-sized company"
+			'sql'		=> "ZNOEMPBAND IN ('E', 'F')",
+			'label'		=> "Medium-sized company",
+			'subset'	=> array(
+				'51-100 employees'		=> "ZNOEMPBAND = 'E'",
+				'100-200 employees' 	=> "ZNOEMPBAND = 'F'"
+			)
 		),
 		'large'	=>  array(
-			'sql'		=> "1 = 0",
-			'label'		=> "Large company (250+ employees)"
+			'sql'		=> "ZNOEMPBAND IN ('G', 'H')",
+			'label'		=> "Large company (200+ employees)",
+			'subset'	=> array(
+				'201-500 employees'		=> "ZNOEMPBAND = 'G'",
+				'500+ employees' 		=> "ZNOEMPBAND = 'H'"
+			)
 		),
 		'unknown'	=>  array(
-			'sql'		=> "1 = 0",
+			'sql'		=> "ZNOEMPBAND = '' OR ZNOEMPBAND = 'X' OR ZNOEMPBAND IS NULL",
 			'label'		=> "Not known"
 		)
 	),
-
-	// 'orgsizes1112' => array(
-	// 	'all'		=>  array(
-	// 		'sql'		=> "1 = 1",
-	// 		'label'		=> "All organisation sizes"		),
-	// 	'small'	=> array(
-	// 		'sql'		=> "ZNOEMPBAND IN ('A', 'B', 'C', 'D')",
-	// 		'label'		=> "Small company (1-49 employees)",
-	// 		'subset'	=> array(
-	// 			'1-5 employees'		=> "ZNOEMPBAND = 'A'",
-	// 			'6-10 employees' 	=> "ZNOEMPBAND = 'B'",
-	// 			'11-25 employees'	=> "ZNOEMPBAND = 'C'",
-	// 			'25-50 employees'	=> "ZNOEMPBAND = 'D'"
-	// 		)
-	// 	),
-	// 	'medium'	=>  array(
-	// 		'sql'		=> "ZNOEMPBAND IN ('E', 'F')",
-	// 		'label'		=> "Medium-sized company",
-	// 		'subset'	=> array(
-	// 			'51-100 employees'		=> "ZNOEMPBAND = 'E'",
-	// 			'100-200 employees' 	=> "ZNOEMPBAND = 'F'"
-	// 		)
-	// 	),
-	// 	'large'	=>  array(
-	// 		'sql'		=> "ZNOEMPBAND IN ('G', 'H')",
-	// 		'label'		=> "Large company (200+ employees)",
-	// 		'subset'	=> array(
-	// 			'201-500 employees'		=> "ZNOEMPBAND = 'G'",
-	// 			'500+ employees' 		=> "ZNOEMPBAND = 'H'"
-	// 		)
-	// 	),
-	// 	'unknown'	=>  array(
-	// 		'sql'		=> "ZNOEMPBAND = '' OR ZNOEMPBAND = 'X' OR ZNOEMPBAND IS NULL",
-	// 		'label'		=> "Not known"
-	// 	)
-	// ),
 
 	'socs' => array(
 		'all'		=>  array(
@@ -2637,10 +2611,10 @@ $newcountrycodes = array(
 );
 
 $regions = array(
-	'Europe'			=> array( '1603', '1605', '1836', '1610', '1837', '1838', '1614', '1853', '1621', '1834', '1638', '1639', '1641', '1831', '1651', '1653', '1847', '1656', '1661', '1670', '1671', '1676', '1678', '1832', '1827', '1833', '1693', '1851', '1700', '1841', '1825', '1710', '1718', '1727', '1728', '1733', '1842', '1826', '1772', '1780', '1850', '1835', '1751', '1755', '1756', '1845', '3826', '4826', '1659', '1864', 'AX', 'AL', 'AD', 'AM', 'AT', 'AZ', 'BY', 'BE', 'BA', 'BG', 'IC', 'HR', 'XA', 'CZ', 'DK', 'EE', 'FO', 'FI', 'FR', 'GE', 'DE', 'GI', 'GR', 'HU', 'IS', 'IE', 'IT', 'QO', 'LV', 'LI', 'LT', 'LU', 'MK', 'MT', 'MD', 'MC', 'ME', 'NL', 'NO', 'PL', 'PT', 'RO', 'RU', 'SM', 'RS', 'SK', 'SI', 'ES', 'SJ', 'SE', 'CH', 'UA', 'VA', 'XL', 'GG', 'JE', 'IM', 'EU', 'XP' ),
+	'Europe'			=> array( '1603', '1605', '1836', '1610', '1837', '1838', '1614', '1853', '1621', '1834', '1638', '1639', '1641', '1831', '1651', '1653', '1847', '1656', '1661', '1670', '1671', '1676', '1678', '1839', '1832', '1827', '1833', '1693', '1851', '1700', '1841', '1825', '1710', '1718', '1727', '1728', '1733', '1842', '1826', '1772', '1780', '1850', '1835', '1751', '1755', '1756', '1845', '3826', '4826', '1659', '1864', 'AX', 'AL', 'AD', 'AM', 'AT', 'AZ', 'BY', 'BE', 'BA', 'BG', 'IC', 'HR', 'XA', 'CZ', 'DK', 'EE', 'FO', 'FI', 'FR', 'GE', 'DE', 'GI', 'GR', 'HU', 'IS', 'IE', 'IT', 'QO', 'LV', 'LI', 'LT', 'LU', 'MK', 'MT', 'MD', 'MC', 'ME', 'NL', 'NO', 'PL', 'PT', 'RO', 'RU', 'SM', 'RS', 'SK', 'SI', 'ES', 'SJ', 'SE', 'CH', 'UA', 'VA', 'XL', 'GG', 'JE', 'IM', 'EU', 'XP' ),
 	'Middle East'		=> array( '1612', '1768', '1674', '1675', '1677', '1682', '1686', '1688', '1708', '1731', '1743', '1757', '1766', '1764', '1601', 'BH', 'XB', 'XC', 'EG', 'IR', 'IQ', 'IL', 'JO', 'KW', 'LB', 'OM', 'PS', 'QA', 'SA', 'SY', 'TR', 'AE', 'YE', 'XR' ),
 
-	'Asia'				=> array( '1602', '1787', '1616', '1620', '1622', '1624', '1631', '1652', '1863', '1672', '1673', '1681', '1684', '1685', '1840', '1687', '1698', '1793', '1704', '1709', '1721', '1726', '1746', '1628', '1843', '1760', '1844', '1846', '1774', '1829', '1839', '1669', '1694', 'AF', 'BD', 'BT', 'BN', 'MM', 'KH', 'CN', 'TL', 'HK', 'IN', 'ID', 'JP', 'KZ', 'KP', 'KR', 'KG', 'LA', 'MO', 'MY', 'MV', 'MN', 'NP', 'PK', 'PH', 'SG', 'LK', 'TW', 'TJ', 'TH', 'TM', 'UZ', 'VN', 'XS' ),
+	'Asia'				=> array( '1602', '1787', '1616', '1620', '1622', '1624', '1631', '1652', '1863', '1672', '1673', '1681', '1684', '1685', '1840', '1687', '1698', '1793', '1704', '1709', '1721', '1726', '1746', '1628', '1843', '1760', '1844', '1846', '1774', '1829', '1669', '1694', 'AF', 'BD', 'BT', 'BN', 'MM', 'KH', 'CN', 'TL', 'HK', 'IN', 'ID', 'JP', 'KZ', 'KP', 'KR', 'KG', 'LA', 'MO', 'MY', 'MV', 'MN', 'NP', 'PK', 'PH', 'SG', 'LK', 'TW', 'TJ', 'TH', 'TM', 'UZ', 'VN', 'XS' ),
 	'Africa'			=> array( '1604', '1606', '1640', '1618', '1769', '1623', '1625', '1788', '1627', '1629', '1804', '1633', '1634', '1749', '1790', '1860', '1648', '1654', '1655', '1658', '1664', '1802', '1679', '1683', '1690', '1691', '1692', '1695', '1696', '1699', '1701', '1702', '1706', '1707', '1798', '1716', '1717', '1734', '1803', '1785', '1744', '1745', '1748', '1750', '1752', '1754', '1759', '1762', '1765', '1767', '1781', '1732', '1821', '1735', 'DZ', 'AO', 'BJ', 'BW', 'BF', 'BI', 'CM', 'CV', 'CF', 'TD', 'KM', 'CD', 'CG', 'DJ', 'GQ', 'ER', 'ET', 'GA', 'GM', 'GH', 'GN', 'GW', 'CI', 'KE', 'LS', 'LR', 'LY', 'MG', 'MW', 'ML', 'MR', 'MU', 'YT', 'MA', 'MZ', 'NA', 'NE', 'NG', 'RE', 'RW', 'ST', 'SN', 'SC', 'SL', 'SO', 'ZA', 'SH', 'SD', 'SZ', 'TZ', 'TG', 'TN', 'UG', 'EH', 'ZM', 'ZW', 'XQ' ),
 	'North America'		=> array( '1615', '1626', '1642', '1828', '1771', 'BM', 'CA', 'GL', 'PM', 'US', 'XT' ),
 	'Central America'	=> array( '1668', '1635', '1646', '1663', '1667', '1703', '1715', '1722', 'BZ', 'CR', 'SV', 'GT', 'HN', 'MX', 'NI', 'PA', 'XU' ),
@@ -2695,10 +2669,10 @@ foreach ( $regions as $region => $codearray ) {
 
 
 $jobtitles = array(
-	'Managers and senior officials' => array(
+	'Managers and Senior Officials' => array(
 		'code' 	=> '1',
 		'subset'	=> array(
-			'Corporate managers and senior officials'	=> array(
+			'Corporate Managers and Senior Officials'	=> array(
 				'code'		=> '111',
 				'subset'	=> array(
 					'Senior officials in national government'	=> '11110',
@@ -2711,7 +2685,7 @@ $jobtitles = array(
 					'Senior officials of political parties'	=> '11144'
 				)
 			),
-			'Production managers'	=>  array(
+			'Production Managers'	=>  array(
 				'code'		=> '112',
 				'subset'	=> array(
 					'Production, works and maintenance managers'	=> '11210',
@@ -2721,7 +2695,7 @@ $jobtitles = array(
 					'Gas, water and electricity supply managers'	=> '11232'
 				)
 			),
-			'Functional managers'	=>  array(
+			'Functional Managers'	=>  array(
 				'code'		=> '113',
 				'subset'	=> array(
 					'Financial managers and chartered secretaries'	=> '11310',
@@ -2749,14 +2723,14 @@ $jobtitles = array(
 					'Research and development managers'	=> '11370'
 				)
 			),
-			'Quality and customer care managers'	=>  array(
+			'Quality and Customer Care Managers'	=>  array(
 				'code'		=> '114',
 				'subset'	=> array(
 					'Quality assurance managers'	=> '11410',
 					'Customer care managers'	=> '11420'
 				)
 			),
-			'Financial institution and office managers'	=>  array(
+			'Financial Institution and Office Managers'	=>  array(
 				'code'		=> '115',
 				'subset'	=> array(
 					'Financial institution managers'	=> '11510',
@@ -2772,7 +2746,7 @@ $jobtitles = array(
 					'Invoice, costs and accounts managers'	=> '11524'
 				)
 			),
-			'Managers in distribution, storage and retail'	=>  array(
+			'Managers in Distribution, Storage and Retail'	=>  array(
 				'code'		=> '116',
 				'subset'	=> array(
 					'Transport and distribution managers'	=> '11610',
@@ -2780,7 +2754,7 @@ $jobtitles = array(
 					'Retail and wholesale managers'	=> '11630'
 				)
 			),
-			'Protective service officers'	=>  array(
+			'Protective Service Officers'	=>  array(
 				'code'		=> '117',
 				'subset'	=> array(
 					'Officers in armed forces'	=> '11710',
@@ -2792,7 +2766,7 @@ $jobtitles = array(
 					'Security managers'	=> '11740'
 				)
 			),
-			'Health and social services managers'	=>  array(
+			'Health and Social Services Managers'	=>  array(
 				'code'		=> '118',
 				'subset'	=> array(
 					'Hospital and health service managers'	=> '11810',
@@ -2804,7 +2778,7 @@ $jobtitles = array(
 					'Day care managers'	=> '11852'
 				)
 			),
-			'Managers in agriculture'	=>  array(
+			'Managers in Agriculture'	=>  array(
 				'code'		=> '121',
 				'subset'	=> array(
 					'Farm managers'	=> '12110',
@@ -2814,7 +2788,7 @@ $jobtitles = array(
 					'Forestry and tree felling managers'	=> '12192'
 				)
 			),
-			'Managers and proprietors in leisure services'	=>  array(
+			'Managers and Proprietors in Leisure Services'	=>  array(
 				'code'		=> '122',
 				'subset'	=> array(
 					'Hotel and accommodation managers'	=> '12210',
@@ -2833,7 +2807,7 @@ $jobtitles = array(
 					'Travel agency managers'	=> '12260'
 				)
 			),
-			'Managers and proprietors in other services'	=>  array(
+			'Managers and Proprietors in other Services'	=>  array(
 				'code'		=> '123',
 				'subset'	=> array(
 					'Property, housing and land managers'	=> '12310',
@@ -2848,7 +2822,7 @@ $jobtitles = array(
 			)
 		)
 	),
-	'Professional occupations'	=>array(
+	'Professional Occupations'	=>array(
 		'code'		=> '2',
 		'subset'	=> array(
 			'Science Professionals'	=> array(
@@ -2874,7 +2848,7 @@ $jobtitles = array(
 					'Mathematicians'	=> '21136'
 				)
 			),
-			'Engineering professionals'	=>  array(
+			'Engineering Professionals'	=>  array(
 				'code'		=> '212',
 				'subset'	=> array(
 					'Civil engineers'	=> '21210',
@@ -2906,7 +2880,7 @@ $jobtitles = array(
 					'Acoustic engineers'	=> '21295'
 				)
 			),
-			'ICT professionals'	=>  array(
+			'ICT Professionals'	=>  array(
 				'code'		=> '213',
 				'subset'	=> array(
 					'IT strategy and planning professionals'	=> '21310',
@@ -2919,7 +2893,7 @@ $jobtitles = array(
 					'Web developers and producers'	=> '21324'
 				)
 			),
-			'Health professionals'	=>  array(
+			'Health Professionals'	=>  array(
 				'code'		=> '221',
 				'subset'	=> array(
 					'Medical practitioners'	=> '22110',
@@ -2940,7 +2914,7 @@ $jobtitles = array(
 					'Veterinarians'	=> '22160'
 				)
 			),
-			'Teaching professionals'	=>  array(
+			'Teaching Professionals'	=>  array(
 				'code'		=> '231',
 				'subset'	=> array(
 					'Higher education teaching professionals'	=> '23110',
@@ -2968,7 +2942,7 @@ $jobtitles = array(
 					'Examiners and moderators'	=> '23194'
 				)
 			),
-			'Research professionals'	=>  array(
+			'Research Professionals'	=>  array(
 				'code'		=> '232',
 				'subset'	=> array(
 					'Scientific researchers'	=> '23210',
@@ -2978,7 +2952,7 @@ $jobtitles = array(
 					'Researchers (university - unspecified discipline)'	=> '23292'
 				)
 			),
-			'Legal professionals'	=>  array(
+			'Legal Professionals'	=>  array(
 				'code'		=> '241',
 				'subset'	=> array(
 					'Solicitors and lawyers, judges and coroners'	=> '24110',
@@ -2990,7 +2964,7 @@ $jobtitles = array(
 					'Legal advisers in non-law firms'	=> '24192'
 			)
 			),
-			'Business and statistical professionals'	=>  array(
+			'Business and Statistical Professionals'	=>  array(
 				'code'		=> '242',
 				'subset'	=> array(
 					'Chartered and certified accountants'	=> '24210',
@@ -3007,7 +2981,7 @@ $jobtitles = array(
 					'Actuaries'	=> '24235'
 				)
 			),
-			'Architects, town planners, surveyors'	=>  array(
+			'Architects, Town Planners, Surveyors'	=>  array(
 				'code'		=> '243',
 				'subset'	=> array(
 					'Architects'	=> '24310',
@@ -3021,7 +2995,7 @@ $jobtitles = array(
 					'Hydrographic surveyors'	=> '24344'
 				)
 			),
-			'Public service professionals'	=>  array(
+			'Public Service Professionals'	=>  array(
 				'code'		=> '244',
 				'subset'	=> array(
 					'Public service administrative professionals'	=> '24410',
@@ -3036,7 +3010,7 @@ $jobtitles = array(
 					'Clergy'	=> '24440'
 				)
 			),
-			'Librarians and related professionals'	=>  array(
+			'Librarians and Related Professionals'	=>  array(
 				'code'		=> '245',
 				'subset'	=> array(
 					'Librarians'	=> '24510',
@@ -3047,7 +3021,7 @@ $jobtitles = array(
 			)
 		)
 	),
-	'Associate professional and technical occupations'	=>array(
+	'Associate Professional and Technical Occupations'	=>array(
 		'code'		=> '3',
 		'subset'	=> array(
 			'Science and Engineering Technicians'	=> array(
@@ -3063,7 +3037,7 @@ $jobtitles = array(
 					'Science and engineering technicians n.e.c.'	=> '31190'
 				)
 			),
-			'Draughtspersons and building inspectors'	=>  array(
+			'Draughtspersons and Building Inspectors'	=>  array(
 				'code'		=> '312',
 				'subset'	=> array(
 					'Architectural and town planning technicians'	=> '31210',
@@ -3077,14 +3051,14 @@ $jobtitles = array(
 					'Building inspectors'	=> '31230'
 				)
 			),
-			'IT service delivery occupations'	=>  array(
+			'IT Service Delivery Occupations'	=>  array(
 				'code'		=> '313',
 				'subset'	=> array(
 					'IT operations technicians (network support)'	=> '31310',
 					'IT User support technicians (help desk support)'	=> '31320'
 				)
 			),
-			'Health associate professionals'	=>  array(
+			'Health Associate Professionals'	=>  array(
 				'code'		=> '321',
 				'subset'	=> array(
 					'Nurses'	=> '32110',
@@ -3119,7 +3093,7 @@ $jobtitles = array(
 					'Homeopaths'	=> '32295'
 				)
 			),
-			'Social welfare associate professionals'	=>  array(
+			'Social Welfare Associate Professionals'	=>  array(
 				'code'		=> '323',
 				'subset'	=> array(
 					'Youth and community workers'	=> '32310',
@@ -3132,7 +3106,7 @@ $jobtitles = array(
 					'Counsellors'	=> '32324'
 				)
 			),
-			'Protective service occupations'	=>  array(
+			'Protective Service Occupations'	=>  array(
 				'code'		=> '331',
 				'subset'	=> array(
 					'Armed forces: NCOs and other ranks'	=> '33110',
@@ -3144,7 +3118,7 @@ $jobtitles = array(
 					'Immigration officers'	=> '33192'
 				)
 			),
-			'Artistic and literary occupations'	=>  array(
+			'Artistic and Literary Occupations'	=>  array(
 				'code'		=> '341',
 				'subset'	=> array(
 					'Artists (fine art)'	=> '34110',
@@ -3170,7 +3144,7 @@ $jobtitles = array(
 					'Entertainment agents'	=> '34164'
 				)
 			),
-			'Design associate professionals'	=>  array(
+			'Design Associate Professionals'	=>  array(
 				'code'		=> '342',
 				'subset'	=> array(
 					'Graphic artists and designers'	=> '34210',
@@ -3187,7 +3161,7 @@ $jobtitles = array(
 					'Clothing advisers, consultants'	=> '34226'
 				)
 			),
-			'Media associate professionals'	=>  array(
+			'Media Associate Professionals'	=>  array(
 				'code'		=> '343',
 				'subset'	=> array(
 					'Journalists, newspaper and periodical editors'	=> '34310',
@@ -3203,7 +3177,7 @@ $jobtitles = array(
 					'Sound recordists, technicians, assistants'	=> '34345'
 				)
 			),
-			'Sports and fitness occupations'	=>  array(
+			'Sports and Fitness Occupations'	=>  array(
 				'code'		=> '344',
 				'subset'	=> array(
 					'Sports players'	=> '34410',
@@ -3215,7 +3189,7 @@ $jobtitles = array(
 					'Outdoor pursuits instructors'	=> '34491'
 				)
 			),
-			'Transport associate professionals'	=>  array(
+			'Transport Associate Professionals'	=>  array(
 				'code'		=> '351',
 				'subset'	=> array(
 					'Air traffic controllers'	=> '35110',
@@ -3226,7 +3200,7 @@ $jobtitles = array(
 					'Train drivers'	=> '35140'
 				)
 			),
-			'Legal associate professionals'	=>  array(
+			'Legal Associate Professionals'	=>  array(
 				'code'		=> '352',
 				'subset'	=> array(
 					'Legal associate professionals'	=> '35200',
@@ -3235,7 +3209,7 @@ $jobtitles = array(
 					'Adjudicators, tribunal and panel members'	=> '35203'
 				)
 			),
-			'Business and finance associate professionals'	=>  array(
+			'Business and Finance Associate Professionals'	=>  array(
 				'code'		=> '353',
 				'subset'	=> array(
 					'Estimators, valuers and assessors'	=> '35310',
@@ -3270,7 +3244,7 @@ $jobtitles = array(
 					'Transport and traffic advisors'	=> '35394'
 				)
 			),
-			'Sales and related associate professionals'	=>  array(
+			'Sales and Related Associate Professionals'	=>  array(
 				'code'		=> '354',
 				'subset'	=> array(
 					'Buyers and purchasing officers'	=> '35410',
@@ -3293,14 +3267,14 @@ $jobtitles = array(
 					'Auctioneers'	=> '35444'
 				)
 			),
-			'Conservation associate professionals'	=>  array(
+			'Conservation Associate Professionals'	=>  array(
 				'code'		=> '355',
 				'subset'	=> array(
 					'Conservation, heritage and environmental protection officers'	=> '35510',
 					'Countryside and park rangers'	=> '35520'
 				)
 			),
-			'Public service and other associate professionals'	=>  array(
+			'Public Service and other Associate Professionals'	=>  array(
 				'code'		=> '356',
 				'subset'	=> array(
 					'Public service associate professionals (HEOs, SEOs)'	=> '35610',
@@ -3323,10 +3297,10 @@ $jobtitles = array(
 			)
 		)
 	),
-	'Administrative and secretarial occupations'	=>array(
+	'Administrative and Secretarial Occupations'	=>array(
 		'code'		=> '4',
 		'subset'	=> array(
-			'Government administrators'	=> array(
+			'Government Administrators'	=> array(
 				'code'		=> '411',
 				'subset'	=> array(
 					'Civil service executive officers'	=> '41110',
@@ -3339,7 +3313,7 @@ $jobtitles = array(
 					'Officers of political parties'	=> '41144'
 				)
 			),
-			'Finance administrators'	=>  array(
+			'Finance Administrators'	=>  array(
 				'code'		=> '412',
 				'subset'	=> array(
 					'Credit controllers'	=> '41210',
@@ -3351,7 +3325,7 @@ $jobtitles = array(
 					'Counter clerks (banks, building societies, Post Offices)'	=> '41230'
 				)
 			),
-			'Records administrators'	=>  array(
+			'Records Administrators'	=>  array(
 				'code'		=> '413',
 				'subset'	=> array(
 					'Filing and other records assistants/clerks'	=> '41310',
@@ -3371,20 +3345,20 @@ $jobtitles = array(
 					'Market research interviewers'	=> '41370'
 				)
 			),
-			'Communications administrators'	=>  array(
+			'Communications Administrators'	=>  array(
 				'code'		=> '414',
 				'subset'	=> array(
 					'Telephonists'	=> '41410',
 					'Communication operators'	=> '41420'
 				)
 			),
-			'General administrators'	=>  array(
+			'General Administrators'	=>  array(
 				'code'		=> '415',
 				'subset'	=> array(
 					'General office assistants/clerks n.e.c.'	=> '41500'
 				)
 			),
-			'Secretarial and related'	=>  array(
+			'Secretarial and Related'	=>  array(
 				'code'		=> '421',
 				'subset'	=> array(
 					'Medical secretaries'	=> '42110',
@@ -3401,10 +3375,10 @@ $jobtitles = array(
 			)
 		)
 	),
-	'Skilled trades occupations' => array(
+	'Skilled Trades Occupations' => array(
 		'code' 	=> '5',
 		'subset'	=> array(
-			'Agricultural trades'	=> array(
+			'Agricultural Trades'	=> array(
 				'code'		=> '511',
 				'subset'	=> array(
 					'Farmers'	=> '51110',
@@ -3414,7 +3388,7 @@ $jobtitles = array(
 					'Agricultural and fishing trades n.e.c.'	=> '51190'
 				)
 			),
-			'Metal forming, welding and related trades'	=>  array(
+			'Metal Forming, Welding and Related Trades'	=>  array(
 				'code'		=> '521',
 				'subset'	=> array(
 					'Smiths and forge workers'	=> '52110',
@@ -3425,7 +3399,7 @@ $jobtitles = array(
 					'Pipe fitters'	=> '52160'
 				)
 			),
-			'Metal machining and instrument making trades'	=>  array(
+			'Metal Machining and Instrument Making Trades'	=>  array(
 				'code'		=> '522',
 				'subset'	=> array(
 					'Metal machining setters and setter-operators'	=> '52210',
@@ -3434,7 +3408,7 @@ $jobtitles = array(
 					'Precision instrument makers and repairers'	=> '52240'
 				)
 			),
-			'Vehicle trades'	=>  array(
+			'Vehicle Trades'	=>  array(
 				'code'		=> '523',
 				'subset'	=> array(
 					'Motor mechanics'	=> '52310',
@@ -3443,7 +3417,7 @@ $jobtitles = array(
 					'Vehicle spray painters'	=> '52340'
 				)
 			),
-			'Electrical trades'	=>  array(
+			'Electrical Trades'	=>  array(
 				'code'		=> '524',
 				'subset'	=> array(
 					'Electricians, electrical fitters'	=> '52410',
@@ -3457,7 +3431,7 @@ $jobtitles = array(
 					'Electrical/electronics engineers n.e.c.'	=> '52490'
 				)
 			),
-			'Construction trades'	=>  array(
+			'Construction Trades'	=>  array(
 				'code'		=> '531',
 				'subset'	=> array(
 					'Steel erectors'	=> '53110',
@@ -3469,7 +3443,7 @@ $jobtitles = array(
 					'Construction trades n.e.c.'	=> '53190'
 				)
 			),
-			'Building trades'	=>  array(
+			'Building Trades'	=>  array(
 				'code'		=> '532',
 				'subset'	=> array(
 					'Plasterers'	=> '53210',
@@ -3477,7 +3451,7 @@ $jobtitles = array(
 					'Painters and decorators'	=> '53230'
 				)
 			),
-			'Textiles and garments trades'	=>  array(
+			'Textiles and Garments Trades'	=>  array(
 				'code'		=> '541',
 				'subset'	=> array(
 					'Weavers and knitters'	=> '54110',
@@ -3487,7 +3461,7 @@ $jobtitles = array(
 					'Textiles, garments and related trades n.e.c.'	=> '54190',
 			)
 			),
-			'Printing trades'	=>  array(
+			'Printing Trades'	=>  array(
 				'code'		=> '542',
 				'subset'	=> array(
 					'Originators, compositors and print preparers'	=> '54210',
@@ -3496,7 +3470,7 @@ $jobtitles = array(
 					'Screen printers'	=> '54240'
 				)
 			),
-			'Food preparation trades'	=>  array(
+			'Food Preparation Trades'	=>  array(
 				'code'		=> '543',
 				'subset'	=> array(
 					'Butchers, meat cutters'	=> '54310',
@@ -3505,7 +3479,7 @@ $jobtitles = array(
 					'Chefs, cooks'	=> '54340'
 				)
 			),
-			'Other skilled trades'	=>  array(
+			'Other Skilled Trades'	=>  array(
 				'code'		=> '549',
 				'subset'	=> array(
 					'Glass and ceramics makers, decorators and finishers'	=> '54910',
@@ -3520,10 +3494,10 @@ $jobtitles = array(
 		)
 
 	),
-	'Personal service occupations'	=>array(
+	'Personal Service Occupations'	=>array(
 		'code'		=> '6',
 		'subset'	=> array(
-			'Healthcare and related personal services'	=> array(
+			'Healthcare and Related Personal Services'	=> array(
 				'code'		=> '611',
 				'subset'	=> array(
 					'Nursing auxiliaries and assistants'	=> '61110',
@@ -3538,7 +3512,7 @@ $jobtitles = array(
 					'Home carers'	=> '61152'
 				)
 			),
-			'Childcare and related personal services'	=>  array(
+			'Childcare and Related Personal Services'	=>  array(
 				'code'		=> '612',
 				'subset'	=> array(
 					'Nursery nurses'	=> '61210',
@@ -3549,14 +3523,14 @@ $jobtitles = array(
 					'Educational assistants (excl. HE/FE tutors and language assistants)'	=> '61240'
 				)
 			),
-			'Animal care services'	=>  array(
+			'Animal Care Services'	=>  array(
 				'code'		=> '613',
 				'subset'	=> array(
 					'Veterinary nurses and assistants'	=> '61310',
 					'Animal care occupations n.e.c.'	=> '61390'
 				)
 			),
-			'Leisure and travel service occupations'	=>  array(
+			'Leisure and Travel Service Occupations'	=>  array(
 				'code'		=> '621',
 				'subset'	=> array(
 					'Sports and leisure assistants'	=> '62110',
@@ -3573,14 +3547,14 @@ $jobtitles = array(
 					'Ship stewards'	=> '62191'
 				)
 			),
-			'Hairdressers and related occupations'	=>  array(
+			'Hairdressers and Related Occupations'	=>  array(
 				'code'		=> '622',
 				'subset'	=> array(
 					'Hairdressers, barbers'	=> '62210',
 					'Beauticians and related occupations'	=> '62220'
 				)
 			),
-			'Housekeeping occupations'	=>  array(
+			'Housekeeping Occupations'	=>  array(
 				'code'		=> '623',
 				'subset'	=> array(
 					'Housekeepers and related occupations'	=> '62310',
@@ -3598,10 +3572,10 @@ $jobtitles = array(
 			)
 		)
 	),
-	'Sales and customer service occupations'	=>array(
+	'Sales and Customer Service Occupations'	=>array(
 		'code'		=> '7',
 		'subset'	=> array(
-			'Sales assistants and retail cashiers'	=> array(
+			'Sales Assistants and Retail Cashiers'	=> array(
 				'code'		=> '711',
 				'subset'	=> array(
 					'Sales and retail assistants'	=> '71110',
@@ -3609,7 +3583,7 @@ $jobtitles = array(
 					'Telephone salespersons'	=> '71130'
 				)
 			),
-			'Sales related occupations'	=>  array(
+			'Sales Related Occupations'	=>  array(
 				'code'		=> '712',
 				'subset'	=> array(
 					'Collector salespersons and credit agents'	=> '71210',
@@ -3626,7 +3600,7 @@ $jobtitles = array(
 					'Sales representatives (retail)'	=> '71294'
 				)
 			),
-			'Customer service occupations'	=>  array(
+			'Customer Service Occupations'	=>  array(
 				'code'		=> '721',
 				'subset'	=> array(
 					'Call centre agents/operators'	=> '72110',
@@ -3635,7 +3609,7 @@ $jobtitles = array(
 			)
 		)
 	),
-	'Process, plant and machine operatives'	=>array(
+	'Process, Plant and Machine Operatives'	=>array(
 		'code'		=> '8',
 		'subset'	=> array(
 			'Process Operatives'	=> array(
@@ -3652,7 +3626,7 @@ $jobtitles = array(
 					'Process operatives n.e.c.'	=> '81190'
 				)
 			),
-			'Plant and machine operatives'	=>  array(
+			'Plant and Machine Operatives'	=>  array(
 				'code'		=> '812',
 				'subset'	=> array(
 					'Paper and wood machine operatives'	=> '81210',
@@ -3664,7 +3638,7 @@ $jobtitles = array(
 					'Plant and machine operatives n.e.c'	=> '81290'
 				)
 			),
-			'Assemblers and routine operatives'	=>  array(
+			'Assemblers and Routine Operatives'	=>  array(
 				'code'		=> '813',
 				'subset'	=> array(
 					'Assemblers (electrical products)'	=> '81310',
@@ -3678,7 +3652,7 @@ $jobtitles = array(
 					'Assemblers and routine operatives n.e.c.'	=> '81390'
 				)
 			),
-			'Construction operatives'	=>  array(
+			'Construction Operatives'	=>  array(
 				'code'		=> '814',
 				'subset'	=> array(
 					'Scaffolders, stagers, riggers'	=> '81410',
@@ -3687,7 +3661,7 @@ $jobtitles = array(
 					'Construction operatives n.e.c'	=> '81490'
 				)
 			),
-			'Transport drivers and operatives'	=>  array(
+			'Transport Drivers and Operatives'	=>  array(
 				'code'		=> '821',
 				'subset'	=> array(
 					'Heavy goods vehicle drivers'	=> '82110',
@@ -3701,7 +3675,7 @@ $jobtitles = array(
 					'Transport operatives n.e.c.'	=> '82190'
 				)
 			),
-			'Mobile machine drivers and operatives'	=>  array(
+			'Mobile Machine Drivers and Operatives'	=>  array(
 				'code'		=> '822',
 				'subset'	=> array(
 					'Crane drivers'	=> '82210',
@@ -3712,10 +3686,10 @@ $jobtitles = array(
 			)
 		)
 	),
-	'Elementary occupations'	=>array(
+	'Elementary Occupations'	=>array(
 		'code'		=> '9',
 		'subset'	=> array(
-			'Elementary agricultural occupations'	=> array(
+			'Elementary Agricultural Occupations'	=> array(
 				'code'		=> '911',
 				'subset'	=> array(
 					'Farm workers'	=> '91110',
@@ -3723,14 +3697,14 @@ $jobtitles = array(
 					'Fishing and agriculture related occupations n.e.c.'	=> '91190'
 				)
 			),
-			'Elementary construction occupations'	=>  array(
+			'Elementary Construction Occupations'	=>  array(
 				'code'		=> '912',
 				'subset'	=> array(
 					'Labourers in building and woodworking trades'	=> '91210',
 					'Labourers in other construction trades n.e.c.'	=> '91290'
 				)
 			),
-			'Elementary process plant occupations'	=>  array(
+			'Elementary Process Plant Occupations'	=>  array(
 				'code'		=> '913',
 				'subset'	=> array(
 					'Labourers in foundries'	=> '91310',
@@ -3740,7 +3714,7 @@ $jobtitles = array(
 					'Labourers in process and plant operations n.e.c.'	=> '91390'
 				)
 			),
-			'Elementary goods storage occupations'	=>  array(
+			'Elementary Goods Storage Occupations'	=>  array(
 				'code'		=> '914',
 				'subset'	=> array(
 					'Stevedores, dockers and slingers'	=> '91410',
@@ -3749,7 +3723,7 @@ $jobtitles = array(
 					'Goods collectors, assemblers, dispatchers and porters'	=> '91492'
 				)
 			),
-			'Elementary administration occupations'	=>  array(
+			'Elementary Administration Occupations'	=>  array(
 				'code'		=> '921',
 				'subset'	=> array(
 					'Postal workers, mail sorters, messengers, couriers'	=> '92110',
@@ -3761,7 +3735,7 @@ $jobtitles = array(
 					'Office juniors'	=> '92192'
 				)
 			),
-			'Elementary personal services occupations'	=>  array(
+			'Elementary Personal Services Occupations'	=>  array(
 				'code'		=> '922',
 				'subset'	=> array(
 					'Hospital porters'	=> '92210',
@@ -3775,7 +3749,7 @@ $jobtitles = array(
 					'Elementary personal services occupations n.e.c.'	=> '92290'
 				)
 			),
-			'Elementary cleaning occupations'	=>  array(
+			'Elementary Cleaning Occupations'	=>  array(
 				'code'		=> '923',
 				'subset'	=> array(
 					'Window cleaners'	=> '92310',
@@ -3786,7 +3760,7 @@ $jobtitles = array(
 					'Elementary cleaning occupations n.e.c.'	=> '92390'
 				)
 			),
-			'Elementary security occupations'	=>  array(
+			'Elementary Security Occupations'	=>  array(
 				'code'		=> '924',
 				'subset'	=> array(
 					'Security guards and related occupations'	=> '92410',
@@ -3799,7 +3773,7 @@ $jobtitles = array(
 					'Elementary security occupations n.e.c.'	=> '92490'
 				)
 			),
-			'Elementary sales occupations'	=>  array(
+			'Elementary Sales Occupations'	=>  array(
 				'code'		=> '925',
 				'subset'	=> array(
 					'Shelf fillers'	=> '92510',
@@ -3814,913 +3788,7 @@ $jobtitles = array(
 );
 
 $jobtitles1112 = array(
-    'Managers, directors and senior officials' => array(
-        'code'  => '1',
-        'subset'    => array(
-            'Chief executives and senior officials' => array(
-                'code'  => '111',
-                'subset'    => array(
-                    'Chief executives and senior officials' => '11150',
-                    'Elected officers and representatives' => '11160'
-                )
-            ),
-            'Production managers and directors' => array(
-                'code'  => '112',
-                'subset'    => array(
-                    'Production managers and directors in manufacturing' => '11210',
-                    'Production managers and directors in construction' => '11220',
-                    'Production managers and directors in mining and energy' => '11230'
-                )
-            ),
-            'Functional managers and directors' => array(
-                'code'  => '113',
-                'subset'    => array(
-                    'Finance managers and directors' => '11311',
-                    'Investment/ merchant bankers' => '11312',
-                    'Chartered company secretaries, treasurers, company registrars' => '11313',
-                    'Financial managers and directors n.e.c.' => '11319',
-                    'Marketing and sales directors' => '11320',
-                    'Purchasing managers and directors' => '11330',
-                    'Advertising and public relations directors' => '11340',
-                    'Human resource managers and directors' => '11350',
-                    'Information technology and telecommunications directors' => '11360',
-                    'Functional managers and directors n.e.c.' => '11390'
-                )
-            ),
-            'Financial institution managers and directors' => array(
-                'code'  => '115',
-                'subset'    => array(
-                    'Financial institution managers and directors' => '11500'
-                )
-            ),
-            'Managers and directors in transport and logistics' => array(
-                'code'  => '116',
-                'subset'    => array(
-                    'Managers and directors in transport and distribution' => '11610',
-                    'Managers and directors in storage and warehousing' => '11620'
-                )
-            ),
-            'Senior officers in protective services' => array(
-                'code'  => '117',
-                'subset'    => array(
-                    'Officers in armed forces' => '11710',
-                    'Senior police officers' => '11720',
-                    'Senior officers in fire, ambulance, prison and related services' => '11730'
-                )
-            ),
-            'Health and social services managers and directors' => array(
-                'code'  => '118',
-                'subset'    => array(
-                    'Health services and public health managers and directors' => '11810',
-                    'Social services managers and directors' => '11840'
-                )
-            ),
-            'Managers and directors in retail and wholesale' => array(
-                'code'  => '119',
-                'subset'    => array(
-                    'Managers and directors in retail and wholesale' => '11900'
-                )
-            ),
-            'Managers and proprietors in agriculture related services' => array(
-                'code'  => '121',
-                'subset'    => array(
-                    'Managers and proprietors in agriculture and horticulture' => '12110',
-                    'Managers and proprietors in forestry, fishing and related services' => '12130'
-                )
-            ),
-            'Managers and proprietors in hospitality and leisure services' => array(
-                'code'  => '122',
-                'subset'    => array(
-                    'Hotel and accommodation managers and proprietors' => '12210',
-                    'Restaurant and catering establishment managers and proprietors' => '12230',
-                    'Publicans and managers of licensed premises' => '12240',
-                    'Leisure and sports managers' => '12250',
-                    'Travel agency managers and proprietors' => '12260'
-                )
-            ),
-            'Managers and proprietors in health and care services' => array(
-                'code'  => '124',
-                'subset'    => array(
-                    'Health care practice managers' => '12410',
-                    'Residential, day and domiciliary care managers and proprietors' => '12420'
-                )
-            ),
-            'Managers and proprietors in other services' => array(
-                'code'  => '125',
-                'subset'    => array(
-                    'Property, housing and estate managers' => '12510',
-                    'Garage managers and proprietors' => '12520',
-                    'Hairdressing and beauty salon managers and proprietors' => '12530',
-                    'Shopkeepers and proprietors - wholesale and retail' => '12540',
-                    'Waste disposal and environmental services managers' => '12550',
-                    'Managers and proprietors in other services n.e.c.' => '12590'
-                )
-            )
-        )
-    ),
-    'Professional occupations' => array(
-        'code'  => '2',
-        'subset'    => array(
-            'Natural and social science professionals' => array(
-                'code'  => '211',
-                'subset'    => array(
-                    'Chemists' => '21111',
-                    'Research/ development chemists' => '21112',
-                    'Analytical chemists' => '21113',
-                    'Chemical scientists n.e.c.' => '21119',
-                    'Biochemists, medical scientists' => '21121',
-                    'Biologists' => '21122',
-                    'Bacteriologists, microbiologists, etc.' => '21123',
-                    'Botanists' => '21124',
-                    'Pathologists' => '21125',
-                    'Agricultural scientists' => '21126',
-                    'Physiologists' => '21127',
-                    'Pharmacologists' => '21128',
-                    'Biological scientists and biochemists n.e.c.' => '21129',
-                    'Physicists' => '21131',
-                    'Geophysicists' => '21132',
-                    'Geologists, mineralogists, etc.' => '21133',
-                    'Meteorologists' => '21134',
-                    'Astronomers' => '21135',
-                    'Physical scientists n.e.c.' => '21139',
-                    'Social and humanities scientists' => '21140',
-                    'University researchers, unspecified discipline' => '21191',
-                    'Sports scientists' => '21192',
-                    'Natural and social science professionals n.e.c.' => '21199'
-                )
-            ),
-            'Engineering professionals' => array(
-                'code'  => '212',
-                'subset'    => array(
-                    'Civil engineers' => '21210',
-                    'Mechanical engineers' => '21220',
-                    'Electrical engineers' => '21230',
-                    'Electronics engineers' => '21240',
-                    'Design and development engineers' => '21260',
-                    'Production and process engineers' => '21270',
-                    'Engineering professionals n.e.c.' => '21290'
-                )
-            ),
-            'Information technology and telecommunications professionals' => array(
-                'code'  => '213',
-                'subset'    => array(
-                    'IT specialist managers' => '21330',
-                    'IT project and programme managers' => '21340',
-                    'IT business analysts, architects and systems designers' => '21350',
-                    'Programmers and software development professionals' => '21360',
-                    'Web design and development professionals' => '21370',
-                    'Information technology and telecommunications professionals n.e.c.' => '21390'
-                )
-            ),
-            'Conservation and environment professionals' => array(
-                'code'  => '214',
-                'subset'    => array(
-                    'Conservation professionals' => '21410',
-                    'Environment professionals' => '21420'
-                )
-            ),
-            'Research and development managers' => array(
-                'code'  => '215',
-                'subset'    => array(
-                    'Research and development managers' => '21500'
-                )
-            ),
-            'Health professionals' => array(
-                'code'  => '221',
-                'subset'    => array(
-                    'Medical practitioners' => '22110',
-                    'Psychologists' => '22121',
-                    'Education psychologists' => '22122',
-                    'Clinical psychologists' => '22123',
-                    'Occupational psychologists' => '22124',
-                    'Psychology assistants' => '22129',
-                    'Pharmacists' => '22130',
-                    'Ophthalmic opticians' => '22140',
-                    'Dental practitioners' => '22150',
-                    'Veterinarians' => '22160',
-                    'Medical radiographers' => '22170',
-                    'Podiatrists' => '22180',
-                    'Health professionals n.e.c.' => '22190',
-                    'Physiotherapists' => '22210'
-                )
-            ),
-            'Therapy professionals' => array(
-                'code'  => '222',
-                'subset'    => array(
-                    'Occupational therapists' => '22220',
-                    'Speech and language therapists' => '22230',
-                    'Therapy professionals n.e.c.' => '22290'
-                )
-            ),
-            'Nursing and midwifery professionals' => array(
-                'code'  => '223',
-                'subset'    => array(
-                    'Nurses' => '22310',
-                    'Midwives' => '22320'
-                )
-            ),
-            'Teaching and educational professionals' => array(
-                'code'  => '231',
-                'subset'    => array(
-                    'Higher education teaching professionals' => '23110',
-                    'Further education teaching professionals' => '23120',
-                    'Secondary education teaching professionals' => '23140',
-                    'Primary and nursery education teaching professionals' => '23150',
-                    'Special needs education teaching professionals' => '23160',
-                    'Senior professionals of educational establishments' => '23170',
-                    'Education advisers and school inspectors' => '23180',
-                    'Teaching and other educational professionals n.e.c.' => '23190'
-                )
-            ),
-            'Legal professionals' => array(
-                'code'  => '241',
-                'subset'    => array(
-                    'Barristers and judges' => '24120',
-                    'Solicitors' => '24130',
-                    'Legal professionals n.e.c.' => '24190'
-                )
-            ),
-            'Business, research and administrative professionals' => array(
-                'code'  => '242',
-                'subset'    => array(
-                    'Chartered and certified accountants' => '24210',
-                    'Management consultants and business analysts' => '24230',
-                    'Business and financial project management professionals' => '24240',
-                    'Actuaries' => '24251',
-                    'Economists' => '24252',
-                    'Statisticians' => '24253',
-                    'Mathematicians' => '24254',
-                    'Actuaries, economists and statisticians n.e.c.' => '24259',
-                    'Researchers (media)' => '24261',
-                    'Researchers (national security, police)' => '24262',
-                    'Researchers n.e.c.' => '24269',
-                    'Business, research and administrative professionals n.e.c.' => '24290'
-                )
-            ),
-            'Architects, town planners and surveyors' => array(
-                'code'  => '243',
-                'subset'    => array(
-                    'Architects' => '24310',
-                    'Town planning officers' => '24320',
-                    'Quantity surveyors' => '24330',
-                    'Chartered surveyors' => '24340',
-                    'Chartered architectural technologists' => '24350',
-                    'Construction project managers and related professionals' => '24360'
-                )
-            ),
-            'Welfare professionals' => array(
-                'code'  => '244',
-                'subset'    => array(
-                    'Social workers' => '24420',
-                    'Probation officers' => '24430',
-                    'Clergy' => '24440',
-                    'Welfare professionals n.e.c.' => '24490'
-                )
-            ),
-            'Librarians and related professionals' => array(
-                'code'  => '245',
-                'subset'    => array(
-                    'Librarians' => '24510',
-                    'Archivists and curators' => '24520'
-                )
-            ),
-            'Quality and regulatory professionals' => array(
-                'code'  => '246',
-                'subset'    => array(
-                    'Quality control and planning engineers' => '24610',
-                    'Quality assurance and regulatory professionals' => '24620',
-                    'Environmental health professionals' => '24630'
-                )
-            ),
-            'Media professionals' => array(
-                'code'  => '247',
-                'subset'    => array(
-                    'Journalists, newspaper and periodical editors' => '24710',
-                    'Public relations professionals' => '24720',
-                    'Advertising accounts managers and creative directors' => '24730'
-                )
-            )
-        )
-    ),
-    'Associate professional and technical occupations' => array(
-        'code'  => '3',
-        'subset'    => array(
-            'Science, engineering and production technicians' => array(
-                'code'  => '311',
-                'subset'    => array(
-                    'Laboratory technicians' => '31110',
-                    'Electrical and electronics technicians' => '31120',
-                    'Engineering technicians' => '31130',
-                    'Building and civil engineering technicians' => '31140',
-                    'Quality assurance technicians' => '31150',
-                    'Planning, process and production technicians' => '31160',
-                    'Science, engineering and production technicians n.e.c.' => '31190'
-                )
-            ),
-            'Draughtspersons and related architectural technicians' => array(
-                'code'  => '312',
-                'subset'    => array(
-                    'Architectural and town planning technicians' => '31210',
-                    'Draughtspersons' => '31220'
-                )
-            ),
-            'Information technology technicians' => array(
-                'code'  => '313',
-                'subset'    => array(
-                    'IT operations technicians' => '31310',
-                    'IT user support technicians' => '31320'
-                )
-            ),
-            'Health associate professionals' => array(
-                'code'  => '321',
-                'subset'    => array(
-                    'Paramedics' => '32130',
-                    'Dispensing opticians' => '32160',
-                    'Pharmaceutical technicians' => '32170',
-                    'Medical and dental technicians' => '32180',
-                    'Health associate professionals n.e.c.' => '32190'
-                )
-            ),
-            'Welfare and housing associate professionals' => array(
-                'code'  => '323',
-                'subset'    => array(
-                    'Youth and community workers' => '32310',
-                    'Child and early years officers' => '32330',
-                    'Housing officers' => '32340',
-                    'Counsellors' => '32350',
-                    'Welfare and housing associate professionals n.e.c.' => '32390'
-                )
-            ),
-            'Protective service occupations' => array(
-                'code'  => '331',
-                'subset'    => array(
-                    'NCOs and other ranks' => '33110',
-                    'Police officers (sergeant and below)' => '33120',
-                    'Fire service officers (watch manager and below)' => '33130',
-                    'Prison service officers (below principal officer)' => '33140',
-                    'Police community support officers' => '33150',
-                    'Protective service associate professionals n.e.c.' => '33190'
-                )
-            ),
-            'Artistic, literary and media occupations' => array(
-                'code'  => '341',
-                'subset'    => array(
-                    'Artists' => '34110',
-                    'Authors, writers and translators' => '34120',
-                    'Actors, entertainers and presenters' => '34130',
-                    'Dancers and choreographers' => '34140',
-                    'Musicians' => '34150',
-                    'Arts officers, producers and directors' => '34160',
-                    'Photographers, audio-visual and broadcasting equipment operators' => '34170'
-                )
-            ),
-            'Design occupations' => array(
-                'code'  => '342',
-                'subset'    => array(
-                    'Graphic designers' => '34211',
-                    'Commercial artists' => '34212',
-                    'Exhibition, multimedia designers' => '34213',
-                    'Desktop publishing assistants and operators' => '34214',
-                    'Graphic design copyists and setters-out' => '34219',
-                    'Interior decoration designers' => '34221',
-                    'Set designers (stage etc.)' => '34222',
-                    'Industrial designers' => '34223',
-                    'Textile designers' => '34224',
-                    'Clothing designers' => '34225',
-                    'Clothing advisers, consultants' => '34226',
-                    'Furniture designers' => '34227',
-                    'Jewellery designers' => '34228',
-                    'Product, clothing and related designers n.e.c.' => '34229'
-                )
-            ),
-            'Sports and fitness occupations' => array(
-                'code'  => '344',
-                'subset'    => array(
-                    'Sports players' => '34410',
-                    'Sports coaches, instructors and officials' => '34420',
-                    'Fitness instructors' => '34430'
-                )
-            ),
-            'Transport associate professionals' => array(
-                'code'  => '351',
-                'subset'    => array(
-                    'Air traffic controllers' => '35110',
-                    'Aircraft pilots and flight engineers' => '35120',
-                    'Ship and hovercraft officers' => '35130'
-                )
-            ),
-            'Legal associate professionals' => array(
-                'code'  => '352',
-                'subset'    => array(
-                    'Legal associate professionals' => '35200'
-                )
-            ),
-            'Business, finance and related associate professionals' => array(
-                'code'  => '353',
-                'subset'    => array(
-                    'Estimators, valuers and assessors' => '35310',
-                    'Brokers' => '35320',
-                    'Insurance underwriters' => '35330',
-                    'Finance and investment analysts and advisers' => '35340',
-                    'Taxation experts' => '35350',
-                    'Importers and exporters' => '35360',
-                    'Financial and accounting technicians' => '35370',
-                    'Financial accounts managers' => '35380',
-                    'Business and related associate professionals n.e.c.' => '35390'
-                )
-            ),
-            'Sales, marketing and related associate professionals' => array(
-                'code'  => '354',
-                'subset'    => array(
-                    'Buyers and procurement officers' => '35410',
-                    'Business sales executives' => '35420',
-                    'Marketing associate professionals' => '35430',
-                    'Estate agents and auctioneers' => '35440',
-                    'Sales accounts and business development managers' => '35450',
-                    'Conference and exhibition managers and organisers' => '35460'
-                )
-            ),
-            'Conservation and environmental associate professionals' => array(
-                'code'  => '355',
-                'subset'    => array(
-                    'Conservation and environmental associate professionals' => '35500'
-                )
-            ),
-            'Public services and other associate professionals' => array(
-                'code'  => '356',
-                'subset'    => array(
-                    'Public services associate professionals' => '35610',
-                    'Human resources and industrial relations officers' => '35620',
-                    'Vocational and industrial trainers and instructors' => '35630',
-                    'Careers advisers and vocational guidance specialists' => '35640',
-                    'Inspectors of standards and regulations' => '35650',
-                    'Health and safety officers' => '35670'
-                )
-            )
-        )
-    ),
-    'Administrative and secretarial occupations' => array(
-        'code'  => '4',
-        'subset'    => array(
-            'Administrative occupations: government and related organisations' => array(
-                'code'  => '411',
-                'subset'    => array(
-                    'National government administrative occupations' => '41120',
-                    'Local government administrative occupations' => '41130',
-                    'Officers of non-governmental organisations' => '41140'
-                )
-            ),
-            'Administrative occupations: finance' => array(
-                'code'  => '412',
-                'subset'    => array(
-                    'Credit controllers' => '41210',
-                    'Book-keepers, payroll managers and wages clerks' => '41220',
-                    'Bank and post office clerks' => '41230',
-                    'Finance officers' => '41240',
-                    'Financial administrative occupations n.e.c.' => '41290'
-                )
-            ),
-            'Administrative occupations: records' => array(
-                'code'  => '413',
-                'subset'    => array(
-                    'Records clerks and assistants' => '41310',
-                    'Pensions and insurance clerks and assistants' => '41320',
-                    'Stock control clerks and assistants' => '41330',
-                    'Transport and distribution clerks and assistants' => '41340',
-                    'Library clerks and assistants' => '41350',
-                    'Human resources administrative occupations' => '41380'
-                )
-            ),
-            'Other administrative occupations' => array(
-                'code'  => '415',
-                'subset'    => array(
-                    'Sales administrators' => '41510',
-                    'Other administrative occupations n.e.c.' => '41590'
-                )
-            ),
-            'Administrative occupations: office managers and supervisors' => array(
-                'code'  => '416',
-                'subset'    => array(
-                    'Office managers' => '41610',
-                    'Office supervisors' => '41620'
-                )
-            ),
-            'Secretarial and related occupations' => array(
-                'code'  => '421',
-                'subset'    => array(
-                    'Medical secretaries' => '42110',
-                    'Legal secretaries' => '42120',
-                    'School secretaries' => '42130',
-                    'Company secretaries' => '42140',
-                    'Personal assistants and other secretaries' => '42150',
-                    'Receptionists' => '42160',
-                    'Typists and related keyboard occupations' => '42170'
-                )
-            )
-        )
-    ),
-    'Skilled trades occupations' => array(
-        'code'  => '5',
-        'subset'    => array(
-            'Agricultural and related trades' => array(
-                'code'  => '511',
-                'subset'    => array(
-                    'Farmers' => '51110',
-                    'Horticultural trades' => '51120',
-                    'Gardeners and landscape gardeners' => '51130',
-                    'Groundsmen and greenkeepers' => '51140',
-                    'Agricultural and fishing trades n.e.c.' => '51190'
-                )
-            ),
-            'Metal forming, welding and related trades' => array(
-                'code'  => '521',
-                'subset'    => array(
-                    'Smiths and forge workers' => '52110',
-                    'Moulders, core makers and die casters' => '52120',
-                    'Sheet metal workers' => '52130',
-                    'Metal plate workers and riveters' => '52140',
-                    'Welding trades' => '52150',
-                    'Pipe fitters' => '52160'
-                )
-            ),
-            'Metal machining, fitting and instrument making trades' => array(
-                'code'  => '522',
-                'subset'    => array(
-                    'Metal machining setters and setter-operators' => '52210',
-                    'Tool makers, tool fitters and markers-out' => '52220',
-                    'Metal working production and maintenance fitters' => '52230',
-                    'Precision instrument makers and repairers' => '52240',
-                    'Air-conditioning and refrigeration engineers' => '52250'
-                )
-            ),
-            'Vehicle trades' => array(
-                'code'  => '523',
-                'subset'    => array(
-                    'Vehicle technicians, mechanics and electricians' => '52310',
-                    'Vehicle body builders and repairers' => '52320',
-                    'Vehicle paint technicians' => '52340',
-                    'Aircraft maintenance and related trades' => '52350',
-                    'Boat and ship builders and repairers' => '52360',
-                    'Rail and rolling stock builders and repairers' => '52370'
-                )
-            ),
-            'Electrical and electronic trades' => array(
-                'code'  => '524',
-                'subset'    => array(
-                    'Electricians and electrical fitters' => '52410',
-                    'Telecommunications engineers' => '52420',
-                    'TV, video and audio engineers' => '52440',
-                    'IT engineers' => '52450',
-                    'Electrical and electronic trades n.e.c.' => '52490'
-                )
-            ),
-            'Skilled metal, electrical and electronic trades supervisors' => array(
-                'code'  => '525',
-                'subset'    => array(
-                    'Skilled metal, electrical and electronic trades supervisors' => '52500'
-                )
-            ),
-            'Construction and building trades' => array(
-                'code'  => '531',
-                'subset'    => array(
-                    'Steel erectors' => '53110',
-                    'Bricklayers and masons' => '53120',
-                    'Roofers, roof tilers and slaters' => '53130',
-                    'Plumbers and heating and ventilating engineers' => '53140',
-                    'Carpenters and joiners' => '53150',
-                    'Glaziers, window fabricators and fitters' => '53160',
-                    'Construction and building trades n.e.c.' => '53190'
-                )
-            ),
-            'Building finishing trades' => array(
-                'code'  => '532',
-                'subset'    => array(
-                    'Plasterers' => '53210',
-                    'Floorers and wall tilers' => '53220',
-                    'Painters and decorators' => '53230'
-                )
-            ),
-            'Construction and building trades supervisors' => array(
-                'code'  => '533',
-                'subset'    => array(
-                    'Construction and building trades supervisors' => '53300'
-                )
-            ),
-            'Textiles and garments trades' => array(
-                'code'  => '541',
-                'subset'    => array(
-                    'Weavers and knitters' => '54110',
-                    'Upholsterers' => '54120',
-                    'Footwear and leather working trades' => '54130',
-                    'Tailors and dressmakers' => '54140',
-                    'Textiles, garments and related trades n.e.c.' => '54190'
-                )
-            ),
-            'Printing trades' => array(
-                'code'  => '542',
-                'subset'    => array(
-                    'Pre-press technicians' => '54210',
-                    'Printers' => '54220',
-                    'Print finishing and binding workers' => '54230'
-                )
-            ),
-            'Food preparation and hospitality trades' => array(
-                'code'  => '543',
-                'subset'    => array(
-                    'Butchers' => '54310',
-                    'Bakers and flour confectioners' => '54320',
-                    'Fishmongers and poultry dressers' => '54330',
-                    'Chefs' => '54340',
-                    'Cooks' => '54350',
-                    'Catering and bar managers' => '54360'
-                )
-            ),
-            'Other skilled trades' => array(
-                'code'  => '544',
-                'subset'    => array(
-                    'Glass and ceramics makers, decorators and finishers' => '54410',
-                    'Furniture makers and other craft woodworkers' => '54420',
-                    'Florists' => '54430',
-                    'Other skilled trades n.e.c.' => '54490'
-                )
-            )
-        )
-    ),
-    'Caring, leisure and other service occupations' => array(
-        'code'  => '6',
-        'subset'    => array(
-            'Childcare and related personal services' => array(
-                'code'  => '612',
-                'subset'    => array(
-                    'Nursery nurses and assistants' => '61210',
-                    'Childminders and related occupations' => '61220',
-                    'Playworkers' => '61230',
-                    'Teaching assistants' => '61250',
-                    'Educational support assistants' => '61260'
-                )
-            ),
-            'Animal care and control services' => array(
-                'code'  => '613',
-                'subset'    => array(
-                    'Veterinary nurses' => '61310',
-                    'Pest control officers' => '61320',
-                    'Animal care services occupations n.e.c.' => '61390'
-                )
-            ),
-            'Caring personal services' => array(
-                'code'  => '614',
-                'subset'    => array(
-                    'Nursing auxiliaries and assistants' => '61410',
-                    'Ambulance staff (excluding paramedics)' => '61420',
-                    'Dental nurses' => '61430',
-                    'Houseparents and residential wardens' => '61440',
-                    'Care workers and home carers' => '61450',
-                    'Senior care workers' => '61460',
-                    'Care escorts' => '61470',
-                    'Undertakers, mortuary and crematorium assistants' => '61480'
-                )
-            ),
-            'Leisure and travel services' => array(
-                'code'  => '621',
-                'subset'    => array(
-                    'Sports and leisure assistants' => '62110',
-                    'Travel agents' => '62120',
-                    'Air travel assistants' => '62140',
-                    'Rail travel assistants' => '62150',
-                    'Leisure and travel service occupations n.e.c.' => '62190'
-                )
-            ),
-            'Hairdressers and related services' => array(
-                'code'  => '622',
-                'subset'    => array(
-                    'Hairdressers and barbers' => '62210',
-                    'Beauticians and related occupations' => '62220'
-                )
-            ),
-            'Housekeeping and related services' => array(
-                'code'  => '623',
-                'subset'    => array(
-                    'Housekeepers and related occupations' => '62310',
-                    'Caretakers' => '62320'
-                )
-            ),
-            'Cleaning and housekeeping managers and supervisors' => array(
-                'code'  => '624',
-                'subset'    => array(
-                    'Cleaning and housekeeping managers and supervisors' => '62400'
-                )
-            )
-        )
-    ),
-    'Sales and customer service occupations' => array(
-        'code'  => '7',
-        'subset'    => array(
-            'Sales assistants and retail cashiers' => array(
-                'code'  => '711',
-                'subset'    => array(
-                    'Sales and retail assistants' => '71110',
-                    'Retail cashiers and check-out operators' => '71120',
-                    'Telephone salespersons' => '71130',
-                    'Pharmacy and other dispensing assistants' => '71140',
-                    'Vehicle and parts salespersons and advisers' => '71150'
-                )
-            ),
-            'Sales related occupations' => array(
-                'code'  => '712',
-                'subset'    => array(
-                    'Collector salespersons and credit agents' => '71210',
-                    'Debt, rent and other cash collectors' => '71220',
-                    'Roundspersons and van salespersons' => '71230',
-                    'Market and street traders and assistants' => '71240',
-                    'Merchandisers and window dressers' => '71250',
-                    'Sales related occupations n.e.c.' => '71290'
-                )
-            ),
-            'Sales supervisors' => array(
-                'code'  => '713',
-                'subset'    => array(
-                    'Sales supervisors' => '71300'
-                )
-            ),
-            'Customer service occupations' => array(
-                'code'  => '721',
-                'subset'    => array(
-                    'Call and contact centre occupations' => '72110',
-                    'Telephonists' => '72130',
-                    'Communication operators' => '72140',
-                    'Market research interviewers' => '72150',
-                    'Customer service occupations n.e.c.' => '72190'
-                )
-            ),
-            'Customer service managers and supervisors' => array(
-                'code'  => '722',
-                'subset'    => array(
-                    'Customer service managers and supervisors' => '72200'
-                )
-            )
-        )
-    ),
-    'Process, plant and machine operatives' => array(
-        'code'  => '8',
-        'subset'    => array(
-            'Process operatives' => array(
-                'code'  => '811',
-                'subset'    => array(
-                    'Food, drink and tobacco process operatives' => '81110',
-                    'Glass and ceramics process operatives' => '81120',
-                    'Textile process operatives' => '81130',
-                    'Chemical and related process operatives' => '81140',
-                    'Rubber process operatives' => '81150',
-                    'Plastics process operatives' => '81160',
-                    'Metal making and treating process operatives' => '81170',
-                    'Electroplaters' => '81180',
-                    'Process operatives n.e.c.' => '81190'
-                )
-            ),
-            'Plant and machine operatives' => array(
-                'code'  => '812',
-                'subset'    => array(
-                    'Paper and wood machine operatives' => '81210',
-                    'Coal mine operatives' => '81220',
-                    'Quarry workers and related operatives' => '81230',
-                    'Energy plant operatives' => '81240',
-                    'Metal working machine operatives' => '81250',
-                    'Water and sewerage plant operatives' => '81260',
-                    'Printing machine assistants' => '81270',
-                    'Plant and machine operatives n.e.c.' => '81290'
-                )
-            ),
-            'Assemblers and routine operatives' => array(
-                'code'  => '813',
-                'subset'    => array(
-                    'Assemblers (electrical and electronic products)' => '81310',
-                    'Assemblers (vehicles and metal goods)' => '81320',
-                    'Routine inspectors and testers' => '81330',
-                    'Weighers, graders and sorters' => '81340',
-                    'Tyre, exhaust and windscreen fitters' => '81350',
-                    'Sewing machinists' => '81370',
-                    'Assemblers and routine operatives n.e.c.' => '81390'
-                )
-            ),
-            'Construction operatives' => array(
-                'code'  => '814',
-                'subset'    => array(
-                    'Scaffolders, stagers and riggers' => '81410',
-                    'Road construction operatives' => '81420',
-                    'Rail construction and maintenance operatives' => '81430',
-                    'Construction operatives n.e.c.' => '81490'
-                )
-            ),
-            'Road transport drivers' => array(
-                'code'  => '821',
-                'subset'    => array(
-                    'Large goods vehicle drivers' => '82110',
-                    'Van drivers' => '82120',
-                    'Bus and coach drivers' => '82130',
-                    'Taxi and cab drivers and chauffeurs' => '82140',
-                    'Driving instructors' => '82150'
-                )
-            ),
-            'Mobile machine drivers and operatives' => array(
-                'code'  => '822',
-                'subset'    => array(
-                    'Crane drivers' => '82210',
-                    'Fork-lift truck drivers' => '82220',
-                    'Agricultural machinery drivers' => '82230',
-                    'Mobile machine drivers and operatives n.e.c.' => '82290'
-                )
-            ),
-            'Other drivers and transport operatives' => array(
-                'code'  => '823',
-                'subset'    => array(
-                    'Train and tram drivers' => '82310',
-                    'Marine and waterways transport operatives' => '82320',
-                    'Air transport operatives' => '82330',
-                    'Rail transport operatives' => '82340',
-                    'Other drivers and transport operatives n.e.c.' => '82390'
-                )
-            )
-        )
-    ),
-    'Elementary occupations' => array(
-        'code'  => '9',
-        'subset'    => array(
-            'Elementary agricultural occupations' => array(
-                'code'  => '911',
-                'subset'    => array(
-                    'Farm workers' => '91110',
-                    'Forestry workers' => '91120',
-                    'Fishing and other elementary agriculture occupations n.e.c.' => '91190'
-                )
-            ),
-            'Elementary construction occupations' => array(
-                'code'  => '912',
-                'subset'    => array(
-                    'Elementary construction occupations' => '91200'
-                )
-            ),
-            'Elementary process plant occupations' => array(
-                'code'  => '913',
-                'subset'    => array(
-                    'Industrial cleaning process occupations' => '91320',
-                    'Packers, bottlers, canners and fillers' => '91340',
-                    'Elementary process plant occupations n.e.c.' => '91390'
-                )
-            ),
-            'Elementary administration occupations' => array(
-                'code'  => '921',
-                'subset'    => array(
-                    'Postal workers, mail sorters, messengers and couriers' => '92110',
-                    'Elementary administration occupations n.e.c.' => '92190'
-                )
-            ),
-            'Elementary cleaning occupations' => array(
-                'code'  => '923',
-                'subset'    => array(
-                    'Window cleaners' => '92310',
-                    'Street cleaners' => '92320',
-                    'Cleaners and domestics' => '92330',
-                    'Launderers, dry cleaners and pressers' => '92340',
-                    'Refuse and salvage occupations' => '92350',
-                    'Vehicle valeters and cleaners' => '92360',
-                    'Elementary cleaning occupations n.e.c.' => '92390'
-                )
-            ),
-            'Elementary security occupations' => array(
-                'code'  => '924',
-                'subset'    => array(
-                    'Security guards and related occupations' => '92410',
-                    'Parking and civil enforcement occupations' => '92420',
-                    'School midday and crossing patrol occupations' => '92440',
-                    'Elementary security occupations n.e.c.' => '92490'
-                )
-            ),
-            'Elementary sales occupations' => array(
-                'code'  => '925',
-                'subset'    => array(
-                    'Shelf fillers' => '92510',
-                    'Elementary sales occupations n.e.c.' => '92590'
-                )
-            ),
-            'Elementary storage occupations' => array(
-                'code'  => '926',
-                'subset'    => array(
-                    'Elementary storage occupations' => '92600'
-                )
-            ),
-            'Other elementary services occupations' => array(
-                'code'  => '927',
-                'subset'    => array(
-                    'Hospital porters' => '92710',
-                    'Kitchen and catering assistants' => '92720',
-                    'Waiters and waitresses' => '92730',
-                    'Bar staff' => '92740',
-                    'Leisure and theme park attendants' => '92750',
-                    'Other elementary services occupations n.e.c.' => '92790'
-                )
-            )
-        )
-    )
-)
+
+);
 
 ?>

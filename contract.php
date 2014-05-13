@@ -7,7 +7,6 @@
 $report = '';
 $contcounts = array();
 $cohorts = array();
-$cohort = 0;
 
 
 # first things first, get all the form parameters so that we can work out our
@@ -99,7 +98,6 @@ foreach ( $yearsToSample as $yearcode ) {
     mysqli_stmt_store_result( $pst );
 #    $cohorts[$yearcode] = 0;
     $cohorts[$yearcode] = mysqli_stmt_num_rows( $pst );
-    $cohort += mysqli_stmt_num_rows( $pst );
 
     # now get the counts for each employer size
     foreach ( $contracts as $contract => $contractdetails ) {
@@ -155,12 +153,6 @@ foreach ( $yearsToSample as $yearcode ) {
 <br />
 <br />
 
-<?php 
-
-if ($cohort >= $minsize) {
-
-?>
-
 <table>
     <tr><th rowspan='2'>Contract type</th>
 
@@ -214,14 +206,6 @@ echo "$totalrow</tr>";
 ?>
 
 </table>
-
-<?php
-
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
-}
-
-?>
 
 
 <p><a href="index.php">Back to main page</a></p>

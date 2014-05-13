@@ -27,8 +27,8 @@
 
 <div id="secta" class="homesect">
     <div>
-    <h2>Destinations 2012 Data (GEMS Version 5.1.5)</h2>
-        <p>This will be available shortly after this an hours downtime -- between 10:30 and 11:30 14-10-2013</p>
+    <h2>Destinations 2012 Data (GEMS Version 5)</h2>
+        <p>This will be available shortly after this an hours downtime -- between 10:00 and 11:00 4-10-2013</p>
    </div>
 </div><!-- end secta -->
 

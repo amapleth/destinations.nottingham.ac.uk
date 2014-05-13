@@ -8,7 +8,6 @@ $report = '';
 $relcounts = array();
 $cohorts = array();
 $rels = $empwheres['qualuses'];
-$cohorts = 0;
 
 # first things first, get all the form parameters so that we can work out our
 # sample population
@@ -95,7 +94,6 @@ foreach ( $yearsToSample as $yearcode ) {
     mysqli_stmt_execute( $pst );
     mysqli_stmt_store_result( $pst );
     $cohorts[$yearcode] = mysqli_stmt_num_rows( $pst );
-    $cohort += mysqli_stmt_num_rows( $pst );
 
     if ($yearcode > '1011') {
         $rels = $empwheres['qualuses1112'];
@@ -151,12 +149,6 @@ foreach ( $yearsToSample as $yearcode ) {
 <br />
 <br />
 
-<?php
-
-if ($cohort >= $minsize) {
-
-?>
-
 <table>
     <tr><th rowspan='2'>Requirement of qualification</th>
 
@@ -204,14 +196,6 @@ echo "$kpirow</tr>"
 ?>
 
 </table>
-
-<?php
-
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
-}
-
-?>
 
 
 <p><a href="index.php">Back to main page</a></p>

@@ -1,12 +1,7 @@
 <?php
-error_reporting(E_ALL);
-//session_start();
-//var_dump($_SESSION);
-//exit;
-?>
+include_once "uon-auth.php";?>
 <?php include 'details.php'; ?>
 <?php include 'database.php'; ?>
-<?php  ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->

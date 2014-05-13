@@ -7,7 +7,6 @@
 $empsizecounts = array();
 $cohorts = array();
 $empsizes = array();
-$cohort = 0;
 
 # first things first, get all the form parameters so that we can work out our
 # sample population
@@ -105,7 +104,6 @@ foreach ( $yearsToSample as $yearcode ) {
     mysqli_stmt_execute( $pst );
     mysqli_stmt_store_result( $pst );
     $cohorts[$yearcode] = mysqli_stmt_num_rows( $pst );
-    $cohort += mysqli_stmt_num_rows( $pst );
 
     # now get the counts for each employer size
     foreach ( $empsizes as $size => $sizedetails ) {
@@ -169,12 +167,6 @@ foreach ( $yearsToSample as $yearcode ) {
 <br />
 <br />
 
-<?php
-
-if ($cohort >= $minsize) {
-
-?>
-
 <table>
     <tr><th rowspan='2'>Company size</th>
 
@@ -196,17 +188,13 @@ foreach ( $empwheres['orgsizes1112'] as $size => $sizedetails ) {
     if ( $size == 'all' ) { continue; }
 
     $tdattrs = '';
-#    if (in_array('1112', $yearsToSample) && array_key_exists('subset', $sizedetails)) { $tdattrs = " id='$size' class='tablerowtoggle'"; }
+    if (in_array('1112', $yearsToSample) && array_key_exists('subset', $sizedetails)) { $tdattrs = " id='$size' class='tablerowtoggle'"; }
 
     echo "<tr><td$tdattrs>".$sizedetails['label']."</td>";
 
     foreach  ( $yearsToSample as $yearcode ) {
         $sizeperc = number_format( ($empsizecounts[$yearcode][$size] / $cohorts[$yearcode]) * 100, 1 );
-        if ( $yearcode == '1112' ) {
-            echo "<td colspan='2'>No Data</td>";
-        } else {
-            echo "<td>".$empsizecounts[$yearcode][$size]."</td><td>$sizeperc%</td>";
-        }
+        echo "<td>".$empsizecounts[$yearcode][$size]."</td><td>$sizeperc%</td>";
    }
 
     echo "</tr>";
@@ -231,26 +219,13 @@ foreach ( $empwheres['orgsizes1112'] as $size => $sizedetails ) {
 
 $totalrow = "<tr><td>Total</td>";
 foreach  ( $yearsToSample as $yearcode ) {
-    if ( $yearcode == '1112' ) {
-        $totalrow .= "<td colspan='2'>No Data</td>";
-    } else {
-        $totalrow .= "<td colspan='2'>".$empsizecounts[$yearcode]['all']."</td>";
-
-    }
+    $totalrow .= "<td colspan='2'>".$empsizecounts[$yearcode]['all']."</td>";
 }
 echo "$totalrow</tr>";
 
 ?>
 
 </table>
-
-<?php
-
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
-}
-
-?>
 
 <p><a href="index.php">Back to main page</a></p>
 

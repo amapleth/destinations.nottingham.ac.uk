@@ -18,7 +18,6 @@ $countycounts = array();
 foreach ( $postregions as $preg => $counties ) { $pregcounts[$preg] = 0; }
 foreach ( $postcodes as $county => $details ) { $countycounts[$county] = 0; }
 $countriescount = 0;
-$cohort = 0;
 
 # first things first, get all the form parameters so that we can work out our
 # sample population
@@ -124,7 +123,6 @@ foreach ( $yearsToSample as $yearcode ) {
     mysqli_stmt_execute( $pst );
     mysqli_stmt_store_result( $pst );
     $cohorts[$yearcode] = mysqli_stmt_num_rows( $pst );
-    $cohort += mysqli_stmt_num_rows( $pst );
 
     # now get counts for each region
     foreach ( $regionwheres as $region => $sql ) {
@@ -170,11 +168,9 @@ foreach ( $yearsToSample as $yearcode ) {
             if ( $yearcode > '1011' ) {
                 $countyst = str_replace('LOCEMP', 'EMPPCODE', $countyst);
                 $countyst .= " AND EMPPCODE <> '' AND EMPPCODE <> 'X' AND EMPPCODE IS NOT NULL";
-
+#                echo "<p>$county: $countyst</p>";
             }
-            // if ( $county == "East Sussex") {
-            //     echo "<p>$county: $countyst</p>";
-            // }
+#            echo "<p>$county: $countyst</p>";
             $ctst = mysqli_prepare( $con, $countyst );
             mysqli_stmt_bind_param( $ctst, 'sss', $p1, $p2, $p3 );
             mysqli_stmt_execute( $ctst );
@@ -238,12 +234,6 @@ foreach ( $yearsToSample as $yearcode ) {
 
 <br />
 <br />
-
-<?php
-
-if ($cohort >= $minsize) {
-
-?>
 
 <?php
 
@@ -343,19 +333,6 @@ echo "</tr>";
 
 echo "</table>";
 
-// $ypc78 = $ukloccounts['78']['South West England']['locations'];
-
-// $pcodes78 = array();
-// foreach ( $ypc78 as $pcode ) {
-//     $pcodes78["$pcode"] = 1;
-// }
-// echo "<p>South West England Postcodes in 7/8:</p><ul>";
-// foreach ($pcodes78 as $pcode => $flag) {
-// echo "<li>$pcode</li>";
-// }
-// echo "</ul>";
-
-
 #print_r( $ukloccounts['1112'] );
 
 #print_r( $countycounts );
@@ -402,14 +379,6 @@ $jsregionmaps = json_encode($regionmaps);
 <div id="mapdiv">
 
 </div>
-
-<?php
-
-} else {
-    echo "<p><strong>There are too few graduates in your chosen population, please go back and re-select.</strong></p>";
-}
-
-?>
 
 <p><a href="index.php">Back to main page</a></p>
 
