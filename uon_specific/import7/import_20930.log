@@ -1,0 +1,23 @@
+total 3580
+-rwxr-xr-x 1 mszadm users     584 Jun 21 11:48 import.ksh
+-rw-r--r-- 1 mszadm users 1228923 Jun 21 11:48 extract0910.txt
+-rw-r--r-- 1 mszadm users 1232603 Jun 21 11:48 extract0809.txt
+-rw-r--r-- 1 mszadm users 1181054 Jun 21 11:48 extract0708.txt
+-rw-r--r-- 1 mszadm users       0 Jun 21 11:51 import_20930.log
+dos2unix: converting file extract1011.txt to UNIX format ...
+dos2unix: problems converting file extract1011.txt
+/usr/local/lib/gems/docs/uon_specific/import7
+total 3584
+-rwxr-xr-x 1 mszadm users     584 Jun 21 11:48 import.ksh
+-rw-r--r-- 1 mszadm users 1228923 Jun 21 11:48 extract0910.txt
+-rw-r--r-- 1 mszadm users 1232603 Jun 21 11:48 extract0809.txt
+-rw-r--r-- 1 mszadm users 1181054 Jun 21 11:48 extract0708.txt
+-rw-r--r-- 1 mszadm users     480 Jun 21 11:51 import_20930.log
+find: *1011.txt: No such file or directory
+extract1011
+6452
+PROMPT set to 'delete data'
+extract1011
+0
+extract1011
+6452

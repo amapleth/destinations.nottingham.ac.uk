@@ -1,0 +1,45 @@
+total 1236
+-rw-r--r-- 1 mszadm users 299449 Jul 31 09:51 tqi910.txt
+-rw-r--r-- 1 mszadm users 297926 Jul 31 09:51 tqi89.txt
+-rw-r--r-- 1 mszadm users 307425 Jul 31 09:51 tqi78.txt
+-rw-r--r-- 1 mszadm users 331489 Jul 31 09:51 tqi1011.txt
+-rwxrwxr-x 1 mszadm users   1362 Jul 31 09:51 import.ksh
+-rw-r--r-- 1 mszadm users      0 Jul 31 10:05 import_8106.log
+dos2unix: converting file tqi78.txt to UNIX format ...
+dos2unix: converting file tqi89.txt to UNIX format ...
+dos2unix: converting file tqi910.txt to UNIX format ...
+dos2unix: converting file tqi1011.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import11
+total 1208
+-rwxrwxr-x 1 mszadm users   1362 Jul 31 09:51 import.ksh
+-rw-r--r-- 1 mszadm users 291421 Jul 31 10:05 tqi910.txt
+-rw-r--r-- 1 mszadm users 289947 Jul 31 10:05 tqi89.txt
+-rw-r--r-- 1 mszadm users 299188 Jul 31 10:05 tqi78.txt
+-rw-r--r-- 1 mszadm users 322600 Jul 31 10:05 tqi1011.txt
+-rw-r--r-- 1 mszadm users    627 Jul 31 10:05 import_8106.log
+find: extract*.txt: No such file or directory
+tqi78
+8237
+tqi89
+7979
+tqi910
+8028
+tqi1011
+8889
+PROMPT set to 'delete data'
+tqi78
+0
+tqi89
+0
+tqi910
+0
+tqi1011
+0
+tqi78
+8237
+tqi89
+7979
+tqi910
+8028
+tqi1011
+8889

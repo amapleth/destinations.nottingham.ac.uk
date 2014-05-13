@@ -1,0 +1,20 @@
+total 2256
+-rw-r--r-- 1 mszadm users  761055 Jun  6 15:50 popdlhe0809.txt
+-rwxrwxr-x 1 mszadm users    1274 Jun  6 15:50 import0809.ksh
+-rw-r--r-- 1 mszadm users 1455803 Jun  6 15:50 extract0809.txt
+-rw-r--r-- 1 mszadm users   70823 Jun  6 15:50 courses0809.txt
+-rw-r--r-- 1 mszadm users       0 Jun  6 15:51 import_31633.log
+dos2unix: converting file extract0809.txt to UNIX format ...
+dos2unix: converting file popdlhe0809.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import4
+total 2244
+-rwxrwxr-x 1 mszadm users    1274 Jun  6 15:50 import0809.ksh
+-rw-r--r-- 1 mszadm users   70823 Jun  6 15:50 courses0809.txt
+-rw-r--r-- 1 mszadm users  752959 Jun  6 15:51 popdlhe0809.txt
+-rw-r--r-- 1 mszadm users     494 Jun  6 15:51 import_31633.log
+-rw-r--r-- 1 mszadm users 1447707 Jun  6 15:51 extract0809.txt
+1708 courses0809.txt
+8096 extract0809.txt
+8096 popdlhe0809.txt
+ERROR 1146 (42S02) at line 2: Table 'uczgcw_career_development.extract809' doesn't exist
+./import0809.ksh: line 12: syntax error at line 36: `(' unexpected

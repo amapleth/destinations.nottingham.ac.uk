@@ -1,0 +1,35 @@
+total 7060
+-rw-r--r-- 1 mszadm users    1528 Oct  9 09:58 import.ksh
+-rw-r--r-- 1 mszadm users 1754496 Oct  9 09:58 extract910.txt
+-rw-r--r-- 1 mszadm users 1711058 Oct  9 09:58 extract89.txt
+-rw-r--r-- 1 mszadm users 1722103 Oct  9 09:58 extract78.txt
+-rw-r--r-- 1 mszadm users 2013181 Oct  9 09:58 extract1011.txt
+-rw-r--r-- 1 mszadm users       0 Oct  9 10:02 import_2648.log
+dos2unix: converting file extract0708.txt to UNIX format ...
+dos2unix: problems converting file extract0708.txt
+dos2unix: converting file extract0809.txt to UNIX format ...
+dos2unix: problems converting file extract0809.txt
+dos2unix: converting file extract0910.txt to UNIX format ...
+dos2unix: problems converting file extract0910.txt
+dos2unix: converting file extract1011.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import31
+total 7056
+-rw-r--r-- 1 mszadm users    1528 Oct  9 09:58 import.ksh
+-rw-r--r-- 1 mszadm users 1754496 Oct  9 09:58 extract910.txt
+-rw-r--r-- 1 mszadm users 1711058 Oct  9 09:58 extract89.txt
+-rw-r--r-- 1 mszadm users 1722103 Oct  9 09:58 extract78.txt
+-rw-r--r-- 1 mszadm users     823 Oct  9 10:02 import_2648.log
+-rw-r--r-- 1 mszadm users 2003606 Oct  9 10:02 extract1011.txt
+9575 extract1011.txt
+8107 extract78.txt
+8096 extract89.txt
+8343 extract910.txt
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+]0;mszadm@dev:/usr/local/lib/gems/docs/uon_specific/import31[mszadm@dev import31]$ 
+]0;mszadm@dev:/usr/local/lib/gems/docs/uon_specific/import31[mszadm@dev import31]$ 
+]0;mszadm@dev:/usr/local/lib/gems/docs/uon_specific/import31[mszadm@dev import31]$ 
+]0;mszadm@dev:/usr/local/lib/gems/docs/uon_specific/import31[mszadm@dev import31]$ 
+]0;mszadm@dev:/usr/local/lib/gems/docs/uon_specific/import31[mszadm@dev import31]$ 
+]0;mszadm@dev:/usr/local/lib/gems/docs/uon_specific/import31[mszadm@dev import31]$ 
+]0;mszadm@dev:/usr/local/lib/gems/docs/uon_specific/import31[mszadm@dev import31]$ 
+]0;mszadm@dev:/usr/local/lib/gems/docs/uon_specific/import31[mszadm@dev import31]$ 

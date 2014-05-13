@@ -1,0 +1,13 @@
+<?php
+
+echo <<<headerHTML
+<div id="rootcontainer">
+
+<div id="headerBox">
+<h1>GEMS 5.1.5</h1>
+<p>Graduate Employment Market Statistics</p>
+</div><!-- end headerBox -->
+headerHTML;
+
+
+?>

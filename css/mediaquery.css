@@ -1,0 +1,54 @@
+@media only screen and (min-width: 900px) {
+    
+	#rootcontainer {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#headerBox {
+		background: url('../img/gemslogo.png') no-repeat #00ADEF;
+		height: 108px;
+		padding-left: 180px;
+		padding-top: 33px;
+	}
+
+	#col1, #col2 {
+		width: 440px;
+	}
+
+	#col1 {
+		float: left;
+	}
+
+	#col2 {
+		float: right;
+	}
+
+	#footer {
+		clear: both;
+	}
+
+	#popselecter label {
+		display: inline-block;
+		width: 13em;
+	}
+
+	select {
+		width: auto;
+	}
+
+	select.adv1 {
+		width: 50%;
+		float: left;
+		margin-left: 30px;
+	}
+
+	select.adv2 {
+		width: 30%;
+		float: left;
+		margin-left: 30px;
+	}
+
+}
+

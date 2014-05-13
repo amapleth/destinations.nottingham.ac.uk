@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/web/!svn/ver/2410/destinations/trunk/templates/uon_specific
+END
+authenticate.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/web/!svn/ver/2410/destinations/trunk/templates/uon_specific/authenticate.php
+END
+authenticate.php.DIST
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/web/!svn/ver/2410/destinations/trunk/templates/uon_specific/authenticate.php.DIST
+END
+verify.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/web/!svn/ver/2410/destinations/trunk/templates/uon_specific/verify.php
+END
+verify.php.DIST
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/web/!svn/ver/2410/destinations/trunk/templates/uon_specific/verify.php.DIST
+END

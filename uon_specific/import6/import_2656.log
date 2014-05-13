@@ -1,0 +1,37 @@
+total 1392
+-rwxrwxr-x 1 mszadm users    1326 Jun 20 15:13 import.ksh
+-rw-r--r-- 1 mszadm users 1413664 Jun 20 15:13 extract1011.txt
+-rw-r--r-- 1 mszadm users       0 Jun 20 15:16 import_2656.log
+dos2unix: converting file extract1011.txt to UNIX format ...
+dos2unix: converting file courses1011.txt to UNIX format ...
+dos2unix: problems converting file courses1011.txt
+dos2unix: converting file popdlhe1011.txt to UNIX format ...
+dos2unix: problems converting file popdlhe1011.txt
+dos2unix: converting file 0155_TQI5.TXT to UNIX format ...
+dos2unix: problems converting file 0155_TQI5.TXT
+/usr/local/lib/gems/docs/uon_specific/import6
+total 1388
+-rwxrwxr-x 1 mszadm users    1326 Jun 20 15:13 import.ksh
+-rw-r--r-- 1 mszadm users     634 Jun 20 15:16 import_2656.log
+-rw-r--r-- 1 mszadm users 1407212 Jun 20 15:16 extract1011.txt
+6452 extract1011.txt
+extract1011
+9575
+courses1011
+1742
+popdlhe1011
+9575
+PROMPT set to 'delete data'
+extract1011
+0
+courses1011
+0
+popdlhe1011
+0
+extract1011
+9575
+courses1011
+1742
+popdlhe1011
+9575
+./import.ksh: line 12: syntax error at line 36: `(' unexpected

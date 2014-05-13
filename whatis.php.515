@@ -1,0 +1,59 @@
+<?php include 'details.php'; ?>
+<?php include 'database.php'; ?>
+<?php include 'lookups.php'; ?>
+<?php
+
+$popres = mysqli_query($con, "SELECT HUSID from popdlhe1112");
+$popcount = number_format(mysqli_num_rows( $popres ));
+
+$resres = mysqli_query($con, "SELECT HUSID from popdlhe1112 INNER JOIN extract1112 on extract1112.HUSIDa = popdlhe1112.HUSID");
+$rescount = number_format(mysqli_num_rows( $resres ));
+
+$resprate = number_format( ($rescount/$popcount) * 100 , 1);
+
+?>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>What is GEMS?</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <?php include 'styles.inc'; ?>
+
+       <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+<div class='rootcontainer'>
+
+<?php include 'header.php' ?>
+
+<h2>The Destinations of Leavers from Higher Education</h2>
+
+<p>The Destinations of Leavers Survey is an annual census of most of our UK and EU taught graduates. The Higher Education Statistics Agency (HESA) provide the questions and the population of graduates which we are to survey, this year it included <?php echo $popcount ?> graduates who graduated in the 11/12 academic year. The graduates were surveyed six months after their respective graduations to achieve consistency in the results. This year we received responses from <?php echo $rescount ?> graduates giving us a response rate of <?php echo $resprate ?>%.</p>
+
+<p>A <?php echo $resprate ?>% response rate at University level means that data collected is very statistically significant, not only this but at School level much of the data will also be very significant. Where possible, the number of graduates who are part of a quoted result will always be highlighted. The Survey is important to the University because the responses are used as performance indicators by the newspaper league tables, the Key Information Sets and the Higher Education Funding Councils. The University wide results are published by HESA against all other UK Universities.</p>
+
+<h2>Graduate Employment Market Statistics (GEMS)</h2>
+<p>The Data Protection Act must be adhered to first and foremost and because of this the information contained within this application is confidential and cannot be distributed outside of this University.
+This application is designed to allow users to easily access data relevant to their School or Course without having to submit a request to the Careers and Employability Service. It is possible that some of the statistics can be used as marketing material provided that the Careers and Employability Service keep track of all published material to ensure that the accumulation of published data does not inadvertently break Data Protection rules.</p>
+
+<p><a href="index.php">Back to main page</a></p>
+
+<?php include 'footer.php' ?>
+
+        <?php include 'scripts.inc'; ?>
+
+        <?php include 'analytics.php'; ?>
+    </body>
+</html>

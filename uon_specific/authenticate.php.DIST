@@ -1,0 +1,19 @@
+<?php
+session_start();
+include_once('uon_specific/classes/clsAuthenticate.php'); 
+
+
+ if (!testAuthentication::isValidUser())
+ {
+ 	 	if(isset($_SESSION))
+ 	 	{
+ 	 		$_SESSION = array();
+			if (isset($_COOKIE[session_name()])) setcookie(session_name(), '', time()-42000, '/');
+			session_destroy();
+ 	 	}	
+ 		header("Location:login.php");
+ }
+ 	
+ 
+
+ 

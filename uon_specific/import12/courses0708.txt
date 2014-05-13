@@ -1,0 +1,1539 @@
+0000050670244	A Level Biology and Chemistry
+0000051216838	A level Chemistry
+0000052835931	ACA
+0000051440097	ACA
+0000040908760	ACA - Association of Chartered Accountancy
+0000040014083	ACA - Association of Chartered Accountancy
+0000040387747	ACA - Association of Chartered Accountancy
+0000040538752	ACA - Association of Chartered Accountancy
+0000050060261	ACA - Association of Chartered Accountancy
+0000040417055	ACA - Association of Chartered Accountancy
+0000050299805	ACA - Association of Chartered Accountancy
+0311551005379	ACA - Association of Chartered Accountancy
+0000051554202	ACA - Association of Chartered Accountancy
+0000050859078	ACA - Association of Chartered Accountancy
+0000040464853	ACA - Association of Chartered Accountancy
+0611551215924	ACA - Association of Chartered Accountancy
+0000050122020	ACA - Association of Chartered Accountancy
+0000050779938	ACA - Association of Chartered Accountancy
+0000041414220	ACA - Association of Chartered Accountancy
+0000041510658	ACA - Association of Chartered Accountancy
+0000051331809	ACA - Association of Chartered Accountancy
+0000040269720	ACA - Association of Chartered Accountancy
+0000030049192	ACA - Association of Chartered Accountancy
+0000050932256	ACA - Association of Chartered Accountancy
+0000052034006	ACA - Association of Chartered Accountancy
+0000040806499	ACA - Association of Chartered Accountancy
+0000051901288	ACA - Association of Chartered Accountancy
+0000050116177	ACA - Association of Chartered Accountancy
+0000050854165	ACA - Association of Chartered Accountancy
+0000051254313	ACA - Association of Chartered Accountancy
+0000051073035	ACA - Association of Chartered Accountancy
+0000051147509	ACA - Association of Chartered Accountancy
+0000050611362	ACA - Association of Chartered Accountancy
+0000050084418	ACA - Association of Chartered Accountancy
+0000051146214	ACA - Association of Chartered Accountancy
+0000050648922	ACA - Association of Chartered Accountancy
+0000041513958	ACA - Association of Chartered Accountancy
+0000051196253	ACA - Association of Chartered Accountancy
+0000050147872	ACA - Association of Chartered Accountancy
+0000040066819	ACA - Association of Chartered Accountancy
+0000990940216	ACA - Association of Chartered Accountancy
+0000051039927	ACA - Association of Chartered Accountancy
+0000052177613	ACA - Association of Chartered Accountancy
+0000050949841	ACA - Association of Chartered Accountancy
+0000051320412	ACA - Association of Chartered Accountancy
+0611551201385	ACA - Association of Chartered Accountancy
+0000050863684	ACA - Association of Chartered Accountancy
+0000040295590	ACA - Association of Chartered Accountancy
+0000050663202	ACA - Association of Chartered Accountancy
+0000050825877	ACA - Association of Chartered Accountancy
+0000020153702	ACA - Association of Chartered Accountancy
+0000050842379	ACA - Association of Chartered Accountancy
+0000050658312	ACA - Association of Chartered Accountancy
+0000050198483	ACA - Association of Chartered Accountancy
+0000050161708	ACA - Association of Chartered Accountancy
+0000051224903	ACA - Association of Chartered Accountancy
+0000041406672	ACA - Association of Chartered Accountancy
+0000050621534	ACA - Association of Chartered Accountancy
+0000050362512	ACA - Association of Chartered Accountancy
+0000050264700	ACA - Association of Chartered Accountancy
+0000040835938	ACA - Association of Chartered Accountancy
+0000050077797	ACA - Association of Chartered Accountancy
+0611551216068	ACA - Association of Chartered Accountancy
+0000041890608	ACA - Association of Chartered Accountancy
+0000041044142	ACA - Association of Chartered Accountancy
+0000050287330	ACCA - Association of Certified Chartered Accountants
+0000051076966	ACCA - Association of Certified Chartered Accountants
+0000050290329	ACCA - Association of Certified Chartered Accountants
+0000031444600	ACCA - Association of Certified Chartered Accountants
+0000040263647	ACCA - Association of Certified Chartered Accountants
+0000054825134	ACCA - Association of Certified Chartered Accountants
+0000040909619	ACCA - Association of Certified Chartered Accountants
+0000042782292	ACCA - Association of Certified Chartered Accountants
+0000040226697	Access to Medicine
+0000051676087	Accountancy
+0000051187620	ACI Dealing Certificate
+0000051442529	ACII
+0000050171914	Actuarial Training
+0000041570799	Actuary Qualification
+0000040212690	Actuary Qualification
+0411558151386	Advanced Diploma in HIV/AIDS and STIs
+0611551199299	Advanced language studies - modern greek
+0000051382258	Airline Transport Pilot's Licence
+0000050534382	Animal Nutrition
+0611554576695	Anthropology
+0611551204755	Antibiotic Resistance / Bacteriology / Molecular Biology
+0611551220696	Antigen Presentation in Cancer/Cancer Therapy
+0000051657938	Applied Forensic Pyschology
+0000034135925	Applied Psychology
+0000040343363	Arabic language
+0000011211422	ARB Part III MArch conversion
+0000050873432	Archaeology
+0000040739544	Architectural Interior Design
+0000030286719	Architecture
+0000040432391	Architecture
+0000011432234	Architecture - Professional Practice
+0000030119163	Architecture Diploma
+0000040852588	Architecture Part II
+0000040865717	Architecture Part II
+0000021149580	Architecture RIBA Part III
+0000011692975	Architecture: Part III
+0000050318472	Art Direction and Copywriting
+0211559275315	Artist in Residence Pilot Scheme
+0000041213782	AS Level Biology
+0611554572251	Assisted Reproduction Technology
+0000040363017	Astrophysics
+0000060831990	ATT - Association of Tax Technicians
+0411559322303	BA Combined Studies
+0611559338663	BA Combined Studies
+0511559322964	BA Combined Studies
+0711551230267	BA Hons in Finance Accounting and Management
+0711551230016	BA Hons in Finance Accounting and Management
+0711551229755	BA Hons in Finance Accounting and Management
+0711551230083	BA Hons in Finance Accounting and Management
+0711551229283	BA Hons in Finance Accounting and Management
+0611551226584	BA Hons in Finance Accounting and Management
+0711551229892	BA Hons in Finance Accounting and Management
+0511559329642	BA Hons in Humanistic Counselling (Degree)
+0511559317580	BA Hons in Humanistic Counselling (Degree)
+0611559337046	BA Hons in Humanistic Counselling (Diploma)
+9411559063430	BA Hons in Humanistic Counselling (Diploma)
+0611559340356	BA Hons in Humanistic Counselling (Diploma)
+0611559339671	BA Hons in Humanistic Counselling (Diploma)
+0511559332583	BA Hons in Humanistic Counselling (Diploma)
+0611559338799	BA Hons in Humanistic Counselling (Diploma)
+0611559338515	BA Hons in Humanistic Counselling (Diploma)
+0611559338685	BA Hons in Humanistic Counselling (Diploma)
+9611559075334	BA Hons in Humanistic Counselling (Diploma)
+0711551230061	BA Hons Management Studies
+0711551230360	BA Hons Politics
+0711551228437	BA Hons Social and Cultural Studies
+0711551230050	BA Hons Social and Cultural Studies
+0711551230290	BA Hons Social Policy and Administration
+0000040348564	BA in Acting
+0411559318018	BA in Combined Studies
+0211559293261	BA in Combined Studies
+0511559309839	BA in Combined Studies
+0000072791103	BA in English and Theology
+0411559313703	BA in Fine Arts
+0411559312717	BA in Fine Arts
+0211559300385	BA in Fine Arts
+0411559309636	BA in Fine Arts
+0511559332538	BA in Humanistic Counselling
+0611559340253	BA in Humanistic Counselling
+0411559301364	BA in Humanistic Counselling
+0511559328553	BA in Humanistic Counselling
+0611559335879	BA in Humanistic Counselling
+0611559325010	BA in Humanistic Counselling
+0711552008290	BA Jt Hons Sociology and Social Policy
+0000051321372	Bachelor of Civil Law BCL
+0000040508010	Bachelor of Veterinary Medicine
+0511558156724	Bachelor of Veterinary Science
+0511558158120	BAH in Nursing Elearning
+0611551190791	BcHD Dentistry
+0000050186309	BDen Dentistry
+0000040880503	Biochemical Research
+0611551211122	Bioengineering
+0611551190919	Biomaterials
+0000041757297	Biomedical Science
+0000041026540	Biomedical Science
+0611554604231	Biomedical Sciences
+0000050489738	BMBS Graduate Entry Medicine
+0000050432413	BMBS Graduate Entry Medicine
+0000056807088	BMBS Graduate Entry Medicine
+0000050055315	BMedSci Medicine
+0000030326853	Broadcast Journalism
+0000040754754	Broadcast Journalism
+0000050299322	BSc BA Graduate Medicine and Surgery
+0000062386131	BSc E-Commerce and Digital Business
+0000041081996	BSc Hons in Computer Science
+0411558150448	BSc Hons in Midwifery
+0411558152877	BSc Hons in Nursing Studies
+0111550313185	BSc Hons in Physiotherapy
+0000040659105	BSc in Bulding Surveying
+0000051900708	BSc in Clinical Physiologist
+0411558154583	BSc in Dual Diagnosis
+0000051274768	BSc in Estate Management
+0000040659013	BSc in Mathematics
+0000060937661	BSc in Mathematics
+0000050273470	BSc in Mathematics
+0511558160190	BSc in Midwifery
+0411558150873	BSc in Nursing
+0411558151250	BSc in Nursing
+0411558151836	BSc in Nursing Studies
+0511558159208	BSc in Nursing Studies
+0511558156263	BSc in Nursing Studies
+0411558153162	BSc in Nursing Studies
+0000060416557	BSc Mathematics
+0000050993626	BTEC Award Photography
+0000052645385	Business French
+0511551165493	Business management
+0611551211959	BVC - Bar Vocational Course
+0000050422584	BVC - Bar Vocational Course
+0000050471227	BVC - Bar Vocational Course
+0000050149566	BVC - Bar Vocational Course
+0000050735440	BVC - Bar Vocational Course
+0000030433748	BVC - Bar Vocational Course
+0611554585251	BVC - Bar Vocational Course
+0000050216503	BVC - Bar Vocational Course
+0000040181503	BVC - Bar Vocational Course
+0000053255305	BVC - Bar Vocational Course
+0611551199303	BVC - Bar Vocational Course
+0000040016168	BVC - Bar Vocational Course
+0000050019074	BVC - Bar Vocational Course
+0611554580500	BVC - Bar Vocational Course
+0000051188720	BVC - Bar Vocational Course
+0611551204205	BVC - Bar Vocational Course
+0000051668576	BVMS Bachelor of Veterinary Medicine and Surgery
+0000050851810	BVSc Veterinary Science
+0000050094347	BVSc Veterinary Science
+0000074791338	BVSc Veterinary Science
+0000030396948	Cancer Epidemiology
+0000040975050	Cardiovascular Science
+0611551204892	Cell Biology
+0000010778106	Cellular Biology and Chemical Engineering
+0000040526782	Ceng in Civil Engineering
+0000031312022	CEng in Engineering
+0000030133479	Certificate in Christian Discipleship
+0411559322244	Certificate in Combined Studies (BA Level 2)
+0011550243438	Certificate in Counselling
+0611559327612	Certificate in Creative Writing
+0611559338847	Certificate in Creative Writing
+0311552916159	Certificate in Financial Accounting
+9511559033968	Certificate in Fine Art
+0311551022158	Certificate in Quantitative Finance
+0211550361149	Certificate in Teaching in Higher Education
+0000050163517	Certificate of Criminal Prosecution
+0000030587133	Certified Financial Analyst
+0000052525537	Ceruantes
+0611551186451	CFA
+0611551203367	CFA
+0000054177446	CFA
+0000050459487	CFA - Chartered Financial Analyst
+0000053758471	CFA (Certified Financial Analysts)
+0611554594013	CFA (Chartered Financial Analyst)
+0611551210491	CFP
+0000052644492	Challenging ideas in mental health
+0000041187069	Changing the alloy composition of metallic glass to make it
+0000056037995	Chartered financial Analyst (CFA)
+0000040248644	Chartership with ICE
+0000040674751	Chartership with ICE
+0611551210011	Chemical Engineering
+0000041194779	Chemistry
+0000050251283	Chemistry
+0000040327972	Chemistry
+0711554736632	Child Psychology
+0000041553736	Chinese Language
+0000050302530	Chinese Language Instruction
+0000050137404	Chinese Language Studies
+0311551002840	CIMA - Chartered Institute of Management Accountants
+0000030292754	CIMA - Chartered Institute of Management Accountants
+0000030666748	CIMA - Chartered Institute of Management Accountants
+0000051107190	CIMA - Chartered Institute of Management Accountants
+0000041599686	CIMA - Chartered Institute of Management Accountants
+0000050071957	CIMA - Chartered Institute of Management Accountants
+0000052108156	CIMA - Chartered Institute of Management Accountants
+0611551205224	CIPD - Chartered Institute of Personel Development
+0000043735213	CIPD - Chartered Institute of Personel Development
+0000040873963	CIPR - Advanced Certificate in Public Relations
+0511551122256	City and Guilds Adult Education
+0611554579582	Civil Engineering
+0000041699698	Civil Enginering
+0000030033722	Classics
+0000040177045	Climate Change
+0000040418731	CMI Diploma in Management
+0000051215691	Coastal Area Engineering
+0000050398083	Commissioning Course
+0000050889145	Composition
+0000050290787	Computer Animation
+0000041457700	Computer Science
+0000051025975	Computer Science
+0000050009156	Computer Software Courses
+0000040393405	Condensed Matter Theory
+0311551002448	Content and Language Integrated Learning
+0711552987342	Conversion Course for EU teachers in Hesse
+0611551212761	CPD in Music Development
+0611559338489	Creative Writing Intermediate
+0511551168704	Curate
+0000040421476	DELE Beginners Spanish
+0000041228111	Dentistry
+0000041184910	Dentistry
+0611554585561	Deutsch Standard Kurs
+0000056852642	Developmental Origins of Health and Disease
+0511558159220	Diabetes
+0111550322811	Diploma in Antenatal Education
+0311559299271	Diploma in Archaeology (Flexible Route)
+0000040666206	Diploma in Architecture
+0411551113693	Diploma in Cognitive Behavioural Therapy
+0511559312437	Diploma in Combined Studies
+9911550204259	Diploma in Counselling
+0611559334517	Diploma in Creative Writing
+0000051514642	Diploma in Financial Economics
+0611559337057	Diploma in Fine Art
+0511559326722	Diploma in Fine Art
+9811559292304	Diploma in Fine Art
+0511559323949	Diploma in Fine Art
+0611554577393	Diploma in Journalism
+0411558150714	Diploma in Midwifery Studies
+0411558152198	Diploma in Nursing
+0511558156056	Diploma in Probation Studies and BA Hons Criminal Justice
+0611554606763	Diploma in Project Management
+0000052447549	Diploma in Psychiatric Nursing
+0000031584722	Diploma in Residential Letting and management
+0000054245789	Diploma in Singapore Law
+0000040491871	Diploma of Architecture
+0000044117696	Diploma Singapore Law
+0411558150688	Dissertation for BSc in Midwifery
+0611554591447	DM Ophthalmology
+0000052112175	Dphil Physics
+0000050175196	Drama
+9711559155242	Early English Studies
+0000052604223	"EC Law, Research Methods, European Politics"
+0411551116225	Econometrics
+0511551182489	EDD Education
+0000030041716	Electronic Engineering
+0000040852706	Energy Harvesting/Scavenging From Ambient Vibrations
+0000041197655	Engineering Chartership
+0511551170534	English
+0000040714471	Environment and Poverty Funding
+0000051226206	Environmental Biology
+0000041779185	Environmental Science
+0511551161026	Epidemiology
+0511551173926	Epidemiology of Hepatatis C
+0000040200240	Estate Management
+0411558151456	Evidence based practice
+0000020558620	Examination in Professional Practice in Architecture: RIBA I
+0411551114379	Extensive Course of French
+0611551216172	FE1 Exams - Solicitor training
+0000040224268	Fellowship of Institute of Actuaries
+0000042982700	Film Journalism
+0000053222097	Finance
+0000040242033	Flexible Programme of Study - Piano Performance
+0000051098865	Food and Fresh Produce Management
+0611551214499	"Foreign Policy, Human Security"
+0000031333577	Foundation Diploma in Art and Design
+0000030090781	Foundation programme for newly qualified doctors
+0000030267006	Foundation Year One Medical Training
+0511558159507	Foundations in Paediatric intensive care
+0000040900890	Francophone Literature
+0000040360382	French and Psychology
+0611554500243	Frontier Project Impact
+0000050003800	Full Pathway for Early Years Professional Status
+0411551099881	GCSE Spanish
+0000050264526	Gdip Economics (Conversion)
+0000052451236	GDL - Graduate Diploma in Law
+0000040889942	GDL - Graduate Diploma in Law
+0000040713784	GDL - Graduate Diploma in Law
+0000041845022	GDL - Graduate Diploma in Law
+0000050698385	GDL - Graduate Diploma in Law
+0000050944950	GDL - Graduate Diploma in Law
+0000050611823	GDL - Graduate Diploma in Law
+0000050132225	GDL - Graduate Diploma in Law
+0000040904717	GDL - Graduate Diploma in Law
+0000040095370	GDL - Graduate Diploma in Law
+0311551046408	GDL - Graduate Diploma in Law
+0000050300075	GDL - Graduate Diploma in Law
+0000032870134	GDL - Graduate Diploma in Law
+0000030160420	GDL - Graduate Diploma in Law
+0000040123695	GDL - Graduate Diploma in Law
+0000030142437	GDL - Graduate Diploma in Law
+0000040095989	GDL - Graduate Diploma in Law
+0000040219471	GDL - Graduate Diploma in Law
+0000040237062	GDL - Graduate Diploma in Law
+0000030755570	GDL - Graduate Diploma in Law
+0000050714733	GDL - Graduate Diploma in Law
+0000050164684	GDL - Graduate Diploma in Law
+0000050861989	GDL - Graduate Diploma in Law
+0000030762752	GDL - Graduate Diploma in Law
+0000020454403	GDL - Graduate Diploma in Law
+0000050783511	GDL - Graduate Diploma in Law
+0000051086851	GDL - Graduate Diploma in Law
+0000040666479	GDL - Graduate Diploma in Law
+0000051666789	GDL - Graduate Diploma in Law
+0000040593555	GDL - Graduate Diploma in Law
+0000032185083	GDL - Graduate Diploma in Law
+0000041136333	GDL - Graduate Diploma in Law
+0000050139372	GDL - Graduate Diploma in Law
+0000050735369	GDL - Graduate Diploma in Law
+0000050244229	GDL - Graduate Diploma in Law
+0000040459527	GDL - Graduate Diploma in Law
+0000020174349	GDL - Graduate Diploma in Law
+0000051120373	GDL - Graduate Diploma in Law
+0000052553035	GDL - Graduate Diploma in Law
+0000051488365	GDL - Graduate Diploma in Law
+0000050672709	GDL - Graduate Diploma in Law
+0000050565216	GDL - Graduate Diploma in Law
+0000050025983	GDL - Graduate Diploma in Law
+0000050142291	GDL - Graduate Diploma in Law
+0000051039318	GDL - Graduate Diploma in Law
+0000053371052	GDL - Graduate Diploma in Law
+0000050301186	GDL - Graduate Diploma in Law
+0000050801468	GDL - Graduate Diploma in Law
+0000050178474	GDL - Graduate Diploma in Law
+0000050936896	GDL - Graduate Diploma in Law
+0000050379244	GDL - Graduate Diploma in Law
+0000050806625	GDL - Graduate Diploma in Law
+0000050505784	GDL - Graduate Diploma in Law
+0000040520344	GDL - Graduate Diploma in Law
+0000050814608	GDL - Graduate Diploma in Law
+0000050210648	GDL - Graduate Diploma in Law
+0000051106300	GDL - Graduate Diploma in Law
+0000050787645	GDL - Graduate Diploma in Law
+0000050200166	GDL - Graduate Diploma in Law
+0000050133244	GDL - Graduate Diploma in Law
+0000050227990	GDL - Graduate Diploma in Law
+0000050814815	GDL - Graduate Diploma in Law
+0000041668580	GDL - Graduate Diploma in Law
+0000050266335	GDL - Graduate Diploma in Law
+0000050898930	GDL - Graduate Diploma in Law
+0000040604688	GDL - Graduate Diploma in Law
+0000050229374	GDL - Graduate Diploma in Law
+0000051038643	GDL - Graduate Diploma in Law
+0000050408832	GDL - Graduate Diploma in Law
+0000041528044	GDL - Graduate Diploma in Law
+0000040454108	GDL - Graduate Diploma in Law
+0000050237874	GDL - Graduate Diploma in Law
+0000051742599	GDL - Graduate Diploma in Law
+0000050309296	GDL - Graduate Diploma in Law
+0000050051018	GDL - Graduate Diploma in Law
+0000051679125	GDL - Graduate Diploma in Law
+0000052245783	GDL - Graduate Diploma in Law
+0000050795226	GDL - Graduate Diploma in Law
+0000040684819	GDL - Graduate Diploma in Law
+0000052264577	GDL - Graduate Diploma in Law
+0000050004070	GDL - Graduate Diploma in Law
+0000050248386	GDL - Graduate Diploma in Law
+0000050250987	GDL - Graduate Diploma in Law
+0000050701881	GDL - Graduate Diploma in Law
+0000050944916	GDL - Graduate Diploma in Law
+0000050098688	GDL - Graduate Diploma in Law
+0000050799028	GDL - Graduate Diploma in Law
+0000040985727	GDL - Graduate Diploma in Law
+0000051376419	GDL - Graduate Diploma in Law
+0000040001429	GDL - Graduate Diploma in Law
+0000050189171	GDL - Graduate Diploma in Law
+0000040453503	GDL - Graduate Diploma in Law
+0000040270195	GDL - Graduate Diploma in Law
+0000040622187	GDL - Graduate Diploma in Law
+0000050671447	GDL - Graduate Diploma in Law
+0000051149123	GDL - Graduate Diploma in Law
+0000051981028	GDL - Graduate Diploma in Law
+0000050661208	GDL - Graduate Diploma in Law
+0000050816635	GDL - Graduate Diploma in Law
+0000050502370	GDL - Graduate Diploma in Law
+0311551037222	GDL - Graduate Diploma in Law
+0611551203839	Gender Studies
+	General Nursing Practice
+0000050511626	Genetics
+0000051608882	Geographical Information Systems
+0000051580599	Geography
+0000042898179	GraDip Architecture
+0000040879736	Graduate Diploma in Architecture
+0000040906939	Graduate Diploma in Architecture
+0000050159358	Graduate Entry Medicine
+0000050236671	Graduate Management Programme
+0000051907545	Graduate Programme - Chartership Civil Engineering
+0000040147163	Graduate Surveying
+0000050783809	Graduate Teacher Programme
+0000040053381	Graduate Teacher Programme
+0000041169766	Graduate Teacher Programme
+0000050507799	Graduate Teacher Programme
+0000051797108	Graduate Teacher Programme
+0000050633238	Graduate Teacher Programme - English
+0000050680704	Graduate Training Consulting
+0000051821115	Graphic Design
+0311558562323	Head & Neck
+0000010034323	Health Economics
+0511558600641	Health Protection
+0000050852301	Higher Diploma in Financial Services
+0411551111301	Higher Medical Training
+0000050237287	History
+0000041256756	History of Art
+0611554585538	HR Management
+0000050190007	"Human Rights, Law and Political Science"
+0000031821683	ICAEW ACA qualification
+0000041996793	ICE - Institution of Civil Engineers
+0000041474305	ICE - Institution of Civil Engineers
+0000040511836	IDM Diploma in Integrated Marketing Communications
+0611551222014	ILM First Line Management Award and TEFL Course
+0000063687651	IMBA for Technology Management
+0000050160653	Immunology of Infectious Diseases
+0000042081036	Industrial Microwave Processing
+0611554695619	Information Technology
+0000050194429	Institute of Actuaries Examinations - with ActEd
+0000042240253	Institute of Civil Engineers Training Partnership
+0211559286632	Institutional Credit in A History of Archaeological Thought
+0000065933691	Intellectual Property Management
+0000040136927	Intermediate Mandarin
+0000030691821	International Journalism
+0000051965464	International Management
+0000051501505	International Management for China
+0000031616436	International Relations
+0000042265038	International Relations
+0000040151056	International Relations
+0000051586937	International Relations
+0611554599281	International Security and Asian Studies
+0311551044127	Investigating Enterpreneuaral Opportunities
+0000051456881	IPA Introduction to Advertising
+0000050417306	iTQ Level 1  - City and Guilds
+0511558156698	IV Drugs Diabetic Management
+0000050097511	Japanese Beginners Language Course
+0000050395381	Journalism
+0000041425134	Journalism
+0511551123242	Kaplan Medical Course
+0611554602950	Language Learner Autonomy
+0000042295426	Law
+0611551209200	Law
+0000050141618	Law
+0611551215692	Law Plus
+0000050853515	Legal Practice Course
+0000051840002	Level 3 - Fastrack  'City & Guilds'
+0000050752643	Life Coaching Diploma
+0000054665493	LLB Hons Law
+0511551114756	LLM Degree in Health and Safety and Environmental Law
+0000052513213	LLM Environmental Law
+0000052970793	LLM Environmental Law
+0000050890060	LLM Environmental Law
+0000050079551	LLM European Law
+0000050274916	LLM European Union Business Law
+0000051368595	LLM Human Rights Law
+0000050255122	LLM Human Rights Law
+0511551155438	LLM Information & Media Law
+0000040143925	LLM International Business Law
+0000050355558	LLM International Commercial Law
+0000050572878	LLM International Criminal Justice and Armed Conflict
+0000050268823	LLM International Financial Law
+0000052964172	LLM International Human Rights Law
+0000040126423	LLM Public International Law
+0000031688640	LLM Public International Law
+0000050276220	Lloyds of London Market Introductory Test
+0000040105934	London Business School ExxonMobil Graduate Development Progr
+0511551143619	LPC - Legal Practice Course
+0000054792191	LPC - Legal Practice Course
+0611551186761	LPC - Legal Practice Course
+0000040096263	LPC - Legal Practice Course
+0000040345529	LPC - Legal Practice Course
+0000051898139	LPC - Legal Practice Course
+0000042706922	LPC - Legal Practice Course
+0000050762055	LPC - Legal Practice Course
+0000050702475	LPC - Legal Practice Course
+0000040219529	LPC - Legal Practice Course
+0000050187661	LPC - Legal Practice Course
+0000050189713	LPC - Legal Practice Course
+0000050787483	LPC - Legal Practice Course
+0000050894426	LPC - Legal Practice Course
+0000041436299	LPC - Legal Practice Course
+0000030255346	LPC - Legal Practice Course
+0611551198306	LPC - Legal Practice Course
+0000051113283	LPC - Legal Practice Course
+0000030512814	LPC - Legal Practice Course
+0000040133579	LPC - Legal Practice Course
+0000040350958	LPC - Legal Practice Course
+0000050036071	LPC - Legal Practice Course
+0000050264962	LPC - Legal Practice Course
+0611551207435	LPC - Legal Practice Course
+0000040486464	LPC - Legal Practice Course
+0000050192517	LPC - Legal Practice Course
+0000040297893	LPC - Legal Practice Course
+0611551220744	LPC - Legal Practice Course
+0000051476030	LPC - Legal Practice Course
+0611551208719	LPC - Legal Practice Course
+0000040307583	LPC - Legal Practice Course
+0000052617968	LPC - Legal Practice Course
+0000050112629	LPC - Legal Practice Course
+0000050223615	LPC - Legal Practice Course
+0000053321426	LPC - Legal Practice Course
+0000050174339	LPC - Legal Practice Course
+0000051152972	LPC - Legal Practice Course
+0000051779333	LPC - Legal Practice Course
+0000050034985	LPC - Legal Practice Course
+0000040388995	LPC - Legal Practice Course
+0611551190171	LPC - Legal Practice Course
+0000050041558	LPC - Legal Practice Course
+0611551217087	LPC - Legal Practice Course
+0000040383510	LPC - Legal Practice Course
+0000050316652	LPC - Legal Practice Course
+0000040283830	LPC - Legal Practice Course
+0000040694265	LPC - Legal Practice Course
+0000050238631	LPC - Legal Practice Course
+0000050200616	LPC - Legal Practice Course
+0000050390283	LPC - Legal Practice Course
+0611551193714	LPC - Legal Practice Course
+0000051124197	LPC - Legal Practice Course
+0000040118853	LPC - Legal Practice Course
+0000050216145	LPC - Legal Practice Course
+0000040025713	LPC - Legal Practice Course
+0000040516299	LPC - Legal Practice Course
+0000040694069	LPC - Legal Practice Course
+0000040017305	LPC - Legal Practice Course
+0000040662312	LPC - Legal Practice Course
+0000050219087	LPC - Legal Practice Course
+0000040615374	LPC - Legal Practice Course
+0000051048837	LPC - Legal Practice Course
+0000040361677	LPC - Legal Practice Course
+0000050344459	LPC - Legal Practice Course
+0000050041329	LPC - Legal Practice Course
+0000040057482	LPC - Legal Practice Course
+0000050539712	LPC - Legal Practice Course
+0000040146270	MA (by Research) German
+0000050837674	MA American Studies
+0000050012145	MA American Studies
+0000051548599	MA American Studies
+0000050039485	MA Ancient History
+0000051386555	MA Ancient History
+0000052489376	MA Anthropology
+0711552007466	MA Applied Professional Studies in Education
+0000050392874	MA Art History
+0000052809208	MA Art History
+0000051308904	MA Art History
+0000050243222	MA Art History
+0000050158683	MA Art History
+0000052788246	MA Art History
+0000053356576	MA Art History
+0000050134311	MA Biblical Interpretation and Theology
+0000041102877	MA Chinese Studies
+0000050703863	MA Classical Studies
+0000041139220	MA Classical Studies
+0000050284982	MA Commercial Law
+0000050161719	MA Conflict Security and Development
+0000051048860	MA Contemporary Chinese Studies
+0000051032928	MA Corporate Strategy and Governance
+0000050465916	MA Corporate Strategy and Governance
+0000050798515	MA Corporate Strategy and Governance
+0000050010406	MA Corporate Strategy and Governance
+0000052761032	MA Corporate Strategy and Governance
+0000050683635	MA Corporate Strategy and Governance
+0000050221828	MA Corporate Strategy and Governance
+0611551223631	MA Counselling Studies
+0000040361448	MA Creative Writing
+0000040116859	MA Creative Writing
+0000056038497	MA Critical Theory and Cultural Studies
+0000053758345	MA Cultural Heritage Management
+0000050267011	MA Cultural Heritage Management
+0000051283667	MA Diplomacy
+0000040294984	MA Diplomacy
+0000040667926	MA Diplomacy and International Relations
+0000051395498	MA Economics
+0000050936461	MA Economics
+0711552989210	MA Education
+0711552992852	MA Education
+0711552993619	MA Education
+0711552002357	MA Education
+0711552987423	MA Education
+0711552996115	MA Education
+0711552986552	MA Education
+0711552004236	MA Education
+0611551186598	MA Education
+0711552996724	MA Education
+0000050279047	MA Education Leadership
+0511551163259	MA Educational Leadership
+0511552949014	MA Educational Research Methods
+0000050995712	MA English
+0211550325901	MA English & French
+0611554579548	MA English Language Teacher Development
+0000040322863	MA English Literature
+0000050728659	MA English Literature
+0000041763036	MA European Business
+0000050022720	MA European History
+0000040427940	MA European Integration
+0000040068787	"MA European Politics, Business and Law"
+0000051726957	MA European Real Estate
+0000040112471	MA Film and Television Management and Policy
+0000053914479	MA Finance & Investment
+0000050987706	MA Finance and Investment
+0000051167703	MA Finance and Investment
+0000054667534	MA Finance and Investment
+0611551187539	MA Finance and Investment
+0000041055643	"MA Global Citizenship, Identities and Human Rights"
+0000053321460	"MA Global Citizenship, Identities and Human Rights"
+0000050798102	MA Heritage Studies
+0211550324959	MA Higher Education
+0611552979513	MA Higher Education
+0611552979281	MA Higher Education
+0000052006999	MA History
+0000050425091	MA History
+0000050590078	MA History
+0000051134299	MA History (Research)
+0000050900624	MA History (Research)
+0000040610634	MA History (Research)
+0000050879571	MA History (Research)
+0000050066388	MA History (taught)
+0000051269627	MA History and Culture of Fashion
+0000055155425	MA History of Design
+0000050396045	MA Hollywood Studies
+0000051470809	MA Hollywood Studies
+0000040647652	MA Hollywood Studies
+0411551073401	MA Humanities
+0411551114737	"MA in Education, Leadership and Management"
+0000050202997	MA in English and American Studies
+0000050755529	MA Insurance Studies
+0000050852585	MA Intelligent International Security
+0000050264711	MA international Conflict Studies
+0000045463976	MA International Relations
+0000050320110	MA International Relations
+0000040275204	MA International Relations
+0000054774164	MA International Relations
+0000052494864	MA International Relations
+0000040874292	MA International Relations
+0000050297683	MA International Relations
+0000051942328	MA International Security and Terrorism
+0000042471798	MA International Security and Terrorism
+0000052267763	MA International Studies
+0000053174844	MA International Studies and Diplomacy
+0000040755441	MA Intrenational Relations with Diplomacy
+0000040140256	MA IP Law
+0000031451158	MA Journalism
+0000052457320	MA Legal and Political Theory
+0000050665273	MA Management
+0000042343060	MA Management
+0000051853493	MA Management
+0000052420438	MA Marketing
+0000051880776	MA Medieval Archaeology
+0000050235711	MA Metaphysics
+0000052366376	MA Middle Eastern Studies
+0411552914495	MA Migration and Transnationalism
+0000041814866	MA Modern Languages and Critical Theory
+0000050764266	MA Museum and Artefact studies
+0000052247488	MA Museum Studies
+0000052595611	MA Music
+0000051045892	MA Newspaper Journalism
+0000040366007	MA Newspaper Journalism
+0000050159439	MA Norse and Viking Studies
+0000050260067	MA Old English Studies
+0000050926381	MA Parliamentary Studies
+0000050162598	"MA Performance, Screen and Visual Cultures"
+0000051389268	MA Philosophical Theology
+0000040058641	MA Philosophical Theology
+0000051690810	MA Philosophy
+0000052742271	MA Philosophy
+0000051905035	MA Philosophy
+0000052383856	MA Photography
+0000040079635	MA Planning and Sustainability
+0000050124736	MA Post-Conflict Cultures
+0000050285886	MA Property
+0000031396273	MA Property and Investment Management
+0000042301495	MA Property Valuation and Law
+0000050789096	MA Public Health
+0000042830319	MA Publishing
+0000050457689	MA Radio Journalism
+0511552973433	MA Reflective Practise
+0000050214554	MA Religion in Contemporary Society
+0000050551909	MA Religious Conflict
+0000053130002	MA Research Biomedical Science
+0000056893416	MA Research Methods (Sociology)
+0000051262330	MA Research Methods (Sociology)
+0611551184929	MA Research Methods in Higher Education
+0000053175623	MA Risk Management
+0000050521278	MA Risk Management
+0000050938661	MA Risk Management
+0000052801095	MA Risk Management
+0000051809951	MA Roman Archaeology
+0000030192096	MA Slavonic Studies - Russian and Soviet Theatre
+0000051345253	MA Social and Global Justice
+0000042316558	MA Socio-legal and Criminological Research
+0611551207778	MA Socio-legal and Criminological Research
+0000040276186	MA Sports Broadcast Journalism
+0711552001936	MA Teaching
+0211550873055	MA Teaching and Learning
+0000040381505	MA Theology - Miraculous Healings of Jesus
+0000050490882	MA Theology and Religious Studies
+0000051522809	MA Theology and Religious Studies
+0000051694874	MA Theology and Religious Studies
+0000041157578	MA Translation
+0000040923165	MA Translation and Interpreting
+0000050377697	Ma Twentieth Century Literature
+0000051979405	MA Twentieth Century Literature and its Contexts
+0000050356326	MA Viking and Anglo-Saxon Studies
+0000041405088	MA Visual Culture
+0000031234517	MA Writing
+0000040931067	MA/PGDip in Journalism
+0411551062575	Management
+0000041747531	Mandarin/ CPA
+0000041049343	Manufacturing Engineering
+0000020212054	MArch ARB Part III
+0000040322483	MArch Architecture
+0000020294728	MArch Architecture
+0000020286435	MArch Architecture
+0000020510651	MArch Architecture conversion
+0000020209353	MArch Conversion
+0611551225967	MArch Conversion
+0000010969748	MArch Conversion
+0000010224865	MArch Conversion in Architecture
+0000020045821	MArch Conversion Professional Practice
+0611551225853	MArch in Professional Practice
+0000020947259	MArch Part III Architecture
+0000021083239	MArch Part III Professional Practice
+0000021726853	MArch Part III RIBA
+0000020739654	MArch RIBA Part III
+0000023040010	MArch RIBA Part III
+0000020278474	MArch RIBA Part III
+0000040491619	Marketing
+0000051161147	Master in Science Education
+0000052547757	Master Nutrition and Dietetics
+0000040027898	Master of Architecture
+0000051722616	Master of Research
+0000052945034	Masters  European Business
+0611552983473	Masters by Research in Toxicology
+0000040108212	Masters in Law
+0000051414674	Masters in Quantity Surveying
+0411551109788	Masters in Research
+0000041388862	Materials Engineering and Materials Design
+0000042033242	Materials Science
+0000053862402	Mathematics Equivalency
+0611554595294	Matrix Programme
+0000054005943	MBA
+0411551109940	MBA
+9811559198693	MBA Business Administration
+0000050241860	MBA Business Administration and Finance
+0000042033688	"MBA in Hospitality, Tourism and Services Industry: Marketing"
+0000042523204	MBA Management
+0000033614911	MBA or EMBA
+0000050240036	MBBS Medicine
+0411551093155	MBChB Graduate Entry Medicine
+0411551059036	MBChB Graduate Entry Medicine
+0000040322896	MBChB Graduate Entry Medicine
+0000050414925	MBChB Graduate Entry Medicine
+0000050000119	MBChB in Medicine
+0000052664375	Mechanical Engineering
+0000041362091	Mechanical Engineering (Composites)
+0000041753705	Med International development and education
+0000050670325	Media
+0000052048830	Medical Physics
+0000041175228	Medical Science
+0611551188938	Medicine
+0611554591447	Medicine
+0000020350909	Medicine
+0000042038797	Medicine
+0000050512254	Medicine
+0000050038754	Medicine
+0611554602765	Medicine (4-year MD program)
+0611554600934	Medicine MD
+0000040559285	MEng Mechanical Engineering
+0411558145477	Mentorship
+0000053697826	MFA Master of Fine Arts
+0000050673142	Microbiology
+0000041907135	MICS Institute of Chartered Shipbroker Qualification
+0511558157732	Midwifery
+0511558157318	Midwifery
+0611558171399	Midwifery
+0511558158751	Midwifery
+	Midwifery - Research and Ethics
+0611551218866	Milk Thistle effectiveness against Alcoholic Liver Disease
+0000051525877	MMedSci in Assisted Reproductive Technologies
+0611552983200	MMedSci Medical Education
+0000040044448	MMus in Advanced Musical studies
+0000051721240	MMus in Musicology
+0000023001549	MNutr Nutrition (direct entry to Year 3)
+0000051505743	Molecular biology
+0000050686359	Molecular Cell Biology
+0000050550153	Montessori Diploma
+0000050073032	MPA in Public and Economic Policy
+0000052100057	MPA Master of Public Administration
+0000054748316	MPH Public Health (International Health)
+0000040956820	MPharmR - Registered pharmacist
+0611551197354	MPhil Archaeology
+0611551217375	MPhil Business and Management
+0000034044683	MPhil Business and Management
+0611551214673	MPhil Civil Engineering
+0611551218039	MPhil Economics
+0611551204940	MPhil Economics
+0611551221659	MPhil Economics
+0611551215119	MPhil Economics
+0611551185269	MPhil English
+0000020088574	MPhil English
+0611551209853	MPhil English
+0611551200333	MPhil English
+0000030095557	MPhil Geography
+0611551191569	Mphil in Law
+0511551174048	MPhil in Veterinary education
+0000044421353	MPhil Mechanical Engineering
+0000051608871	MPhil Mechanical Engineering
+0000054202955	MPhil Mechanical Engineering
+0000030530597	MPhil Music
+0411552938044	Mphil Nordic Viking and Medieval Culture
+0000053952792	MPhil Obstetrics and Gynaecology
+0000051025894	MPhil Philosophy
+0611551192382	MPhil Politics
+0611551190779	MPhil Theology
+0611551193655	MPhil Theology
+0000031135890	MPhil Theology
+0511551180094	MPhil Theology
+0000031883094	MPhil/PhD  Caribbean Studies
+0000050756962	MRes American and Canadian Studies
+0000040783167	MRes Biosciences
+0000054969782	MRes Developmental Biology
+0000050863983	MRes in Biodiversity and Conservation
+0611554577326	MRes Politics
+0000050324200	MSc  International Political Economy and PhD in Government
+0000053057075	MSc Advanced Chemical Engineering
+0000050162543	MSc Advanced Computing
+0000051243362	MSc Advanced Materials
+0000050512966	MSc Advanced Materials
+0000054848166	MSc Advanced Materials
+0000051018896	MSc Air Pollution Control and Management
+0000050384802	MSc Applied Biomolecular Technology
+0000051535980	MSc Applied Economics
+0000050672075	MSc Applied Economics
+0711554632057	MSc Applied Economics
+0000050528440	MSc Applied Economics and Financial Economics
+0000051356938	MSc Applied Meteorology and Climatology
+0000050740123	MSc Audiology
+0711554734524	MSc Behavioural Economics
+0000052147063	Msc Bioarchaeology
+0000050476794	MSc Bioarchaeology
+0000051929101	MSc Biological Photography and Imaging
+0000051335254	MSc Biological Photography and Imaging
+0000050747579	MSc Biological Photography and Imaging
+0000050000795	MSc Biomedical Science
+0000051459505	MSc Cancer Immunotherapy
+0000051738592	MSc Chemical Biology
+0611554464831	MSc Chemical Engineering
+0000050968288	MSc Chemical Engineering
+0000052149872	MSc Civil Engineering
+0000063695829	MSc Civil Engineering
+0000052262551	MSc Civil Engineering: Management
+0000054671221	MSc Civil Engineering: Pavement Engineering
+0000053986889	MSc Civil Engineering: Structural Engineering
+0000053661436	MSc Civil Engineering: Structural Engineering
+0000040291732	MSc Clinical Neuroscience
+0000050157435	MSc Computational Finance
+0000041616503	MSc Computational Finance
+0000063664526	MSc Computational Finance
+0000063643462	MSc Computational Finance
+0000063693663	MSc Computational Finance
+0000063682302	MSc Computational Finance
+0000050152898	MSc Computational Finance
+0000050771747	MSc Computer Animation and Visual Effects
+0000051657879	MSc Computer Science
+0000040835352	MSc Computer Science and Entrepreneurship
+0000052752351	MSc Construction Management
+0000051166809	MSc Construction Management and Economics
+0000052000573	MSc Criminal Justice Policy
+0411552920304	MSc Critically Ill Patient
+0000051017947	MSc Dietetic
+0000051044471	MSc Economic Development and Policy Analysis
+0000040042824	MSc Economics
+0711554754430	MSc Economics and Development Economics
+0000052776771	MSc Economics and Finance
+0000050088003	"MSc Economy, Space and Society"
+0000063679760	MSc Electronic and Ultrasonic Instrumentation
+0711551228909	MSc Electronic Communications and Computer Engineering
+0000041587513	MSc Energy Conversion and Mangement
+0000063683583	MSc Entrepreneurship
+0000052226265	MSc Entrepreneurship
+0000041776793	MSc Entrepreneurship
+0000051795654	MSc Entrepreneurship
+0000025022894	MSc Entrepreneurship
+0000050805961	MSc Entrepreneurship
+0000051135090	MSc Entrepreneurship
+0000050865806	MSc Envinromental Engineering
+0000042539869	MSc Environmental Design and Engineering
+0000040051251	MSc Environmental Design and Engineering
+0000040745730	MSc Environmental Engineering
+0000032837953	MSc Environmental Management
+0000050598166	MSc Environmental Management
+0000051154563	MSc Environmental Monitoring and analysis
+0000053908009	MSc Environmental Technology
+0000020069470	MSc Epidemology
+0000031610135	MSc European Studies: Ideas and Identities
+0000051294711	MSc Finance
+0000050414350	MSc Finance
+0000053708292	MSc Finance
+0000051195566	Msc Food Technology
+0511551165046	MSc Gas Turbine Control
+0000050246625	MSc Geographical Information Science
+0000040221784	MSc Geographical Information Science
+0000050112940	MSc Global Politics
+0411551109858	MSc Health and Social Care Leadership
+0000050433502	MSc Health and Society: Social Epidemiology
+0000040862336	MSc Health Care Ethics and Law
+0000040065708	MSc Health Economics
+0000052181850	MSc Health Promotion
+0000054345953	MSc Health Psychology
+0000053197809	MSc Health Psychology
+0000051492797	MSc Health Psychology
+0000050780211	MSc Health Psychology
+0000050326857	MSc Human Molecular Genetics
+0000050230026	MSc Human-Centred Computer Systems
+0000051224936	MSc Immunology and Allergy
+0000050000441	MSc Immunology and Allergy
+0000040811976	MSc in Rehabilitation Psychology
+0000050202366	MSc Information Technology
+0411551101438	MSc Information Technology
+0411551106064	MSc Innovation and Design for Sustainability
+0000052761456	MSc Innovation and Technology Management
+0000050848382	MSc Interactive Systems Design
+0000040278548	MSc International Business
+0000050435838	MSc International Business
+0000050164776	MSc International Business
+0000050230129	MSc International Business
+0000031761965	MSc International Business
+0000050215355	MSc International Business
+0000041091685	MSc International Business
+0000040393472	MSc International Business
+0000051170138	MSc International Business
+0000041847886	MSc International Business
+0000041697203	MSc International Business
+0000052131176	MSc International Business
+0000050048605	MSc International Business
+0000041908648	MSc International Business
+0000050933552	MSc International Business
+0000050237977	MSc International Business
+0000050701766	MSc International Business
+0000051128438	MSc International Business
+0000041795587	MSc International Health Management and Development
+0000041809839	MSc International Hotel Management
+0000052798614	Msc International Management for China
+0000040291640	MSc International Public Policy
+0000040792147	MSc Latin American Studies
+0000040759070	MSc Management
+0000030108178	MSc Management
+0000050091450	MSc Management
+0000050825637	MSc Management
+0000041917042	MSc Management
+0000040124223	MSc Management
+0000050084094	MSc Management and International Business
+0000051571508	MSc Management and Marketing
+0000050848968	MSc Management in Contemporary China
+0000040237051	MSc Management of Information Technology
+0000041342325	MSc Management of Information Technology
+0000041232727	MSc Management of Information Technology
+0000051820749	MSc Management of Information Technology
+0000050446007	Msc Management Psychology
+0000050130221	MSc Management Psychology
+0000020445179	MSc Management Psychology
+0000051675622	MSc Management Psychology
+0611551193301	MSc Management Studies
+0000050761531	"MSc Management, Technology and Economics"
+0000040644307	MSc Manufacturing Engineering and Management
+0000051957827	MSc Manufacturing Engineering and Management
+0000052165263	MSc Manufacturing Engineering and Management
+0000051496865	MSc Marketing
+0000050315987	MSc Mathematical Finance
+0411552934633	MSc Mathematical Logic
+0000050565489	MSc Mathematical Medicine and Biology
+0000052742673	MSc Mathematics
+0000050914218	MSc Mechanical Engineering
+0000041109706	MSc Mechanical Engineering
+0000041225785	MSc Mechanical Engineering
+0000040411628	MSc Medical and Radiation Physics
+0000040127040	MSc Medical Physics
+0000040905312	MSc Medical Physics
+0000050319262	MSc Mental Health Studies
+0000063687271	MSc Metal and Energy finance
+0311558139413	MSc Midwifery
+0000050237564	MSc Modern Chinese Studies
+0000050627570	MSc Molecular Diagnostics
+0511552959334	MSc Molecular Diagnostics
+0000050170560	MSc Molecular Medical Microbiology
+0000052749166	MSc Nanoscience
+0000041094697	MSc Nanoscience
+0000050385876	MSc Nanoscience
+0000050272174	MSc Nanoscience
+0000040323882	MSc Nanoscience
+0000044383132	MSc Nanoscience
+0000044431156	MSc Neuroscience
+0411558575906	MSc Non-Medical Prescribing
+0000051078742	MSc Numerical Techniques for Finance
+0511552955325	MSc Occupational Health Psychology
+0000051230889	MSc Occupational Psychology
+0000051738581	MSc Occupational Psychology
+0000041093564	MSc Occupational Psychology
+0000050644119	MSc Occupational Psychology
+0000052527140	MSc Occupational Psychology
+0000050230820	MSc Occupational Psychology
+0000051363453	MSc Occupational Psychology
+0611551194216	MSc Oncology
+0311552916056	MSc Oncology
+0000050118654	MSc Oncology
+0000051013857	MSc Oncology
+0000050386873	MSc Oncology
+0000051470393	MSc Operations Management
+0000030139437	MSc Orthopedic Surgery
+0000040304858	MSc Petroleum Engineering
+0000040885287	MSc Physics
+0000050580378	MSc Plant Genetic Manipulation
+0000051521710	MSc Plant Genetic Manipulation
+0000063687363	MSc Power Electronics and Drives
+0000041573930	MSc Property Appraisal and Management
+0711554738566	MSc Psychological Research Methods
+0000051263326	MSc Psychological Research Methods
+0711552005624	MSc Psychology
+0311552915082	MSc Public Health
+0000056802706	MSc Pure Mathematics
+0000040686743	MSc Radiation Physics with Medical Applications
+0000040709396	MSc Real Estate
+0000040219150	MSc Real Estate
+0000041401301	MSc Real Estate
+0000051444648	MSc Real Estate Economics and Finance
+0000051558635	MSc Real Estate Management
+0000051040727	MSc Rehabilitation Psychology
+0000052159505	MSc Rehabilitation Psychology
+0000052740750	MSc Rehabilitation Psychology
+0000053257066	MSc Risk Management and Financial Engineering
+0000040069795	MSc Science Communication
+0000050046014	MSc Scientific Computation with Computational Fluid Dynamics
+0000043504284	MSc Scientific Computation with Mathematical Medicine and Bi
+0000051407621	MSc Statistics
+0000050378177	MSc Statistics and Applied Probability
+0000053519827	MSc Stem Cell Technology
+0000051675688	MSc Supply Chain and Operations Management
+0611554578611	MSc Surveying
+0000050521762	MSc Sustaianable Management of the Water Environment
+0000043369834	Msc Transport
+0000064053745	MSc Wildlife Management and Consevation
+0000050150470	MSt in Greek and Latin Languages and Literature
+0000050865954	Musical Theatre
+0611554601399	Nanostructured Solar Cells
+0000040695273	National Council for the training of Journalists
+0000033119508	NCTJ Fast-track Newspaper Journalism
+0000050679982	NCTJ in Newspaper journalism
+0000051639107	NCTJ Pre Enry Certificate in Journalism
+0000040375272	Networking
+0000051980973	Neurodevelopmental Disability and Behaviouiral Phenotypes
+0000050876178	Neuroscience
+0000040722649	Neuroscience
+0000040945499	Neuroscience
+0611554583268	No Qual (PG) Postgraduate - No Award
+0611554583420	No Qual (PG) Postgraduate - No Award
+0611551217135	Nonlinear Optics
+0611558166672	Not Stated
+0411558154538	Not Stated
+0000051058984	Not Stated
+0000041744286	Not Stated
+0000053244170	Not Stated
+0000050888735	Not Stated
+0000050233108	Not Stated
+0411551083477	Not stated
+0611552998891	Nurse Education
+0311551050704	Nurse Education
+0411558563394	Nurse Prescribing Course
+0211552887863	Nursing
+0000030011340	"Nutrition: Diet, weight-loss and disease-risk"
+0000051437260	NVQ Customer Service and GCSE Maths
+0000020189619	NVQ Level 2 Supporting Teaching and Learning in the Class
+0000052611380	NVQ Level 3 Health and Social care
+0000042003946	NVQ Level 3 in Youth Work
+0000050037562	NVQ Level 4 AAT
+0511551115708	Ofsted
+0511558160134	Openings course in Psychology
+0000041420081	Organic Photovoltaics
+0511558158359	Palliative and End of Life Studies
+0000040209977	Palsma Physics
+0000021715606	Part III Architecture MArch Conversion
+0000992258678	Part III Architecture MArch Conversion
+0000020285852	Part III Architecture with Masters Conversion
+0000020840639	Part III Architecture with Masters Conversion
+0000040023786	Part III Maths (Cambridge)
+0000010081453	Part III Professional Course
+0000020823883	Part III Professional Practice
+0000020212788	Part III Professional Practice and Management
+0000020917724	Part III Professional Practice M(Arch)
+0000030182444	Passport 2 Mandarin Chinese
+0000050665631	Performance
+0000040722661	PG Dip Slovene
+0611551196379	PG Research study on Genetic Epidemiology
+0000041196393	PGA Architecture
+0000040231325	PgC in Management
+0311558139642	PgC In Obstetric Ultrasound
+0000051086792	PGCE
+0000051567361	PGCE
+0000042063799	PGCE
+0000050982136	PGCE
+0000042558985	PGCE
+0000041085455	PGCE
+0000051749772	PGCE
+0000050057607	PGCE
+0000050792362	PGCE
+0000052719398	PGCE
+0000050857395	PGCE
+0000040768142	PGCE
+0000030781580	PGCE
+0000040852810	PGCE
+0000051854308	PGCE
+0000041164783	PGCE
+0000051483946	PGCE
+0000050906659	PGCE
+0000050839092	PGCE
+0000052021084	PGCE
+0000031203203	PGCE
+0000050130313	PGCE
+0511558675465	PGCE
+0000051015105	PGCE
+0000051011211	PGCE
+0000040475170	PGCE - RE
+0000040314617	PGCE 11 - 18 MFL
+0000053515058	PGCE Biology
+0000052004917	PGCE Biology
+0000050408566	PGCE Biology
+0000050389911	PGCE Biology
+0000050046601	PGCE Classics
+0000051038001	PGCE Classics
+0000050402069	PGCE Combined Science
+0031155100852	PGCE Combined Science
+0411552937771	PGCE Combined Science: Biology
+0000050280825	PGCE Combined Science: Physics
+0000050365616	PGCE English
+0000053512116	PGCE English
+0000050186240	PGCE English
+0000050076217	PGCE English 11-18
+0000041094206	PGCE Food Technology
+0000040835444	PGCE General Primary
+0000050568963	PGCE General Primary
+0000050351295	PGCE Geography (Secondary Education)
+0000050456202	PGCE History
+0000040093631	PGCE History
+0000041242232	PGCE History
+0000051193816	PGCE History
+0061155121282	PGCE History
+0000050827893	PGCE History
+0000051140898	PGCE Mathematics
+0000052080922	PGCE Mathematics
+0000050174317	PGCE Mathematics
+0000050862148	PGCE Mathematics
+0000050863307	PGCE Mathematics
+0000050309447	PGCE Mathematics
+0000041358005	PGCE Mathematics
+0000050139589	PGCE Mathematics- Maths Enhancement course
+0000051047896	PGCE Maths
+0000030323047	PGCE MFL Secondary
+0000040303297	PGCE Modern Foreign Languages
+0000041574568	PGCE Modern Foreign Languages
+0000040265021	PGCE Modern Languages
+0000040287207	PGCE Modern Languages
+0000052063970	PGCE Music
+0000050086733	PGCE Music
+0000051014083	PGCE Physics
+	PGCE Practice Teacher in Health and Social Care
+0000050457210	PGCE RE
+0000051961695	PGCE Religious Education
+0000040538028	PGCE Religious Studies
+0000052080461	PGCE Science
+0000050413814	PGCE Science
+0511551117539	PGCE Science
+0000041052033	PGCE Science
+0000050290422	PGCE Science (chemistry)
+0000050812475	PGCE Science (chemistry)
+0000040179854	PGCE SCITT
+0000030720110	PGCE SCITT
+0000041180060	PGCE SCITT
+0000050579198	PGCE SCITT
+0000051767927	PGCE SCITT
+0000041411757	PGCE SCITT
+0000051641546	PGCE SCITT
+0000041558133	PGCE SCITT
+0000041581175	PGCE SCITT
+0000040756644	PGCE SCITT
+0000041698440	PGCE SCITT
+0000040416922	PGCE SCITT
+0000051412762	PGCE SCITT
+0000050221633	PGCE SCITT with Modern Languages (French)
+0611554606486	PGCE Sociology
+0111552070712	PGCert Higher Education
+0000040613233	PGCert Special Needs
+0311551047298	PGCHE
+0000050286850	PGDip Cert Theatre Directing
+0000045981883	PGDip Chemical Engineering
+0000050037528	PGDip Electronic Communications and Computer Engineering
+0000040995357	PGDip Food Production Management
+0000051120638	PgDip in Health and Public Leadership
+0000051155803	PgDip in Healthcare Leadership and Management
+0000051046497	PgDip in Human Resource Management
+0000051314846	PGDip Psychology (Conversion Course)
+0000041274211	PGDip Psychology (Conversion Course)
+0000050235135	PGDip Research Methods (Sociology)
+0000040520322	PGDip Serbian/Croatian
+0000056838244	PGDip Sustainable Building Technology
+0000040364254	Pharmacy
+0000040785378	Pharmacy
+0000040642222	Pharmacy
+0000040179739	Pharmacy
+0000041262528	Pharmacy
+0000040922560	Pharmacy
+0000040475332	Pharmacy
+0000040277297	Pharmacy
+0611551203688	PhD
+0611551189142	PhD
+0611551218327	PHD
+0611554544317	PhD
+0611551191721	PhD
+0411551071452	PhD
+0611551201743	PhD
+0611551214282	PhD
+0611551204504	PhD
+0511551160719	PhD  Electrical and Electronic Engineering
+0311550367333	PhD Adult Education
+0611551199923	PhD American Studies
+0000020351375	PhD American Studies
+0611551222047	PhD American Studies
+0611551189267	PhD Applied Psychology
+0611551192201	PhD Applied Psychology - Post Traumatic Stress
+0000051519186	PhD Biomedical Sciences
+0000040231428	PhD Biomedical Sciences
+0000050577426	PhD Biomedical Sciences
+0611551207907	PhD Cell & Molecular Biology
+0611554578851	PhD Chemical Engineering
+0511551132761	PhD Chemical Engineering
+0000042058821	PhD Chemical Engineering
+0000042235514	PhD Chemical Engineering
+0611551226311	PhD Chemical Engineering
+0000041089556	PhD Chemical Engineering
+0000033932398	PhD Chemical Engineering
+0711551228817	PhD Chemical Engineering
+0000043135848	PhD Chemistry
+0611552974460	PhD Chemistry
+0000040473268	PhD Chemistry
+0000041644067	PhD Chemistry
+0000040932190	PhD Chemistry
+0000041233827	PhD Chemistry
+0000040899343	PhD Chemistry
+0000040142825	PhD Chemistry
+0000040460741	PhD Chemistry
+0000040387699	PhD Chemistry- High Pressure Crystallography
+0000040079772	PhD Civil Engineering
+0611551209668	PhD Civil Engineering
+0611551206597	PhD Civil Engineering
+0000044228143	PhD Civil Engineering
+0611552974611	PhD Civil Engineering
+0611551201905	PhD Civil Engineering
+0000031465616	PhD Classics
+0511551184438	PhD Computer Science
+0000051515959	PhD Computer Science
+0000051289843	PhD Computer Science
+0611551210871	PhD Computer Science
+0511551176983	PhD Corpus Linguistics
+0611551197701	PhD Critical Theory
+0611551221257	PhD Critical Theory
+0611551212093	PhD Critical Theory
+0611554582478	Phd Economics
+0511551177326	PhD Education
+0611551224591	PhD Education
+0000040392925	PhD Electrical and Electronic Engineering
+0000063051047	PhD Electrical and Electronic Engineering
+0000044545914	PhD Electrical and Electronic Engineering
+0000043152580	PhD Electrical and Electronic Engineering
+0611554585099	PhD Electrical and Electronic Engineering
+0611551214455	PhD Electrical and Electronic Engineering
+0611551218589	PhD Electrical and Electronic Engineering
+0611551185007	PhD Electrical and Electronic Engineering
+0000063051069	PhD Electrical and Electronic Engineering
+0000063653793	PhD Electrical and Electronic Engineering
+0611551213643	PhD Electrical and Electronic Engineering
+0411551065130	PhD Electrical and Electronic Engineering
+0611551193585	PhD Electrical and Electronic Engineering
+0611551207147	PhD Electrical and Electronic Engineering
+0611551215669	PhD Electrical and Electronic Engineering
+0000054057573	PhD Electrical and Electronic Engineering
+0611551206737	PhD Engineering Surveying and Space Geodesy
+0611551208535	PhD Environmental Engineering
+0611551214868	PhD Environmental Engineering
+0611554604297	PhD Environmental Engineering
+0611554596202	PhD Environmental Engineering
+0611554578264	PhD Environmental Engineering
+0611551186314	PhD Environmental Engineering
+0000051380368	PhD Environmental Science - Soil Science
+0611554586535	PhD Epidemiology and Public Health
+0611554487656	PhD Epidemiology and Public Health
+0611551213975	PhD Food Sciences
+0611554588665	PhD Food Sciences
+0000051671587	PhD Food Sciences
+0000021286036	PhD French - The Work of Gabriel Marcel
+0511551125497	PhD French Studies
+0611551197697	PhD Genetics
+0611554598675	PhD Genetics
+0611551185742	PhD Genetics
+0611551215256	PhD Geography
+0611554606785	PhD Geography - Wild Food Networks and Sustainability
+0611551223147	PhD Hepititus C Virus
+0000010100400	PhD History
+0211559285901	PhD History
+0611551218774	PhD History
+0611551205796	PhD History
+0000031754657	PhD History
+0000034392805	PhD IBT/ISET (Engineering) (Science)
+0000043677348	PhD in Astrophysics
+0000030712964	PhD in Biophysical Chemistry
+0000056038567	PHD in Biotechnology
+0611554695653	PhD in Business Administration
+0511559331450	PhD in Computer Science - In Car-gaming
+0611554574370	PhD in Education
+0000064655941	PhD in Environmental Microbiology
+0611554575207	PhD in Food Sciences
+0000040389198	PhD in Mechanical Engineering
+0611551214813	PHD IN MOLECULAR MICROBIOLOGY
+0611552971159	PhD in Molecular Microbiology University of Nottingham
+0611551208052	PhD in the Economics of Rapid Manufacturing
+0611551205626	PhD Information Technology
+0611551191075	PhD Landscape and Culture
+0611551211328	PhD Law
+0511551154028	PhD Manufacturing Engineering & Operations Management
+0511551154453	PhD Manufacturing Engineering and Operations Management
+0611551214156	PhD Manufacturing Engineering and Operations Management
+0000041917514	PhD Materials Engineering and Materials Design
+0611551217261	PhD Mathematics
+0000041320275	PhD Mathematics
+0000040277367	PhD Mathematics
+0000041662197	PhD Mathematics
+0000040935180	PhD Mathematics
+0000041349140	PhD Mechanical Engineering
+0000042313719	PhD Mechanical Engineering
+0000041349128	PhD Mechanical Engineering
+0000050316168	PhD Microbiology
+0611551216747	PhD Neuroscience
+0611552983211	PhD Nutritional Sciences
+0611554506049	PhD Obstetrics and Gynaecology
+0511551158336	PhD Oncology
+0611551219302	PhD Pharmacy
+0000040462941	PhD Pharmacy
+0000051918208	PhD Physics
+0000040707897	PhD Physics
+0000040098245	PhD Physics
+0000054708147	PhD Physics
+0000040429380	PhD Physics and Astronomy
+0611552982823	PhD Plant Sciences
+0611554494931	PhD Primary Care
+0611551203312	PhD Private International Law
+0611551222508	PhD Professional Social and Emotional Development Navigation
+0611551224443	PhD program
+0000050437555	PhD Psychiatry
+0611551187241	PhD Psychology
+0000030176719	PhD Psychology
+0611551220593	PhD Psychology
+0000030196393	PhD Psychology
+0000031864912	PhD Psychology
+0000031299505	PhD Psychology
+0000021842072	PhD Psychology
+0611551192603	PhD Russian
+0611551212978	PhD School of Education
+0311551053211	PhD School of Education
+0611551223491	PhD School of Education
+0611552973832	PhD School of Education
+0611551222472	PhD Science Technology and Society
+0611551224269	PhD Virology
+0000020210522	Philosophy
+0000050525519	Philosophy
+0000041674547	Physics
+0000041454318	Physics
+0000040146591	Physics
+0000040951836	Physics Magnetic Resonance imaging
+0000040140599	Placement Architecture
+0000042586210	Placement Year
+0000050786796	Plant Science
+0611551210435	Political Science
+0000034333923	Politics
+0311551033969	Post Adlitoral
+0411551115572	Post Graduate Diploma in Clinical Pharmacy
+0000040872999	Post Graduate Diploma in Events Management
+0711552001903	Post Gradute Diploma Modern Languages
+0511551158554	Post Qualifying Diploma Counselling Children & Young People
+0000041293131	Post Registration Study Programme
+0000051391319	Postgraduate Certificate in Law
+0611554599731	Postgraduate Certificate in Law
+0511558156894	Postgraduate Certificate in Psychological Therapies
+0000051920212	Postgraduate Diploma in Accoustic Control
+0000054319622	Postgraduate Diploma in Law Part A Bar exams
+0511552949313	Postgraduate Diploma in Psychology
+0211550336468	Postgraduate Programme in Teaching and Learning
+0611551218198	Postgraduate Research on Language and Society
+0611554576776	PQ6 - Post Qualifying Award in Social Work
+0611551226089	Practice and Management Part III
+0511558159286	Practice Learning
+0000052396362	Practicer of Outdoor Activities
+0000040760917	Pre Registration Pharmacist training year
+0411558151157	Preceptorship and Generic
+0000041262023	Preparing a portfolio toward Chartership
+0311551051170	Private Pilot License
+0000040276979	Production Set Design
+0511551179504	Professional Diploma by CIM
+0411558152811	Professional Diploma in Epilepsy Care
+0611551218567	Professional Graduate Diploma in Education (S) English
+0000040789583	Professional Pharmacist
+0000052105144	Professional Physiotheraphy
+0311551027393	Professional qualification - actuarial qualification
+0000032758980	Project Management
+0311551055891	"Protein, Proteomics"
+0000050042599	Psychiatry
+0711554725005	Psychology
+0000070039814	Psychology
+0000050235087	Psychology
+0000064801010	Public Health and Nutrition
+0511558157570	Public Health Degree-School Nursing or Health Visiting
+0611551212299	Public International Law
+0000031179218	QTS - Qualified Teacher Status
+0000051164713	QTS - Qualified Teacher Status
+0000041369137	Qualified Teacher Status
+0000040149547	Quantum Chaos
+0000040118303	Radar Signal Processing
+0000050224416	Real Estate
+0000056038534	Real Estate Finance
+0000040981110	Real Estate Management
+0000050493023	Registered student with the Institute of Chartered Accountan
+0611554529602	Reproductive Endocrinology
+0611554661566	Research & Methodology Diploma
+0411558150013	Respect for People - Diversity and Equality
+0211550353694	RFS Certificate of Arboriculture
+0611554575230	Rhabdomyosarcoma
+0000030330252	Russian and East European Studies
+0000050099641	School Centered Initial Teacher Training
+0000050395750	Short Track Speed Skating
+0000051707990	"SII - Regulations, Securities and Derivatives"
+0000050945728	SII Diploma in Commodity Derivatives
+0000040112080	Ski Instructor Course
+0611551201640	Social Psychological effects on visual processing
+0611551222575	Social Psychology
+0611554581747	Social Science
+0000050507526	"South Asian Studies (History, Culture, Religion and Language"
+0000050875883	Spanish language
+0000050052093	Spanish Language
+0000042257099	Sports Massage Diploma - Advanced gym instructor level 3
+0000054536883	Statistics
+0311558139686	Supporting Learning and Assessment in Practice
+0511558668711	Supporting Pratice Learning
+0000052617245	Sustainable Agriculture
+0000051522441	Sustainable Energy Features
+0000050963582	Teach First
+0000050918434	TEFL
+0000063664700	Telecommunication Engineering
+0411551091597	Theology
+0000050168073	Theology
+0000050996627	Theology
+0311551054687	Tourism Marketing
+0000030016024	Training as a doctor
+0000041048601	Training to gain Chartership in Engineering
+0411558152431	Transaction Analysis
+0000010670202	Tumour Immunology
+0000050133521	TV and Broadcasting Journalism
+0000050042854	Veterinary Medicine (BVMS)
+0000051508272	Veterinary Medicine BVetMed
+0000051729545	Veterinary Science
+0000050282726	Veterinary Science
+0000051396989	Viral Immunology and Vaccinology
+0000041125991	Vocal Performance
+0611551220032	Welding Engineering and Materials Engineering
+0611554605618	Womens Writing
+	Work based learning
+0411558152763	Wound Management Trainee
+0000050279221	Writing for Stage and Broadcasting
+0000051084020	WSET Advanced Level
+0711552999530	Youth work

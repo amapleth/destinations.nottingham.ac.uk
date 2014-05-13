@@ -1,0 +1,239 @@
+<?php
+
+/**
+ * Base path
+ */
+define('BASE_PATH', realpath(dirname('../../')));
+
+/**
+ * Application path
+ */
+define('APPLICATION_PATH', BASE_PATH . '/application');
+
+/**
+ * Library path
+ */
+define('LIBRARY_PATH',  '/usr/local/zend/share/ZendFramework/library');
+
+// Set the include path
+set_include_path(LIBRARY_PATH . PATH_SEPARATOR . get_include_path());
+require_once 'Zend/Debug.php';
+
+
+$config = array(
+    'hostname'  => 'dev1.portal.nottingham.ac.uk:8447',   // dev1.portal.nottingham.ac.uk:8447/cas-web/login?service=https%3A%2F%2Fdev3.portal.nottingham.ac.uk%3A443%2Fc%2Fportal%2Flogin%3Bjsessionid%3D735A680EDD718305B5A1EEE960B1A6D9
+    'port'      => 443,
+    'path'      => 'cas-web/',
+);
+
+/**
+ * cas
+ *
+ * CAS Login
+ */
+function cas($config)
+{
+
+	/**
+	 * @see Zend_Auth
+	 */
+	require_once 'Zend/Auth.php';
+
+	$auth = Zend_Auth::getInstance();
+
+	/**
+	 * @see Zend_Auth_Adapter_Cas
+	 */
+	require_once 'Zend/Auth/Adapter/Cas.php';
+	
+	$adapter = new Zend_Auth_Adapter_Cas($config);
+
+	$messages = array();
+
+	// If no identity is set and a ticket exists, attempt to authenticate
+	if(!$auth->hasIdentity() && $adapter->hasTicket()) {
+
+		$result = $auth->authenticate($adapter);
+			
+		if(!$result->isValid()) {
+
+			$messages = $result->getMessages();
+
+
+			return $messages;
+		}
+	}
+
+	// Logout if requested
+	if(isset($_GET['logout'])) {
+
+		$auth->clearIdentity();
+			
+		// Expire the cookie
+		if(isset($_COOKIE[session_name()])) {
+			setcookie(session_name(), '', time()-42000, '/');
+		}
+			
+		// Destroy the session.
+		session_destroy();
+
+		// Specify the landing URL to hit after logout
+		$landingUrl = 'http://' . $_SERVER['HTTP_HOST'];
+		return header('Location: ' . $adapter->getLogoutUrl($landingUrl));
+	}
+
+	// Send to CAS for authentication
+	if(!$auth->hasIdentity()) {
+		return header('Location: ' . $adapter->getLoginUrl());
+	}
+
+	return $messages;
+}
+?>
+<!--  <html>
+    <title>CAS Authentication Example</title>
+    <body>
+ 
+    <h1>CAS Authentication Example</h1>
+     
+    <p>
+    <a href="/">Home</a>
+    </p>-->
+<?php
+/*Zend_Debug::dump($messages, eval('return __FILE__;') . ' $messages', true);
+     
+    Zend_Debug::dump($_COOKIE, eval('return __FILE__;') . ' $_COOKIE', true);
+     
+    Zend_Debug::dump($_SESSION, eval('return __FILE__;') . ' $_SESSION', true);
+     
+    Zend_Debug::dump($_SERVER, eval('return __FILE__;') . ' $_SERVER', true);
+ */ 
+// make sure your host is the correct one
+// that you issued your secure certificate to
+$messages = cas($config);
+/*
+ $username=$_SESSION["Zend_Auth"]["storage"];
+$ldaphost = "ldaps://ildap.nottingham.ac.uk";
+
+// Connecting to LDAP
+$ldapconn = ldap_connect($ldaphost)
+or die("Could not connect to {$ldaphost}");
+echo (" connected to {$ldaphost}");
+if ($ldapconn) {
+	$ldaprdn	='CN=LDAP_destinations,CN=Users,DC=intdir,DC=nottingham,DC=ac,DC=uk';
+	$ldappass	='LdapD3stinati0n';
+
+	// binding to ldap server
+	//$ldapbind = ldap_bind($ldapconn);
+	$ldapbind = ldap_bind($ldapconn, $ldaprdn, $ldappass);
+
+	// verify binding
+	if ($ldapbind) {
+		echo "LDAP bind successful...$ldapbind";
+	} else {
+		echo "LDAP bind failed...";
+	}
+	$ldap = array (    'label' => "International LDAP",
+	  'type' => "ad",
+	  'ldaphost' => "ldaps://ildap.nottingham.ac.uk",
+	  'ldapport' => "636",
+	//'ldapuser' => "CN=LDAP_destinations,CN=Users,DC=intdir,DC=nottingham,DC=ac,DC=uk",
+	'ldapuser' => "LDAP_destinations",
+	  'ldappass' => "LdapD3stinati0n",
+	  'ldaprootdn' => "OU=University,DC=intdir,DC=nottingham,DC=ac,DC=uk",
+	  'ldapquery' => "sAMAccountName=$username",
+	//  'ldapquery' => "sn=maplethorpe",
+  'ldapattributes' => array("givenname", "department", "useraccountcontrol", "memberof","mail","cn","sn")
+	// 'ldapattributes' => array( "givenname")
+
+	);
+	$SearchFor="Alan";
+	$filter = "(sAMAccountName=$username*)";
+
+	if (!($search=@ldap_search($ldapconn, 'OU=University,DC=intdir,DC=nottingham,DC=ac,DC=uk', $filter))) {
+		echo("<br/>Unable to search ldap server<br/>");
+		echo("msg:'".ldap_error($ldapconn)."'<br/>");#check the message again
+	} else {
+		$number_returned = ldap_count_entries($ldapconn,$search);
+		$info = ldap_get_entries($ldapconn, $search);
+		echo "The number of entries returned is ". $number_returned."<p>";
+		for ($i=0; $i<$info["count"]; $i++) {
+
+			var_dump($info[$i]);#look for your user account in this pile of junk and apply the whole pattern where you build $dn to match exactly the ldap tree entry
+			$sam=$info[$i]['samaccountname'][0];
+			$giv=$info[$i]['givenname'][0];
+			$tel=$info[$i]['physicaldeliveryofficename'][0];
+			$email=$info[$i]['mail'][0];
+			$nam=$info[$i]['cn'][0];
+			$dir=$info[$i]['sn'][0];
+			$dir=strtolower($dir);
+			$pos=strpos($dir,"home");
+			$pos=$pos+5;
+			if (stristr($sam, "$SearchFor") && (strlen($dir) > 8)) {
+				print "\nActive Directory says that:\n";
+				print "CN is: $nam \n";
+				print "SAMAccountName is: $sam \n";
+				print "Given Name is: $giv \n";
+				print "Telephone is: $tel \n";
+				print "Home Directory is: $dir \n";
+			}
+		}
+	}
+
+	$search = ldap_search($ldapconn, $ldap["ldaprootdn"], $ldap["ldapquery"], $ldap["ldapattributes"]);
+
+	## Get results
+	//$count = @ldap_count_entries($ldapconn, $search);
+	//print "<br> DEBUG: COUNT: $count";
+	$results = ldap_get_entries($ldapconn, $search);
+
+	print "<br>Raw data from search for ildap $results\n";
+
+	foreach ($results[0] as $key => $value) {
+		if (is_array($value)){
+			foreach ($value as $key2 => $value2 ){
+				print "<br>key2: $key2 => value2: $value2";
+			}
+		}else{
+			print "<br>key: $key => value: $value";
+		}
+	}
+
+}
+*/
+
+/*
+ echo "get_include_path:".get_include_path();
+ */
+?>
+<p>
+	<a
+		href="https://dev1.portal.nottingham.ac.uk:8447/cas-web/logout?url=http://dev.webapps.nottingham.ac.uk/destinations/?logout">Logout</a>
+</p>
+
+<?php
+
+ 
+ /**
+ * @see Zend_Debug
+*/
+ require_once 'Zend/Debug.php';
+
+ // Variable dumps
+/*
+ Zend_Debug::dump($messages, eval('return __FILE__;') . ' $messages', true);
+
+ Zend_Debug::dump($_COOKIE, eval('return __FILE__;') . ' $_COOKIE', true);
+
+ Zend_Debug::dump($_SESSION, eval('return __FILE__;') . ' $_SESSION', true);
+
+ Zend_Debug::dump($_SERVER, eval('return __FILE__;') . ' $_SERVER', true);
+*/
+ 
+ 
+ echo("Username:".$_SESSION["Zend_Auth"]["storage"]);
+ ?>
+
+ </body>
+ </html>
+ 

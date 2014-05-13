@@ -1,0 +1,42 @@
+total 2244
+-rw-r--r-- 1 mszadm users    1039 Jun  6 15:51 import_31633.log
+-rw-r--r-- 1 mszadm users  752959 Jun  6 15:53 popdlhe0809.txt
+-rw-r--r-- 1 mszadm users 1447707 Jun  6 15:53 extract0809.txt
+-rw-r--r-- 1 mszadm users   69115 Jun  6 15:53 courses0809.txt
+-rw-r--r-- 1 mszadm users    1451 Jun  6 15:53 import_31698.log
+-rwxrwxr-x 1 mszadm users    1210 Jun  6 15:54 import0809.ksh
+-rw-r--r-- 1 mszadm users       0 Jun  6 15:54 import_31725.log
+dos2unix: converting file extract0809.txt to UNIX format ...
+dos2unix: converting file courses0809.txt to UNIX format ...
+dos2unix: converting file popdlhe0809.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import4
+total 2248
+-rw-r--r-- 1 mszadm users    1039 Jun  6 15:51 import_31633.log
+-rw-r--r-- 1 mszadm users    1451 Jun  6 15:53 import_31698.log
+-rwxrwxr-x 1 mszadm users    1210 Jun  6 15:54 import0809.ksh
+-rw-r--r-- 1 mszadm users  752959 Jun  6 15:54 popdlhe0809.txt
+-rw-r--r-- 1 mszadm users     683 Jun  6 15:54 import_31725.log
+-rw-r--r-- 1 mszadm users 1447707 Jun  6 15:54 extract0809.txt
+-rw-r--r-- 1 mszadm users   69115 Jun  6 15:54 courses0809.txt
+1708 courses0809.txt
+8096 extract0809.txt
+8096 popdlhe0809.txt
+extract0809
+8096
+courses0809
+1708
+popdlhe0809
+0
+PROMPT set to 'delete data'
+extract0809
+0
+courses0809
+0
+popdlhe0809
+0
+extract0809
+8096
+courses0809
+1708
+popdlhe0809
+8096

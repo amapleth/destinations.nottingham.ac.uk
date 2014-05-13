@@ -1,0 +1,33 @@
+total 14112
+-rw-r--r--@ 1 mszadm  AD\domain users  2013181  9 Oct 09:53 extract1011.txt
+-rw-r--r--@ 1 mszadm  AD\domain users  1722103  9 Oct 09:53 extract78.txt
+-rw-r--r--@ 1 mszadm  AD\domain users  1711058  9 Oct 09:53 extract89.txt
+-rw-r--r--@ 1 mszadm  AD\domain users  1754496  9 Oct 09:53 extract910.txt
+-rw-r--r--  1 mszadm  AD\domain users     1450  9 Oct 10:07 import_2648.log
+-rw-r--r--  1 mszadm  AD\domain users     1576  9 Oct 10:10 import_3051.log
+-rw-r--r--  1 mszadm  AD\domain users     1542  9 Oct 10:12 import.ksh
+-rw-r--r--  1 mszadm  AD\domain users     1704  9 Oct 10:13 import_3185.log
+-rw-r--r--  1 mszadm  AD\domain users        0  9 Oct 10:14 import_29136.log
+-bash: dos2unix: command not found
+-bash: dos2unix: command not found
+-bash: dos2unix: command not found
+-bash: dos2unix: command not found
+/Users/mszadm/projects/gems2/uon/import31
+total 14120
+-rw-r--r--@ 1 mszadm  AD\domain users  2013181  9 Oct 09:53 extract1011.txt
+-rw-r--r--@ 1 mszadm  AD\domain users  1722103  9 Oct 09:53 extract78.txt
+-rw-r--r--@ 1 mszadm  AD\domain users  1711058  9 Oct 09:53 extract89.txt
+-rw-r--r--@ 1 mszadm  AD\domain users  1754496  9 Oct 09:53 extract910.txt
+-rw-r--r--  1 mszadm  AD\domain users     1450  9 Oct 10:07 import_2648.log
+-rw-r--r--  1 mszadm  AD\domain users     1576  9 Oct 10:10 import_3051.log
+-rw-r--r--  1 mszadm  AD\domain users     1542  9 Oct 10:12 import.ksh
+-rw-r--r--  1 mszadm  AD\domain users     1704  9 Oct 10:13 import_3185.log
+-rw-r--r--  1 mszadm  AD\domain users      869  9 Oct 10:14 import_29136.log
+    9575 extract1011.txt
+    8107 extract78.txt
+    8096 extract89.txt
+    8343 extract910.txt
+ERROR 1045 (28000): Access denied for user 'mszadm'@'localhost' (using password: YES)
+pui51888:import31 mszadm$ 
+pui51888:import31 mszadm$ 
+pui51888:import31 mszadm$ 

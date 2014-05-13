@@ -1,0 +1,85 @@
+[19-Apr-2012 09:04:01 UTC] PHP Warning:  include_once(uon_specific/cas.php): failed to open stream: No such file or directory in /Users/mszadm/projects/gems2/docs/details.php on line 8
+[19-Apr-2012 09:04:01 UTC] PHP Stack trace:
+[19-Apr-2012 09:04:01 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:04:01 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:04:01 UTC] PHP Warning:  include_once(): Failed opening 'uon_specific/cas.php' for inclusion (include_path='.:/usr/local/zend/share/ZendFramework/library:/usr/local/zend/share/pear') in /Users/mszadm/projects/gems2/docs/details.php on line 8
+[19-Apr-2012 09:04:01 UTC] PHP Stack trace:
+[19-Apr-2012 09:04:01 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:04:01 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:27:05 UTC] PHP Warning:  require_once(Zend/Auth/Adapter/Cas.php): failed to open stream: No such file or directory in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:27:05 UTC] PHP Stack trace:
+[19-Apr-2012 09:27:05 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:27:05 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:27:05 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:27:05 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:108
+[19-Apr-2012 09:27:05 UTC] PHP Fatal error:  require_once(): Failed opening required 'Zend/Auth/Adapter/Cas.php' (include_path='/Users/mszadm/projects/gems2/library:.:/usr/local/zend/share/ZendFramework/library:/usr/local/zend/share/pear') in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:27:05 UTC] PHP Stack trace:
+[19-Apr-2012 09:27:05 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:27:05 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:27:05 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:27:05 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:108
+[19-Apr-2012 09:29:14 UTC] PHP Warning:  require_once(Zend/Auth/Adapter/Cas.php): failed to open stream: No such file or directory in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:29:14 UTC] PHP Stack trace:
+[19-Apr-2012 09:29:14 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:29:14 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:29:14 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:29:14 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:108
+[19-Apr-2012 09:29:14 UTC] PHP Fatal error:  require_once(): Failed opening required 'Zend/Auth/Adapter/Cas.php' (include_path='/usr/local/zend/share/ZendFramework/library/Zend:.:/usr/local/zend/share/ZendFramework/library:/usr/local/zend/share/pear') in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:29:14 UTC] PHP Stack trace:
+[19-Apr-2012 09:29:14 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:29:14 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:29:14 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:29:14 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:108
+[19-Apr-2012 09:29:41 UTC] PHP Warning:  require_once(Zend/Auth/Adapter/Cas.php): failed to open stream: No such file or directory in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:29:41 UTC] PHP Stack trace:
+[19-Apr-2012 09:29:41 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:29:41 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:29:41 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:29:41 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:108
+[19-Apr-2012 09:29:41 UTC] PHP Fatal error:  require_once(): Failed opening required 'Zend/Auth/Adapter/Cas.php' (include_path='/usr/local/zend/share/ZendFramework/library:.:/usr/local/zend/share/ZendFramework/library:/usr/local/zend/share/pear') in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:29:41 UTC] PHP Stack trace:
+[19-Apr-2012 09:29:41 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:29:41 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:29:41 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:29:41 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:108
+[19-Apr-2012 09:30:09 UTC] PHP Warning:  require_once(Zend/Auth/Adapter/Cas.php): failed to open stream: No such file or directory in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:30:09 UTC] PHP Stack trace:
+[19-Apr-2012 09:30:09 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:30:09 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:30:09 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:30:09 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:108
+[19-Apr-2012 09:30:09 UTC] PHP Fatal error:  require_once(): Failed opening required 'Zend/Auth/Adapter/Cas.php' (include_path='/usr/local/zend/share/ZendFramework/library/:.:/usr/local/zend/share/ZendFramework/library:/usr/local/zend/share/pear') in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:30:09 UTC] PHP Stack trace:
+[19-Apr-2012 09:30:09 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:30:09 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:30:09 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:30:09 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:108
+[19-Apr-2012 09:31:24 UTC] PHP Warning:  require_once(Zend/Auth/Adapter/Cas.php): failed to open stream: No such file or directory in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:31:24 UTC] PHP Stack trace:
+[19-Apr-2012 09:31:24 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:31:24 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:31:24 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:31:24 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:110
+[19-Apr-2012 09:31:24 UTC] PHP Fatal error:  require_once(): Failed opening required 'Zend/Auth/Adapter/Cas.php' (include_path='/usr/local/zend/share/ZendFramework/library/:.:/usr/local/zend/share/ZendFramework/library:/usr/local/zend/share/pear') in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:31:24 UTC] PHP Stack trace:
+[19-Apr-2012 09:31:24 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:31:24 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:31:24 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:31:24 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:110
+[19-Apr-2012 09:36:01 UTC] PHP Warning:  require_once(Zend/Auth/Adapter/Cas.php): failed to open stream: No such file or directory in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:36:01 UTC] PHP Stack trace:
+[19-Apr-2012 09:36:01 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/whatis.php:0
+[19-Apr-2012 09:36:01 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/whatis.php:5
+[19-Apr-2012 09:36:01 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:36:01 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:110
+[19-Apr-2012 09:36:01 UTC] PHP Fatal error:  require_once(): Failed opening required 'Zend/Auth/Adapter/Cas.php' (include_path='/usr/local/zend/share/ZendFramework/library/:.:/usr/local/zend/share/ZendFramework/library:/usr/local/zend/share/pear') in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 48
+[19-Apr-2012 09:36:01 UTC] PHP Stack trace:
+[19-Apr-2012 09:36:01 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/whatis.php:0
+[19-Apr-2012 09:36:01 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/whatis.php:5
+[19-Apr-2012 09:36:01 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8
+[19-Apr-2012 09:36:01 UTC] PHP   4. cas() /Users/mszadm/projects/gems2/docs/uon_specific/cas.php:110
+[19-Apr-2012 09:52:54 UTC] PHP Notice:  Use of undefined constant LIBRARY_PATH - assumed 'LIBRARY_PATH' in /Users/mszadm/projects/gems2/docs/uon_specific/cas.php on line 19
+[19-Apr-2012 09:52:54 UTC] PHP Stack trace:
+[19-Apr-2012 09:52:54 UTC] PHP   1. {main}() /Users/mszadm/projects/gems2/docs/index.php:0
+[19-Apr-2012 09:52:54 UTC] PHP   2. include() /Users/mszadm/projects/gems2/docs/index.php:6
+[19-Apr-2012 09:52:54 UTC] PHP   3. include_once() /Users/mszadm/projects/gems2/docs/details.php:8

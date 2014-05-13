@@ -1,0 +1,38 @@
+total 2232
+-rw-r--r-- 1 mszadm users  766316 Jun  7 12:55 popdlhe0708.txt
+-rwxr-x--- 1 mszadm users    1210 Jun  7 12:55 import0708.ksh
+-rw-r--r-- 1 mszadm users 1433234 Jun  7 12:55 extract0708.txt
+-rw-r--r-- 1 mszadm users   64175 Jun  7 12:55 courses0708.txt
+-rw-r--r-- 1 mszadm users       0 Jun  7 12:57 import_18073.log
+dos2unix: converting file extract0708.txt to UNIX format ...
+dos2unix: converting file courses0708.txt to UNIX format ...
+dos2unix: converting file popdlhe0708.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import5
+total 2220
+-rwxr-x--- 1 mszadm users    1210 Jun  7 12:55 import0708.ksh
+-rw-r--r-- 1 mszadm users  758211 Jun  7 12:57 popdlhe0708.txt
+-rw-r--r-- 1 mszadm users     555 Jun  7 12:57 import_18073.log
+-rw-r--r-- 1 mszadm users 1425129 Jun  7 12:57 extract0708.txt
+-rw-r--r-- 1 mszadm users   62636 Jun  7 12:57 courses0708.txt
+1539 courses0708.txt
+8105 extract0708.txt
+8105 popdlhe0708.txt
+extract0708
+8600
+courses0708
+1437
+popdlhe0708
+8200
+PROMPT set to 'delete data'
+extract0708
+0
+courses0708
+0
+popdlhe0708
+0
+extract0708
+8105
+courses0708
+1539
+popdlhe0708
+8105

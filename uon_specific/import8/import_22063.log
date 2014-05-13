@@ -1,0 +1,56 @@
+total 1532
+-rw-r--r-- 1 mszadm users    573 Jun 27 13:23 import_520.log
+-rw-r--r-- 1 mszadm users   2262 Jun 28 13:24 import_21697.log
+-rw-r--r-- 1 mszadm users   2388 Jun 28 13:28 import_21787.log
+-rw-r--r-- 1 mszadm users 369323 Jun 28 13:31 tqi910.txt
+-rw-r--r-- 1 mszadm users 367037 Jun 28 13:31 tqi89.txt
+-rwxrwxrwx 1 mszadm users 378908 Jun 28 13:31 tqi78.txt
+-rw-r--r-- 1 mszadm users 408945 Jun 28 13:31 tqi1011.txt
+-rw-r--r-- 1 mszadm users   1762 Jun 28 13:31 import_21908.log
+-rwxrwxrwx 1 mszadm users   1361 Jun 28 13:36 import.ksh
+-rw-r--r-- 1 mszadm users      0 Jun 28 13:36 import_22063.log
+dos2unix: converting file tqi78.txt to UNIX format ...
+dos2unix: converting file tqi89.txt to UNIX format ...
+dos2unix: converting file tqi910.txt to UNIX format ...
+dos2unix: converting file tqi1011.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import8
+total 1536
+-rw-r--r-- 1 mszadm users    573 Jun 27 13:23 import_520.log
+-rw-r--r-- 1 mszadm users   2262 Jun 28 13:24 import_21697.log
+-rw-r--r-- 1 mszadm users   2388 Jun 28 13:28 import_21787.log
+-rw-r--r-- 1 mszadm users   1762 Jun 28 13:31 import_21908.log
+-rwxrwxrwx 1 mszadm users   1361 Jun 28 13:36 import.ksh
+-rw-r--r-- 1 mszadm users 369323 Jun 28 13:36 tqi910.txt
+-rw-r--r-- 1 mszadm users 367037 Jun 28 13:36 tqi89.txt
+-rwxrwxrwx 1 mszadm users 378908 Jun 28 13:36 tqi78.txt
+-rw-r--r-- 1 mszadm users 408945 Jun 28 13:36 tqi1011.txt
+-rw-r--r-- 1 mszadm users    877 Jun 28 13:36 import_22063.log
+8889 tqi1011.txt
+8237 tqi78.txt
+7979 tqi89.txt
+8028 tqi910.txt
+tqi78
+0
+tqi89
+0
+tqi910
+0
+tqi1011
+0
+PROMPT set to 'delete data'
+tqi78
+0
+tqi89
+0
+tqi910
+0
+tqi1011
+0
+tqi78
+8237
+tqi89
+7979
+tqi910
+8028
+tqi1011
+8889

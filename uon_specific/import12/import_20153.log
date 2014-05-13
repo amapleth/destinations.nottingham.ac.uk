@@ -1,0 +1,85 @@
+total 3452
+-rw-r--r-- 1 mszadm users    1188 Aug  2 10:29 import_17350.log
+-rw-r--r-- 1 mszadm users    1354 Aug  2 10:30 import_17405.log
+-rw-r--r-- 1 mszadm users  357693 Aug  2 13:28 tqi910.txt
+-rw-r--r-- 1 mszadm users  355373 Aug  2 13:28 tqi89.txt
+-rw-r--r-- 1 mszadm users  366948 Aug  2 13:28 tqi78.txt
+-rw-r--r-- 1 mszadm users  396160 Aug  2 13:28 tqi1011.txt
+-rw-r--r-- 1 mszadm users  758211 Aug  2 13:28 popdlhe0708.txt
+-rw-r--r-- 1 mszadm users 1175626 Aug  2 13:28 extract0708.txt
+-rw-r--r-- 1 mszadm users   62636 Aug  2 13:28 courses0708.txt
+-rw-r--r-- 1 mszadm users    2249 Aug  2 13:28 import_20065.log
+-rwxrwxr-x 1 mszadm users    2315 Aug  2 13:31 import.ksh
+-rw-r--r-- 1 mszadm users       0 Aug  2 13:31 import_20153.log
+dos2unix: converting file courses0708.txt to UNIX format ...
+dos2unix: converting file extract0708.txt to UNIX format ...
+dos2unix: converting file popdlhe0708.txt to UNIX format ...
+dos2unix: converting file tqi78.txt to UNIX format ...
+dos2unix: converting file tqi910.txt to UNIX format ...
+dos2unix: converting file tqi1011.txt to UNIX format ...
+dos2unix: converting file tqi89.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import12
+total 3456
+-rw-r--r-- 1 mszadm users    1188 Aug  2 10:29 import_17350.log
+-rw-r--r-- 1 mszadm users    1354 Aug  2 10:30 import_17405.log
+-rw-r--r-- 1 mszadm users    2249 Aug  2 13:28 import_20065.log
+-rwxrwxr-x 1 mszadm users    2315 Aug  2 13:31 import.ksh
+-rw-r--r-- 1 mszadm users  357693 Aug  2 13:31 tqi910.txt
+-rw-r--r-- 1 mszadm users  355373 Aug  2 13:31 tqi89.txt
+-rw-r--r-- 1 mszadm users  366948 Aug  2 13:31 tqi78.txt
+-rw-r--r-- 1 mszadm users  396160 Aug  2 13:31 tqi1011.txt
+-rw-r--r-- 1 mszadm users  758211 Aug  2 13:31 popdlhe0708.txt
+-rw-r--r-- 1 mszadm users    1198 Aug  2 13:31 import_20153.log
+-rw-r--r-- 1 mszadm users 1175626 Aug  2 13:31 extract0708.txt
+-rw-r--r-- 1 mszadm users   62636 Aug  2 13:31 courses0708.txt
+1539 courses0708.txt
+5303 extract0708.txt
+8105 popdlhe0708.txt
+8889 tqi1011.txt
+8237 tqi78.txt
+7979 tqi89.txt
+8028 tqi910.txt
+tqi78
+8237
+tqi89
+7979
+tqi910
+0
+tqi1011
+8889
+PROMPT set to 'delete data'
+tqi78
+0
+tqi89
+0
+tqi910
+0
+tqi1011
+0
+courses78
+1539
+extract78
+5303
+popdlhe78
+8105
+PROMPT set to 'delete data'
+courses78
+0
+extract78
+0
+popdlhe78
+0
+courses78
+1539
+extract78
+5303
+popdlhe78
+8105
+tqi78
+8237
+tqi89
+7979
+tqi910
+8028
+tqi1011
+8889

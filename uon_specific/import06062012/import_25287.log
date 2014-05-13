@@ -1,0 +1,39 @@
+total 2308
+-rw-r--r-- 1 mszadm users   71928 Jun  6 08:41 courses0910.txt
+-rw-r--r-- 1 mszadm users  787420 Jun  6 08:41 popdlhe0910.txt
+-rw-r--r-- 1 mszadm users 1475367 Jun  6 08:41 extract0910.txt
+-rwxrwxr-x 1 mszadm users    1326 Jun  6 08:47 import.ksh
+-rw-r--r-- 1 mszadm users    1499 Jun  6 08:47 import_25245.log
+-rw-r--r-- 1 mszadm users       0 Jun  6 08:49 import_25287.log
+dos2unix: converting file extract1011.txt to UNIX format ...
+dos2unix: problems converting file extract1011.txt
+dos2unix: converting file courses1011.txt to UNIX format ...
+dos2unix: problems converting file courses1011.txt
+dos2unix: converting file popdlhe1011.txt to UNIX format ...
+dos2unix: problems converting file popdlhe1011.txt
+dos2unix: converting file 0155_TQI5.TXT to UNIX format ...
+dos2unix: problems converting file 0155_TQI5.TXT
+/usr/local/lib/gems/docs/uon_specific/import06062012
+total 2312
+-rw-r--r-- 1 mszadm users   71928 Jun  6 08:41 courses0910.txt
+-rw-r--r-- 1 mszadm users  787420 Jun  6 08:41 popdlhe0910.txt
+-rw-r--r-- 1 mszadm users 1475367 Jun  6 08:41 extract0910.txt
+-rwxrwxr-x 1 mszadm users    1326 Jun  6 08:47 import.ksh
+-rw-r--r-- 1 mszadm users    1499 Jun  6 08:47 import_25245.log
+-rw-r--r-- 1 mszadm users     883 Jun  6 08:49 import_25287.log
+find: *1011.txt: No such file or directory
+ERROR 13 (HY000) at line 14: Can't get stat of '/usr/local/lib/gems/docs/uon_specific/import06062012/extract1011.txt' (Errcode: 2)
+extract1011
+0
+courses1011
+0
+popdlhe1011
+0
+PROMPT set to 'delete data'
+extract1011
+0
+courses1011
+0
+popdlhe1011
+0
+./import.ksh: line 12: syntax error at line 36: `(' unexpected

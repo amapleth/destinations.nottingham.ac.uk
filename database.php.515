@@ -1,0 +1,10 @@
+<?php
+
+$con = mysqli_connect($dbserver, $dbuser, $dbpassword, $dbname);
+
+if (mysqli_connect_errno( $con )) {
+	echo "Can't connect to database: ".mysqli_connect_error();
+}
+
+
+?>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' type='text/css' href='style/reset.css'	media='screen' />
+<link rel='stylesheet' type='text/css' href='style/default.css' 	media='screen' />
+<link rel="stylesheet" type="text/css" href="../careers.css" media="screen" />
+<link rel='stylesheet' type='text/css' href='style/typography.css' 	media='screen' />
+
+<title>[TITLE]</title>
+</head>
+
+
+<body>
+<!-- start of header -->
+<div id="header">
+	<div class="headercontent">
+	<h1>Intranet</h1>
+		<a href="http://www.nottingham.ac.uk/" title="University of Nottingham" ><img  height="39" width="130" alt="University of Nottingham" 	src="img/header/mastheadlogo.png" /></a>
+	</div>
+</div>
+	<!--//END header -->
+
+	<!-- start horizontal blue bar  -->
+
+	<div id="subheading">
+		<h2>GEMS</h2>
+	</div>
+	
+	
+	
+	<div id="contentmain">
+	
+	<div id="secondarybranding">
+	<img src="../Gemsbanner2.jpg"  alt="UoN Centre for Careers Development" />
+	
+	</div>
+	<!-- start of content  -->
+	<div id="content">
+	<!-- not guilty -->
+<form name="input" action="contract.php" method="post">
+
+
+<p class="header2"> Get contract types for...</p>
+
+
+
+<div id="firsttable">
+<table>
+<tbody><tr><td>
+<p class="body">School: </p></td><td>
+
+<input name="school" value="Biosciences" type="hidden"><input name="subject" value="Nutrition/Food Sciences" type="hidden"><input name="courses" value="Food Science BSc Hons" type="hidden">Biosciences
+
+</td></tr>
+
+<tr><td>
+<p class="body">Subject: </p></td><td>
+Nutrition/Food Sciences
+
+</td></tr>
+<tr><td>
+<p class="body">Course: </p></td><td>
+
+Food Science BSc Hons
+
+
+</td></tr>
+</tbody></table>
+
+<br>And select the type of students you want destinations information on:<br><br>
+<table>
+<tbody><tr>
+
+<td>
+
+<span style="font-size: 10pt;"><input name="ftpt" value="1" type="radio"> Full-Time</span></td><td>
+<span style="font-size: 10pt;"><input name="ftpt" value="2" type="radio"> Part-Time</span></td><td colspan="3">
+<span style="font-size: 10pt;"><input checked="checked" name="ftpt" value="%" type="radio"> All</span></td></tr>
+<tr>
+<td colspan="5"><hr></td></tr><tr><td>
+<span style="font-size: 10pt;"><input name="type" value="2" type="radio"> Undergraduate</span></td><td>
+<span style="font-size: 10pt;"><input name="type" value="1" type="radio"> Postgraduate</span></td><td colspan="3">
+
+<span style="font-size: 10pt;"><input checked="checked" name="type" value="%" type="radio"> All</span></td></tr>
+<tr>
+<td colspan="5"><hr></td></tr><tr><td>
+<span style="font-size: 10pt;"><input name="level" value="1" type="radio"> Foundation Degree</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+<span style="font-size: 10pt;"><input name="level" value="2" type="radio"> Bachelors</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+<span style="font-size: 10pt;"><input name="level" value="3" type="radio"> PGCE</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+<span style="font-size: 10pt;"><input name="level" value="4" type="radio"> Masters</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+
+<span style="font-size: 10pt;"><input checked="checked" name="level" value="%" type="radio"> All</span></td></tr>
+<tr><td colspan="5"><hr></td></tr><tr><td>
+<span style="font-size: 10pt;"><input name="feestatus" value="Home" type="radio"> Home Graduates</span></td><td>
+<span style="font-size: 10pt;"><input name="feestatus" value="EU" type="radio"> EU Graduates</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+<span style="font-size: 10pt;"><input name="feestatus" value="1" type="radio"> Both Home and EU</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+<span style="font-size: 10pt;"><input name="feestatus" value="International" type="radio"> International Graduates</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>
+<span style="font-size: 10pt;"><input checked="checked" name="feestatus" value="%" type="radio">All</span></td></tr>
+
+
+<tr><td colspan="5"><hr></td></tr>
+</tbody></table>
+
+<table>
+<tbody><tr><td colspan="5"><p class="bold">Details now they are a graduate</p></td></tr><tr><td colspan="5">&nbsp;</td></tr><tr><td>
+<span style="font-size: 10pt;"><input name="pubgrid" value="A" type="radio"> Full-time paid employment (including self-employed)&nbsp;&nbsp;&nbsp;</span></td><td>
+<span style="font-size: 10pt;"><input name="pubgrid" value="B" type="radio"> Part-time paid employment</span></td><td>
+<span style="font-size: 10pt;"><input name="pubgrid" value="D" type="radio"> Working and undertaking further study&nbsp;&nbsp;&nbsp;</span></td><td>
+
+<span style="font-size: 10pt;"><input name="pubgrid" value="C" type="radio"> Working unpaid&nbsp;&nbsp;&nbsp;</span></td><td>
+<span style="font-size: 10pt;"><input checked="checked" name="pubgrid" value="%" type="radio"> All&nbsp;&nbsp;&nbsp;</span></td></tr>
+<tr><td colspan="5"><hr></td></tr><tr><td>
+<span style="font-size: 10pt;"><input name="grad" value="1" type="radio"> Graduate level employment</span></td><td>
+<span style="font-size: 10pt;"><input name="grad" value="2" type="radio"> Non-graduate level employment&nbsp;&nbsp;&nbsp;</span></td><td colspan="3">
+<span style="font-size: 10pt;"><input checked="checked" name="grad" value="%" type="radio"> All</span></td></tr>
+<tr><td colspan="5"><hr></td></tr><tr><td>
+
+<span style="font-size: 10pt;"><input name="empsize" value="1" type="radio"> Small company (1-49 employees)</span></td><td>
+<span style="font-size: 10pt;"><input name="empsize" value="2" type="radio"> SME (50-249 employees)</span></td><td>
+<span style="font-size: 10pt;"><input name="empsize" value="3" type="radio"> Large company (250+ employees)</span></td><td colspan="2">
+<span style="font-size: 10pt;"><input checked="checked" name="empsize" value="%" type="radio"> All</span></td></tr>
+<tr><td colspan="5"><hr></td></tr><tr><td>
+<span style="font-size: 10pt;"><input name="qualreq" value="3" type="radio"> Qualification - Formal requirement</span></td><td>
+<span style="font-size: 10pt;"><input name="qualreq" value="4" type="radio"> Qualification - advantage</span></td><td>
+
+<span style="font-size: 10pt;"><input name="qualreq" value="5" type="radio"> Qualification - not an advantage</span></td><td colspan="2">
+<span style="font-size: 10pt;"><input checked="checked" name="qualreq" value="%" type="radio"> All</span></td></tr>
+<tr><td colspan="5"><hr></td></tr></tbody></table>
+<table><tbody><tr><td>
+<span style="font-size: 10pt;">Industry</span></td><td>
+<select name="sic">
+<option value="%" selected="selected">All</option>
+<option value="A">Agriculture, forestry and fishing</option>
+<option value="B">Mining and quarrying</option>
+
+<option value="C">Manufacturing</option>
+<option value="D">Electricity, gas, steam and air conditioning supply</option>
+<option value="E">Water supply, sewerage, waste management and remediation activities</option>
+<option value="F">Construction</option>
+<option value="G">Wholesale and retail trade; repair of motor vehicles and motor cycles</option>
+<option value="I">Accommodation and food service activities</option>
+<option value="H">Transport and storage</option>
+<option value="J">Information and communication</option>
+<option value="K">Financial and insurance activities</option>
+
+<option value="L">Real estate activities</option>
+<option value="M">Professional, scientific and technical activities</option>
+<option value="N">Administrative and support service activities</option>
+<option value="O">Public Administration and defence; compulsary social security</option>
+<option value="P">Education</option>
+<option value="Q">Human health and social work activities</option>
+<option value="R">Arts, entertainment and recreation</option>
+<option value="S">Other service activities</option>
+<option value="T">Activities of households as employers</option>
+
+<option value="U">Activities of extraterritorial organisations</option>
+</select>
+</td></tr></tbody></table>
+<br><br>
+
+<input class="red" value="Submit" type="submit">
+
+<br>
+<a class="one" href="index.php">Take me back to the main page</a>
+<br><br>
+
+
+	<!--  end of not guilty -->
+	</div>
+
+</div></div>
+<div id="footer">
+	<ul>
+        <li><a title="Copyright"  href="http://www.nottingham.ac.uk/utilities/copyright.aspx">Copyright</a></li>
+        <li><a title="Terms and Conditions"  href="http://www.nottingham.ac.uk/utilities/terms.aspx">Terms &amp; Conditions</a></li>
+        <li><a title="Privacy" href="http://www.nottingham.ac.uk/utilities/privacy.aspx">Privacy</a></li>
+        <li><a title="Accessibility"  href="http://www.nottingham.ac.uk/utilities/accessibility/accessibility.aspx">Accessibility</a></li>
+        <li><a title="Freedom of Information" href="http://www.nottingham.ac.uk/freedom-of-information/">Freedom of Information</a></li>
+      </ul>
+</div>
+</body>
+</html>

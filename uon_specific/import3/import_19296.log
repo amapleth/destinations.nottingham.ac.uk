@@ -1,0 +1,37 @@
+total 2236
+-rw-r--r-- 1 mszadm users     966 Jun  6 13:57 import_29853.log
+-rwxrwxr-x 1 mszadm users    1295 Jun  6 13:59 import.ksh
+-rw-r--r-- 1 mszadm users    1094 Jun  6 13:59 import_29916.log
+-rw-r--r-- 1 mszadm users 1475343 Jun  7 14:15 extract0910.txt
+-rw-r--r-- 1 mszadm users  784430 Jun  7 14:15 popdlhe0910.txt
+-rwxr-x--- 1 mszadm users    1018 Jun  7 14:16 import0910.ksh
+-rw-r--r-- 1 mszadm users       0 Jun  7 14:17 import_19296.log
+dos2unix: converting file extract0910.txt to UNIX format ...
+dos2unix: converting file popdlhe0910.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import3
+total 2224
+-rw-r--r-- 1 mszadm users     966 Jun  6 13:57 import_29853.log
+-rwxrwxr-x 1 mszadm users    1295 Jun  6 13:59 import.ksh
+-rw-r--r-- 1 mszadm users    1094 Jun  6 13:59 import_29916.log
+-rwxr-x--- 1 mszadm users    1018 Jun  7 14:16 import0910.ksh
+-rw-r--r-- 1 mszadm users  776087 Jun  7 14:17 popdlhe0910.txt
+-rw-r--r-- 1 mszadm users     617 Jun  7 14:17 import_19296.log
+-rw-r--r-- 1 mszadm users 1467000 Jun  7 14:17 extract0910.txt
+8343 extract0910.txt
+8343 popdlhe0910.txt
+extract0910
+8343
+popdlhe0910
+8343
+PROMPT set to 'delete data'
+extract0910
+0
+popdlhe0910
+0
+extract0910
+8343
+courses0910
+1694
+popdlhe0910
+8343
+./import0910.ksh: line 10: syntax error at line 32: `(' unexpected

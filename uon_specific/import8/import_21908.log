@@ -1,0 +1,34 @@
+total 1528
+-rw-r--r-- 1 mszadm users    573 Jun 27 13:23 import_520.log
+-rw-r--r-- 1 mszadm users   2262 Jun 28 13:24 import_21697.log
+-rw-r--r-- 1 mszadm users 369323 Jun 28 13:28 tqi910.txt
+-rw-r--r-- 1 mszadm users 367037 Jun 28 13:28 tqi89.txt
+-rwxrwxrwx 1 mszadm users 378908 Jun 28 13:28 tqi78.txt
+-rw-r--r-- 1 mszadm users 408945 Jun 28 13:28 tqi1011.txt
+-rw-r--r-- 1 mszadm users   2388 Jun 28 13:28 import_21787.log
+-rwxrwxrwx 1 mszadm users    401 Jun 28 13:31 import.ksh
+-rw-r--r-- 1 mszadm users      0 Jun 28 13:31 import_21908.log
+dos2unix: converting file tqi78.txt to UNIX format ...
+dos2unix: converting file tqi89.txt to UNIX format ...
+dos2unix: converting file tqi910.txt to UNIX format ...
+dos2unix: converting file tqi1011.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import8
+total 1532
+-rw-r--r-- 1 mszadm users    573 Jun 27 13:23 import_520.log
+-rw-r--r-- 1 mszadm users   2262 Jun 28 13:24 import_21697.log
+-rw-r--r-- 1 mszadm users   2388 Jun 28 13:28 import_21787.log
+-rwxrwxrwx 1 mszadm users    401 Jun 28 13:31 import.ksh
+-rw-r--r-- 1 mszadm users 369323 Jun 28 13:31 tqi910.txt
+-rw-r--r-- 1 mszadm users 367037 Jun 28 13:31 tqi89.txt
+-rwxrwxrwx 1 mszadm users 378908 Jun 28 13:31 tqi78.txt
+-rw-r--r-- 1 mszadm users 408945 Jun 28 13:31 tqi1011.txt
+-rw-r--r-- 1 mszadm users    814 Jun 28 13:31 import_21908.log
+8889 tqi1011.txt
+8237 tqi78.txt
+7979 tqi89.txt
+8028 tqi910.txt
+./import.ksh: line 12: tqi78: not found
+./import.ksh: line 12: tqi89: not found
+./import.ksh: line 12: tqi910: not found
+./import.ksh: line 12: tqi1011: not found
+ERROR 1064 (42000) at line 3: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

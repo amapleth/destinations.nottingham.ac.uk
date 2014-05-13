@@ -1,0 +1,275 @@
+
+body.rootcontainer {
+	background: #EAEAEA;/*pw*/
+	margin: 0 auto;/*pw*/
+	font: 0.9em Verdana, Arial, Helvetica, sans-serif;	
+	padding: 0;
+	text-align: center;
+	color: #000000;
+}
+
+
+/*pw*/	
+#tablethree, .one, .button4 {
+	font: 0.9em Verdana, Arial, Helvetica, sans-serif!important;
+	margin: 0 0 0 20px;
+}
+
+#tableone, #tabletwo, #tablethree {
+	padding-top:15px;
+}
+
+#tabletwo {
+	padding-right:55px;
+}
+
+#tablethree {
+	
+}
+
+#tableone, #tabletwo  {
+	margin: 0 0 0 20px;
+}
+
+#tableone td, #tabletwo td {
+	line-height:0.6em;
+}
+
+
+.rootcontainer #mainContent {
+	padding: 0 10px;
+	background: #FFFFFF;
+	top: 180px;
+	width: auto;
+	border-width:5px;
+	margin-left:20px;
+}
+
+#rootcontainer {
+	width: 960px;/*pw*/	
+	background: #FFFFFF;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #BBBBBB;
+	background-image: url("http://www.nottingham.ac.uk/common/assets/image/background-page.png");/*pw*/	
+	background-repeat: repeat-y;/*pw*/	
+	padding:0 30px;/*pw*/	
+}
+
+
+ div#uon-app-header {
+	 margin-bottom:10px;
+ }
+
+
+div#uon-app-intranet-logo:after {
+  color: #003366;
+  content: ": GEMS";
+  font-size: 1.5em;
+
+  right: 5px;
+}
+
+
+
+
+
+#title {
+	background: white;
+	border-style: solid;
+	border-color: black;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	width: 400px;
+	padding:5px;
+	border-width:2px;
+	margin-top:10px;
+	margin-bottom:11px;
+	margin-left:20px;
+	box-shadow: 10px 10px 5px #888888;
+	-webkit-box-shadow: 10px 10px 5px #888888;
+}
+p.sectionheader {
+	font-family: sans-serif;
+	color: black;
+	font-weight: bolder;
+}
+form {
+	display: inline;
+}
+p.bold {
+	font-family:sans-serif;
+	font-weight:bold;
+	margin-left:20px;
+}
+p.header2 {
+	font-family: sans-serif;
+	color: #333399;
+	font-weight: bolder;
+}
+p.body {
+	font-family: sans-serif;
+}
+p.positive {
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: large;
+}
+p.small {
+	font-size:9px;
+	display: inline;
+}
+.button4 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	color: #FFF;
+	padding: 5px 50px 5px 50px;
+	border: 1px solid #999;
+	text-shadow: 0px 1px 1px #666;
+	text-decoration: none;
+	-moz-box-shadow: 0 1px 3px #111;
+	-webkit-box-shadow: 0 1px 3px #111;
+	box-shadow: 0 1px 3px #111;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+/*	background: #64a724;
+	background: -moz-linear-gradient(top, #64a724 0%, #579727 50%, #58982a 51%, #498c25 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(#64a724), to(#498c25), color-stop(0.4, #579727), color-stop(0.5, #58982a), color-stop(.9, #498c25), color-stop(0.9, #498c25));
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64a724', endColorstr='#498c25', GradientType=0 );*/
+ 	background:#003366;
+	font-weight:bold!important;
+	cursor: pointer;
+}
+.button4:hover {
+	border: 1px solid #FFF;
+}
+option.text {
+	font-family:sans-serif;
+}
+
+a.one {
+	background:url(../images/menu_bullet.gif) no-repeat 0 40%;
+	padding-left:15px;
+}
+
+a.one:link {
+	font-family: sans-serif;
+	color: #003366;
+	text-decoration: none;
+}
+a.one:visited {
+	font-family: sans-serif;
+	color: #003366;
+	text-decoration: none;
+}
+a.one:hover {
+	font-family: sans-serif;
+	color:#003366;
+	text-decoration: underline;
+}
+a.one:active {
+	font-family: sans-serif;
+	color: #003366;
+	text-decoration: none;
+}
+a.three:link {
+	color: white;
+	text-decoration: none;
+}
+a.three:visited {
+	color: white;
+	text-decoration: none;
+}
+a.three:hover {
+	color: white;
+	text-decoration: underline;
+}
+a.three:active {
+	color: white;
+	text-decoration: none;
+}
+a.footer:link {
+	color: #003366;
+	text-decoration: none;
+}
+a.footer:visited {
+/*	color: white;*/
+	text-decoration: none;
+}
+a.footer:hover {
+	/*color: white;*/
+	text-decoration: underline;
+}
+a.footer:active {
+	/*color: white;*/
+	text-decoration: none;
+}
+table {
+	/*border-collapse: collapse;*/
+	font-family: sans-serif;
+	border-color:#000000;
+/*	font-size:14px;*/
+}
+p.fourteen {
+	font-family: sans-serif;
+	font-size:8px;
+}
+
+.body #header {
+	background: #FFFFFF;
+	padding: 0 0px 0 0px;
+	/*height: 200px;*/
+}
+.body #header h1 {
+	margin: 0;
+	padding: 0px 0;
+}
+.body #footer {
+	padding: 0 10px;
+/*	background:#61002b;*/ /*pw*/
+	width:865px;
+}
+.body #footer p {
+	margin: 0 0 10px 0;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 9pt;
+	color: #000;
+	position:relative;
+	left:28px;
+	border: 1px dashed #CCCCCC;
+}
+
+#footer #spacer {
+	display:block;
+	height:3px;
+}
+
+
+td {
+	padding:1px;
+	padding-left:4px;
+	border-color:#000000;
+	/*font-size: 10pt;*/
+}
+td.no {
+	padding:0px;
+	padding-left:0px;
+}
+th {
+	padding:3px;
+	border-color:#000000;
+	font-size: 10pt;
+}
+td.value img {
+	vertical-align: middle;
+	margin: 5px 5px 5px 0;
+}
+label {
+	/*width: 4em;*/
+	float: left;
+	margin-right: 0.5em;
+	display: block;
+	font-family: sans-serif;
+}

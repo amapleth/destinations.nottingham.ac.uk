@@ -1,0 +1,8 @@
+ls -lrt
+dos2unix extract1011.txt
+dos2unix courses1011.txt
+dos2unix popdlhe1011.txt
+dos2unix 0155_TQI5.TXT
+pwd
+ls -lrt
+mysql -h localhost -u root -pwebapps

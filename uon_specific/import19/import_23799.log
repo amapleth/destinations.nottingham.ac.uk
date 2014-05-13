@@ -1,0 +1,18 @@
+total 1976
+-rwxr-xr-x 1 mszadm users     581 Aug 15 10:45 import.ksh
+-rw-r--r-- 1 mszadm users 2013280 Aug 15 10:45 extract1011.txt
+-rw-r--r-- 1 mszadm users       0 Aug 15 10:47 import_23799.log
+dos2unix: converting file extract1011.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import19
+total 1972
+-rwxr-xr-x 1 mszadm users     581 Aug 15 10:45 import.ksh
+-rw-r--r-- 1 mszadm users     304 Aug 15 10:47 import_23799.log
+-rw-r--r-- 1 mszadm users 2003705 Aug 15 10:47 extract1011.txt
+9575 extract1011.txt
+extract1011
+9575
+PROMPT set to 'delete data'
+extract1011
+0
+extract1011
+9575

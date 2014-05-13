@@ -1,0 +1,48 @@
+total 1524
+-rw-r--r-- 1 mszadm users    573 Jun 27 13:23 import_520.log
+-rwxrwxrwx 1 mszadm users   2098 Jun 28 13:20 import.ksh
+-rw-r--r-- 1 mszadm users 369323 Jun 28 13:24 tqi910.txt
+-rw-r--r-- 1 mszadm users 367037 Jun 28 13:24 tqi89.txt
+-rwxrwxrwx 1 mszadm users 378908 Jun 28 13:24 tqi78.txt
+-rw-r--r-- 1 mszadm users 408945 Jun 28 13:24 tqi1011.txt
+-rw-r--r-- 1 mszadm users   2262 Jun 28 13:24 import_21697.log
+-rw-r--r-- 1 mszadm users      0 Jun 28 13:28 import_21787.log
+dos2unix: converting file tqi78.txt to UNIX format ...
+dos2unix: converting file tqi89.txt to UNIX format ...
+dos2unix: converting file tqi910.txt to UNIX format ...
+dos2unix: converting file tqi1011.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import8
+total 1528
+-rw-r--r-- 1 mszadm users    573 Jun 27 13:23 import_520.log
+-rwxrwxrwx 1 mszadm users   2098 Jun 28 13:20 import.ksh
+-rw-r--r-- 1 mszadm users   2262 Jun 28 13:24 import_21697.log
+-rw-r--r-- 1 mszadm users 369323 Jun 28 13:28 tqi910.txt
+-rw-r--r-- 1 mszadm users 367037 Jun 28 13:28 tqi89.txt
+-rwxrwxrwx 1 mszadm users 378908 Jun 28 13:28 tqi78.txt
+-rw-r--r-- 1 mszadm users 408945 Jun 28 13:28 tqi1011.txt
+-rw-r--r-- 1 mszadm users    751 Jun 28 13:28 import_21787.log
+find: extract*.txt: No such file or directory
+./import.ksh: line 12: tqi78: not found
+./import.ksh: line 12: tqi89: not found
+./import.ksh: line 12: tqi910: not found
+./import.ksh: line 12: tqi1011: not found
+./import.ksh: line 12: tqi78: not found
+./import.ksh: line 12: HUSIDd: not found
+./import.ksh: line 12: XJACS201: not found
+./import.ksh: line 12: LEV1: not found
+./import.ksh: line 12: LEV2: not found
+./import.ksh: line 12: LEV3: not found
+./import.ksh: line 12: PROGTYPE: not found
+./import.ksh: line 12: QMODE: not found
+./import.ksh: line 12: QLEVD: not found
+./import.ksh: line 12: ACTIVITY: not found
+./import.ksh: line 12: RESP: not found
+./import.ksh: line 12: ITT: not found
+./import.ksh: line 12: COUNTER: not found
+./import.ksh: line 12: tqi89: not found
+./import.ksh: line 12: tqi78: not found
+./import.ksh: line 12: tqi910: not found
+./import.ksh: line 12: tqi78: not found
+./import.ksh: line 12: tqi1011: not found
+./import.ksh: line 12: tqi78: not found
+ERROR 1064 (42000) at line 3: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1

@@ -1,0 +1,48 @@
+total 4964
+-rwxrwxrwx 1 mszadm users    1527 Jul 16 15:28 import.ksh
+-rwxrwxrwx 1 mszadm users 1413564 Jul 16 15:28 extract1011.txt
+-rwxrwxrwx 1 mszadm users 1228776 Jul 16 15:28 extract0910.txt
+-rwxrwxrwx 1 mszadm users 1232419 Jul 16 15:28 extract0809.txt
+-rwxrwxrwx 1 mszadm users 1180929 Jul 16 15:28 extract0708.txt
+-rw-r--r-- 1 mszadm users       0 Jul 16 15:31 import_10922.log
+dos2unix: converting file extract0708.txt to UNIX format ...
+dos2unix: converting file extract0809.txt to UNIX format ...
+dos2unix: converting file extract0910.txt to UNIX format ...
+dos2unix: converting file extract1011.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import9
+total 4948
+-rwxrwxrwx 1 mszadm users    1527 Jul 16 15:28 import.ksh
+-rw-r--r-- 1 mszadm users     675 Jul 16 15:31 import_10922.log
+-rwxrwxrwx 1 mszadm users 1407112 Jul 16 15:31 extract1011.txt
+-rwxrwxrwx 1 mszadm users 1223171 Jul 16 15:31 extract0910.txt
+-rwxrwxrwx 1 mszadm users 1226803 Jul 16 15:31 extract0809.txt
+-rwxrwxrwx 1 mszadm users 1175626 Jul 16 15:31 extract0708.txt
+5303 extract0708.txt
+5616 extract0809.txt
+5605 extract0910.txt
+6452 extract1011.txt
+extract78
+5303
+extract89
+5616
+extract910
+5605
+extract1011
+6452
+PROMPT set to 'delete data'
+extract78
+0
+extract89
+0
+extract910
+0
+extract1011
+0
+extract78
+5303
+extract89
+5616
+extract910
+5605
+extract1011
+6452

@@ -1,0 +1,18 @@
+total 388
+-rwxrwxrwx 1 mszadm users 387145 Jun 27 13:23 tqi78.txt
+-rwxrwxrwx 1 mszadm users    528 Jun 27 13:23 import.ksh
+-rw-r--r-- 1 mszadm users      0 Jun 27 13:23 import_520.log
+dos2unix: converting file tqi78.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import8
+total 384
+-rwxrwxrwx 1 mszadm users    528 Jun 27 13:23 import.ksh
+-rwxrwxrwx 1 mszadm users 378908 Jun 27 13:23 tqi78.txt
+-rw-r--r-- 1 mszadm users    285 Jun 27 13:23 import_520.log
+find: extract*.txt: No such file or directory
+tqi78
+8237
+PROMPT set to 'delete data'
+tqi78
+0
+tqi78
+8237

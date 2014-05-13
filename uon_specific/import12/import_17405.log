@@ -1,0 +1,43 @@
+total 2652
+-rw-r--r-- 1 mszadm users  740321 Aug  2 10:27 KLogger.txt
+-rw-r--r-- 1 mszadm users  732216 Aug  2 10:29 popdlhe0708.txt
+-rw-r--r-- 1 mszadm users 1155108 Aug  2 10:29 extract0708.txt
+-rw-r--r-- 1 mszadm users   56320 Aug  2 10:29 courses0708.txt
+-rw-r--r-- 1 mszadm users    1188 Aug  2 10:29 import_17350.log
+-rwxrwxr-x 1 mszadm users    1188 Aug  2 10:30 import.ksh
+-rw-r--r-- 1 mszadm users       0 Aug  2 10:30 import_17405.log
+dos2unix: converting file courses0708.txt to UNIX format ...
+dos2unix: converting file extract0708.txt to UNIX format ...
+dos2unix: converting file popdlhe0708.txt to UNIX format ...
+/usr/local/lib/gems/docs/uon_specific/import12
+total 2656
+-rw-r--r-- 1 mszadm users  740321 Aug  2 10:27 KLogger.txt
+-rw-r--r-- 1 mszadm users    1188 Aug  2 10:29 import_17350.log
+-rwxrwxr-x 1 mszadm users    1188 Aug  2 10:30 import.ksh
+-rw-r--r-- 1 mszadm users  732216 Aug  2 10:30 popdlhe0708.txt
+-rw-r--r-- 1 mszadm users     675 Aug  2 10:30 import_17405.log
+-rw-r--r-- 1 mszadm users 1155108 Aug  2 10:30 extract0708.txt
+-rw-r--r-- 1 mszadm users   56320 Aug  2 10:30 courses0708.txt
+1539 courses0708.txt
+5303 extract0708.txt
+8105 KLogger.txt
+8105 popdlhe0708.txt
+courses78
+1539
+extract78
+5303
+popdlhe78
+8105
+PROMPT set to 'delete data'
+courses78
+0
+extract78
+0
+popdlhe78
+0
+courses78
+1539
+extract78
+5303
+popdlhe78
+8105

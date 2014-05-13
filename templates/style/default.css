@@ -1,0 +1,107 @@
+
+
+/* Portal style css - Shaun Hare  @todo incorporate into main css*/
+
+#header{
+		width:100%; 
+		margin:auto; 
+		height:60px; 
+		background:#fff url("../img/header/mastheadbg.png") repeat-x 0 0;  
+	}
+.headercontent {
+margin:auto;
+width:960px;
+}
+#header img { float:right;padding-top:10px;padding-right:20px;}
+#header h1 {display:inline;margin:12px 0px; float:left;}
+
+h2.header{margin:0;}
+#subheading{margin:0 auto; width:100%;background:#1b3f59;min-height:40px;padding:0px;}
+#subheading h2 {margin:0 auto;width:960px;padding:6px 0 6px 0;}
+#secondarybranding{ width:900px;height:150px; background:#fff url("../img/Gemsbanner2_top.jpg") no-repeat 0 0;}
+#secondarybranding h3{ color:#fff; padding:50px; font-size:180%;}
+#contentmain,#content{width:900px; margin: 20px auto;}
+#contentmain #appfooter{width:900px;height:150px; background:#fff url("../img/Gemsbanner2_btm.jpg") no-repeat 0 0;}
+#contentmain #appfooter p {color:#fff; text-align:center; padding:40px;}
+#content{margin-top:0;min-height:30em;font-size:14px;}
+#contentmain #contenttext p {line-height:135%;}
+#contenthelp,div#instructionsmac,div#instructionslinux,div#instructionswindows{
+background:#DDE4EF none repeat scroll 0 0;
+border:1px solid #6699CC;
+float:right;
+line-height:135%;
+
+}
+
+#contenthelp ul,#instructionsmac ol,#instructionslinux ol,#instructionswindows ol{padding:20px;
+list-style-type:decimal;
+margin-left:5px;}
+
+form ul {margin-top:10px;}
+form ul li{padding:10px;}
+
+
+form ul li input.button{-moz-border-radius-bottomleft:4px;
+-moz-border-radius-bottomright:4px;
+-moz-border-radius-topleft:4px;
+-moz-border-radius-topright:4px;
+clear:both;
+color:#FFFFFF !important;
+font-weight:bold;
+padding:0.5em 0.5em 0.5em 2.2em;
+width:7em;
+text-align:center;
+}
+
+form ul li input.no{background:#CF8174 url(../img/button/error.gif) no-repeat scroll 0.6em 50% !important;
+border:2px solid #B12A19;
+}
+form ul li input.yes{background:#8AB039 url(../img/button/check.gif) no-repeat scroll 0.6em 50% !important;
+border:2px solid #658F08;
+}
+#contenthelp h4.help, div#instructionsmac h4.help,div#instructionslinux h4.help,div#instructionswindows h4.help{text-align:center; font-size:160%; }
+
+ol{list-style-type:decimal;}
+
+p{line-height:135%;}
+
+
+
+table,tr,td,th{padding:4px;border:solid 1px #000;}
+table {
+border-collapse:collapse;
+border-color:#000000;
+font-family:sans-serif;
+font-size:14px;
+
+}
+td.value span{padding-left:2px;}
+#footer{width:100%; background:#F0F0F0 none repeat scroll 0 0;
+text-align:center;border-top:1px solid #B7B7B7;clear:both;
+padding:0.9em 0;border-bottom:1px solid #B7B7B7;}
+#footer ul{padding:3px;text-align:center;margin:auto;width:50%; background:#F0F0F0 none repeat scroll 0 0;display:inline;}
+#footer li{border-right:1px solid #336699;
+color:#336699;
+display:inline;
+font-size:1.1em;
+padding:0 0.5em 0 0.6em;}
+#footer ul li a {
+color:#336699;
+}
+#footer img{vertical-align:middle;padding:2px;}
+
+p.error{background:#FFFFCE url(../img/button/warning.gif) no-repeat scroll 1% 12px;
+border:1px solid #EFE995;
+color:;
+display:block;
+font-weight:bold;
+padding-left:30px;}
+
+img{border:0;}
+
+div#firsttable table { border:none;}
+
+ol.terms{margin-left:10px;list-style:decimal;line-height: 135%;}
+ul.terms{margin-left:15px;line-height:135%;}
+.indent{margin-left:25px;}
+#maincontent p { margin-bottom:5px;line-height:135%;}
